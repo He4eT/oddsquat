@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "nanogen": "^0.4.2"
+    "nanogen": "^0.4.2",
+    "typography": "^0.16.19"
   }
 }

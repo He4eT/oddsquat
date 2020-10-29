@@ -5,7 +5,8 @@
   "main": "site.config.js",
   "scripts": {
     "start": "nanogen start",
-    "build": "nanogen build"
+    "build": "nanogen build",
+    "typography": "node typography.js"
   },
   "keywords": [],
   "author": "",

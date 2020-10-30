@@ -1,43 +1,47 @@
 <!DOCTYPE html>
 <html lang="<%= page.lang || 'en' %>">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="<%= page.description %>">
-    <title>
-      <%= page.title + ' / ' + site.title %>
-    </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="<%= page.description %>">
+  <title>
+    <%= page.title + ' / ' + site.title %>
+  </title>
 
-    <link rel="stylesheet" href="/css/typography.css">
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Open+Sans+Condensed:wght@700&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+  <link rel="stylesheet" href="/css/typography.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Open+Sans+Condensed:wght@700&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap">
 </head>
 <body>
-    <header>
-      <nav>
-          <ul>
-              <li><a href="/"><%= site.title %></a></li>
 
-              <% if (page.section) { %>
-                <li><a href="/<%= page.section %>">
-                  <%= page.section %></a></li>
-              <% } %>
-              <% if (page.year) { %>
-                <li><a href="/post/list#<%= page.year %>">
-                  <%= page.year %></a></li>
-              <% } %>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/"><%= site.title %></a></li>
 
-              <li><%= page.title %></li>
-          </ul>
-      </nav>
-    </header>
-    <main>
-        <article>
-          <%- body %>
-        </article>
-    </main>
-    <footer>
-      <%= page.date %>
-    </footer>
+        <% if (page.section) { %>
+          <li><a href="/<%= page.section %>">
+            <%= page.section %></a></li>
+        <% } %>
+        <% if (page.year) { %>
+          <li><a href="/post/list#<%= page.year %>">
+            <%= page.year %></a></li>
+        <% } %>
+
+        <li><%= page.title %></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <article>
+      <%- body %>
+    </article>
+  </main>
+
+  <footer>
+    <%= page.date %>
+  </footer>
+
 </body>
 </html>

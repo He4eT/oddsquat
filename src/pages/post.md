@@ -12,10 +12,10 @@ description: 'Сomplete list of posts'
 
 ## 2020
 
--   [Markdown test](/test/)
+-   [EN] [Markdown test](/test/)
 
 	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 
--   [Another link](/test/)
+-   [EN] [Another link](/test/)
 
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	Lorem ipsum dolor sit amet labore et dolore magna aliqua. Ut enim ad minim veniam

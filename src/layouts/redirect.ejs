@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta
+    name="description"
+    content="Redirect to '<%= page.redirectTarget %>'">
+  <meta
+    http-equiv="Refresh"
+    content="0; URL=<%= page.redirectTarget %>">
+  <title>
+    <%= 'Redirect / ' + site.title %>
+  </title>
+</head>
+<body>
+  <main>
+    Redirect to
+    <a
+      style="color: inherit;"
+      href="<%= page.redirectTarget %>">
+        <%= page.redirectTarget %>
+    </a>
+  </main>
+</body>
+</html>

@@ -11,7 +11,6 @@ section: 'post'
 title: 'Markdown test page'
 description: 'A test document written using Markdown'
 
-
 ---
 
 # Markdown: Syntax

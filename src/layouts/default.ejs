@@ -11,6 +11,12 @@
   <link rel="stylesheet" href="/css/typography.css">
   <link rel="stylesheet" href="/css/main.css">
   <%- include('partials/head-fonts') %>
+
+  <% if (page.css) { %>
+    <% page.css.forEach(cssFile => { %>
+      <link rel="stylesheet" href="/css/<%= cssFile %>.css">
+    <% }) %>
+  <% } %>
 </head>
 <body>
   <%- body %>

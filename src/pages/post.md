@@ -12,10 +12,6 @@ description: 'Сomplete list of posts'
 
 ## 2020
 
--   [EN] [Markdown test](/test/)
+- [RU] [Initial post](/post/2020/initial_post/)
 
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-
--   [EN] [Another link](/test/)
-
-	Lorem ipsum dolor sit amet labore et dolore magna aliqua. Ut enim ad minim veniam
+  Какие инструменты были использованы для создания этого сайта, какие решения были приняты и почему.

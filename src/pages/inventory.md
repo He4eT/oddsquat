@@ -25,7 +25,7 @@ Split-hand, concave, columnar, layered, and ergonomic.
 [repository](https://github.com/He4eT/dotfiles) |
 post
 
-Minimalistic desktop environment with a focus on usability, simplicity and clarity. <br>
+Minimalistic desktop environment with a&nbsp;focus on&nbsp;usability, simplicity and clarity.<br>
 Includes config for i3-gaps WM, Firefox, Sublime Text, urxvt, etc.
 
 ---

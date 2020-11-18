@@ -9,8 +9,11 @@ description: 'Сomplete list of posts'
 
 ---
 
-
 ## 2020
+
+- [RU] [Typographic linter](/post/2020/typographic_linter/)
+
+  Prettier для текста. Автоматизация рутинной типографики.
 
 - [RU] [Initial post](/post/2020/initial_post/)
 

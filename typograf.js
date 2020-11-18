@@ -1,12 +1,10 @@
-const Typograf = require('typograf');
+const Typograf = require('typograf')
 const fs = require('fs')
 
 if (!process.argv[2]) {
   console.log('Usage:\n node typograf file [locale]')
   return
 }
-
-/* */
 
 const filePath =
   `${process.cwd()}/${process.argv[2]}`
@@ -25,9 +23,7 @@ const tp = new Typograf({
   }
 })
 
-tp.disableRule('*')
-
-;[
+tp.disableRule('*');[
   'common/punctuation/quote',
   'common/nbsp/*',
   'ru/nbsp/*',

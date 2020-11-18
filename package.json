@@ -6,6 +6,7 @@
   "scripts": {
     "start": "nanogen start",
     "build": "nanogen build",
+    "lint": "node typograf.js",
     "typography": "node typography.js"
   },
   "keywords": [],

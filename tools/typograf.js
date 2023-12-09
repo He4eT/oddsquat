@@ -3,7 +3,7 @@ import { readFileSync, writeFile } from 'fs'
 
 if (!process.argv[2]) {
   console.log('Usage:\n node typograf file [locale]')
-  return
+  process.exit(1)
 }
 
 const filePath =

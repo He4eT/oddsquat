@@ -1,5 +1,5 @@
-const Typography = require('typography')
-const fs = require('fs')
+import Typography from 'typography'
+import { writeFile } from 'fs'
 
 const TYPOGRAPHY_CSS_FILEPATH =
   './src/assets/css/typography.css'
@@ -21,7 +21,7 @@ const typography = new Typography({
   bodyColor: 'hsl(0, 0%, 0%, 0.8)'
 })
 
-void fs.writeFile(
+void writeFile(
   TYPOGRAPHY_CSS_FILEPATH,
   typography.toString(),
   err => err

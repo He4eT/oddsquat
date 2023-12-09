@@ -4,12 +4,11 @@
   "description": "",
   "main": "site.config.js",
   "scripts": {
-    "start": "npm run site:dev",
-    "site:dev": "nanogen start",
-    "site:build": "nanogen build",
-    "update:typography": "node tools/typography.js",
-    "update:rss": "node tools/rss.js",
-    "post:lint": "node tools/typograf.js"
+    "build": "nanogen build",
+    "start": "nanogen start",
+    "tool:fonts-generator": "node tools/typography.js",
+    "tool:linter": "node tools/typograf.js",
+    "tool:rss-generator": "node tools/rss.js"
   },
   "keywords": [],
   "author": "",

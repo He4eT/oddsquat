@@ -1,5 +1,5 @@
-const Typograf = require('typograf')
-const fs = require('fs')
+import Typograf from 'typograf'
+import { readFileSync, writeFile } from 'fs'
 
 if (!process.argv[2]) {
   console.log('Usage:\n node typograf file [locale]')
@@ -10,7 +10,7 @@ const filePath =
   `${process.cwd()}/${process.argv[2]}`
 
 const fileContent =
-  fs.readFileSync(filePath).toString()
+  readFileSync(filePath).toString()
 
 const locale =
   process.argv[3] || 'en-US'
@@ -31,7 +31,7 @@ tp.disableRule('*');[
 ].forEach(rule =>
   tp.enableRule(rule))
 
-void fs.writeFile(
+void writeFile(
   filePath,
   tp.execute(fileContent),
   err => err

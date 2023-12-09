@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "site.config.js",
+  "type": "module",
   "scripts": {
     "build": "nanogen build",
     "start": "nanogen start",

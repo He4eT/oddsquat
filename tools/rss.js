@@ -1,17 +1,8 @@
-const feed = [[
-  '2021-10-02',
-  'http://example.com/article4?this&that',
-  'item title',
-  'use this for the content. It can include html.'
-], [
-  '2021-10-01',
-  'http://example.com/arthat',
-  'another item title',
-  'another use this for the content. It can include html.'
-]]
+import rss from 'rss-generator'
+import { feed } from './rss-entries.js'
 
 const url = 'https://oddsquat.org'
-const rssFeed = new (require('rss-generator'))({
+const rssFeed = new rss({
   title: 'oddsquat',
   site_url: `${url}`,
   feed_url: `${url}/rss.xml`,
@@ -22,11 +13,11 @@ const rssFeed = new (require('rss-generator'))({
 feed.forEach(([date, url, title, description]) =>
   rssFeed.item({date, url, title, description}))
 
-const fs = require('fs')
+import { writeFile } from 'fs'
 const RSS_FILEPATH =
   './src/assets/rss.xml'
 
-void fs.writeFile(
+void writeFile(
   RSS_FILEPATH,
   rssFeed.xml(),
   err => err

@@ -1,5 +1,5 @@
-import Typograf from 'typograf'
-import { readFileSync, writeFile } from 'fs'
+const Typograf = require('typograf')
+const { readFileSync, writeFile } = require('fs')
 
 if (!process.argv[2]) {
   console.log('Usage:\n node typograf file [locale]')

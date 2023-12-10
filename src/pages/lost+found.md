@@ -4,7 +4,7 @@ layout: post
 lang: 'en'
 section: 'lost+found'
 
-title: 'list of issues'
+title: 'issue list'
 description: 'Irregular Link Digest'
 
 ---

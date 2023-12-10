@@ -6,7 +6,7 @@ lang: 'ru'
 date: '2020-11-08'
 
 year: '2020'
-section: 'post'
+section: 'posts'
 
 title: 'initial post'
 description: 'Первый пост в этом фэнзине, рассказывающий о его внутреннем устойстве'

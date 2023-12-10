@@ -6,7 +6,7 @@ lang: 'ru'
 date: '2020-11-18'
 
 year: '2020'
-section: 'post'
+section: 'posts'
 
 title: 'typographic linter'
 description: 'Prettier для текста. Автоматизация рутинной типографики.'

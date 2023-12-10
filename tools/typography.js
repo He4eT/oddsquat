@@ -1,5 +1,5 @@
-import Typography from 'typography'
-import { writeFile } from 'fs'
+const Typography = require('typography')
+const { writeFile } = require('fs')
 
 const TYPOGRAPHY_CSS_FILEPATH =
   './src/assets/css/typography.css'

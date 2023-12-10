@@ -1,5 +1,6 @@
-import rss from 'rss-generator'
-import { feed } from './rss-entries.js'
+const rss = require('rss-generator')
+const { feed } = require('./rss-entries.js')
+const { writeFile } = require('fs')
 
 const url = 'https://oddsquat.org'
 const rssFeed = new rss({
@@ -13,7 +14,6 @@ const rssFeed = new rss({
 feed.forEach(([date, url, title, description]) =>
   rssFeed.item({date, url, title, description}))
 
-import { writeFile } from 'fs'
 const RSS_FILEPATH =
   './src/assets/rss.xml'
 

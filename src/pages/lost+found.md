@@ -13,10 +13,10 @@ description: 'Irregular Link Digest'
 
 Irregular Link Digest
 
-> Some file systems contain a special directory,
-> called **lost+found** under Unix, where a file system check
+> Some file systems contain a&nbsp;special directory,
+> called **lost+found** under Unix, where a&nbsp;file system check
 > places lost and potentially corrupted files when the correct location
-> cannot be determined, and so **requires manual intervention by the user**.
+> cannot be&nbsp;determined, and so&nbsp;**requires manual intervention by&nbsp;the user**.
 
 ---
 

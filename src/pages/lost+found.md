@@ -11,7 +11,7 @@ description: 'Irregular Link Digest'
 
 # lost+found
 
-Irregular Link Digest
+Irregular Link Digest.
 
 > Some file systems contain a&nbsp;special directory,
 > called **lost+found** under Unix, where a&nbsp;file system check

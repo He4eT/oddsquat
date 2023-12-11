@@ -9,7 +9,7 @@ const rssFeed = new rss({
   feed_url: `${url}/rss.xml`,
   image_url: `${url}/icon.svg'`,
   description:
-    'Fanzine about experiments, code and other cyberpunk stuff'})
+    'A fanzine about experiments, code and other cyberpunk stuff'})
 
 feed.forEach(([date, url, title, description]) =>
   rssFeed.item({date, url, title, description}))

@@ -53,12 +53,15 @@ ul {
 
 /* Layout */
 
+html, body {
+  scroll-behavior: smooth;
+}
+
 header,
 footer,
 main {
   box-sizing: content-box;
   max-width: 45rem;
-  padding: 15px 30px;
   padding: 3% 5%;
 }
 

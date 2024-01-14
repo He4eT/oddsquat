@@ -16,5 +16,5 @@ I'm a&nbsp;frontend developer, a&nbsp;big fan of&nbsp;Open Source, and a&nbsp;me
 ---
 
 - Email: [He4eT@oddsquat.org](mailto:He4eT@oddsquat.org)
-- GitHub: [@He4eT](https://github.com/He4eT)
-- Telegram: [@He4eT](https://t.me/He4eT)
+- GitHub: <a target='_blank' href='https://github.com/He4eT'>@He4eT</a>
+- Telegram: <a target='_blank' href='https://t.me/He4eT'>@He4eT</a>

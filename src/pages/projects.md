@@ -18,7 +18,7 @@ h4 {
 
 # Projects
 
-Incomplete list of my projects and experiments.
+Incomplete list of&nbsp;my&nbsp;projects and experiments.
 
 ---
 
@@ -33,7 +33,7 @@ Incomplete list of my projects and experiments.
 
 ## Interactive Fiction
 
-### IF Tools
+### IF&nbsp;Tools
   - #### ElseIFPlayer
   Interactive fiction player for the web.
 
@@ -42,19 +42,19 @@ Incomplete list of my projects and experiments.
   | <a href='https://he4et.github.io/elseifplayer/' target='_blank'>app</a>
 
   - #### cheap-glkote
-  Abstract implementation of the GlkOte library interface
-  designed to be used with Emglken.
+  Abstract implementation of&nbsp;the GlkOte library interface
+  designed to&nbsp;be&nbsp;used with Emglken.
 
   <a href='https://github.com/He4eT/cheap-glkote' target='_blank'>repository</a>
   | <a href='https://www.npmjs.com/package/cheap-glkote' target='_blank'>npm</a>
 
 ---
 
-### IF Games
+### IF&nbsp;Games
 
   - #### yet another experiment
-  Tiny "escape the room" style TADS3 game.
-  <br>Designed as a set of examples for developing interactive fiction.
+  Tiny “escape the room” style TADS3&nbsp;game.
+  <br>Designed as&nbsp;a&nbsp;set of&nbsp;examples for developing interactive fiction.
 
   <a href='https://github.com/He4eT/yet-another-experiment' target='_blank'>repository</a>
   | <a href='https://ifdb.org/viewgame?id=rsssdo3anjpwnt6e' target='_blank'>ifdb</a>
@@ -66,7 +66,7 @@ Incomplete list of my projects and experiments.
 
 ### Hardware
   - #### oddkb
-  My custom ergonomic mechanical Dactyl-Manuform (5x6) keyboard.
+  My&nbsp;custom ergonomic mechanical Dactyl-Manuform (5x6) keyboard.
 
   <a href='https://github.com/He4eT/oddkb' target='_blank'>repository</a>
 
@@ -74,8 +74,8 @@ Incomplete list of my projects and experiments.
 
 ### Software, Plugins and Tools
 - #### dotfiles
-  Custom-made desktop environment based on i3wm.
-  <br>It comes with settings for
+  Custom-made desktop environment based on&nbsp;i3wm.
+  <br>It&nbsp;comes with settings for
   i3wm, Polybar, Rofi, dunst, NeoVim, and some other applications.
 
   <a href='https://github.com/He4eT/dotfiles' target='_blank'>repository</a>
@@ -86,7 +86,7 @@ Incomplete list of my projects and experiments.
   <a href='https://github.com/He4eT/desolate.nvim' target='_blank'>repository</a>
 
 - #### tabswiper
-  Firefox extension that makes trimming your tabs as effortless as swiping on a dating app.
+  Firefox extension that makes trimming your tabs as&nbsp;effortless as&nbsp;swiping on&nbsp;a&nbsp;dating app.
 
   <a href='https://github.com/He4eT/tabswiper' target='_blank'>repository</a>
   | <a href='https://addons.mozilla.org/en-GB/firefox/addon/tabswiper/' target='_blank'>extension</a>

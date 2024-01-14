@@ -20,6 +20,4 @@ Irregular Link Digest.
 
 ---
 
-## 2023
-
-[2023-11]() | [2023-12]()
+Coming soon

@@ -5,6 +5,7 @@
   "main": "site.config.js",
   "scripts": {
     "build": "nanogen build",
+    "release": "sh tools/gh.release.sh",
     "start": "nanogen start",
     "tool:fonts-generator": "node tools/typography.js",
     "tool:linter": "node tools/typograf.js",

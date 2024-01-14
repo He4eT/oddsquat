@@ -23,8 +23,8 @@ Incomplete list of&nbsp;my&nbsp;projects and experiments.
 ---
 
 - [Interactive Fiction](#interactive-fiction)
-  - [IF Tools](#if-tools)
-  - [IF Games](#if-games)
+  - [IF Tools](#iftools)
+  - [IF Games](#ifgames)
 - [Inventory](#inventory)
   - [Hardware](#hardware)
   - [Software, Plugins and Tools](#software-plugins-and-tools)

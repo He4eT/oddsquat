@@ -9,6 +9,12 @@ description: 'Сomplete list of posts'
 
 ---
 
+## 2024
+
+- [RU] [selfhosted LLM](/posts/2024/selfhosted_llm/)
+
+  Персональная LLM в docker-контейнере на твоём компьютере.
+
 ## 2020
 
 - [RU] [typographic linter](/posts/2020/typographic_linter/)

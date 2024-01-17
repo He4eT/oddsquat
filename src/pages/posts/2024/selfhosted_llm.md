@@ -9,7 +9,7 @@ year: '2024'
 section: 'posts'
 
 title: 'selfhosted LLM'
-description: 'Персональная LLM в docker-контейнере на твоём компьютере'
+description: 'Персональные LLM в docker-контейнере на твоём компьютере.'
 
 ---
 

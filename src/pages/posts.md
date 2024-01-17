@@ -13,7 +13,7 @@ description: 'Сomplete list of posts'
 
 - [RU] [selfhosted LLM](/posts/2024/selfhosted_llm/)
 
-  Персональная LLM в docker-контейнере на твоём компьютере.
+  Персональные LLM в docker-контейнере на твоём компьютере.
 
 ## 2020
 

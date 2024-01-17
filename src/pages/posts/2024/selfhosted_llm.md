@@ -337,4 +337,4 @@ docker exec -it ollama ollama rm mistral
 
 ---
 
-При написании этого поста не&nbsp;была использована ни&nbsp;одна LLM =)
+Этот пост написан без использования LLM =)

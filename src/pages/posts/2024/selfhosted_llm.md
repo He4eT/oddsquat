@@ -298,7 +298,7 @@ docker run --net=host diy-ollama-proxy
 Для обновления и&nbsp;удаления моделей можно использовать команды `pull` и&nbsp;`rm`:
 ```
 docker exec -it ollama ollama pull mixtral
-docker exec -it ollama ollama rm&nbsp;mistral
+docker exec -it ollama ollama rm mistral
 ```
 
 Я&nbsp;знаю, что для обновления и&nbsp;удаления docker-образов и&nbsp;docker-контейнеров тоже есть специальные команды (это тоже `pull` и&nbsp;`rm`), но&nbsp;каждый раз ленюсь в&nbsp;этом разобраться, просто сношу всё с&nbsp;помощью утилиты [sen](https://github.com/TomasTomecek/sen) и&nbsp;разворачиваю нужное заново.
@@ -319,7 +319,7 @@ docker exec -it ollama ollama rm&nbsp;mistral
 
 ## Зачем всё это нужно?
 
-Конечно, GhatGPT умнее и&nbsp;умеет из&nbsp;коробки гораздо больше.<br>
+Конечно, ChatGPT умнее и&nbsp;умеет из&nbsp;коробки гораздо больше.<br>
 Конечно, ChatGPT требует меньше телодвижений для использования.<br>
 Конечно, самые умные модели требуют внушительных ресурсов, ведь для запуска нашумевшей [mixtral](https://ollama.ai/library/mixtral) или аналогичной модели нужно иметь 48&nbsp;Gb&nbsp;оперативной памяти.<br>
 Кончено, сидя в&nbsp;кафе задать вопрос Bard от&nbsp;Google гораздо проще, чем достучаться до&nbsp;модели в&nbsp;закрытом ноутбуке, который остался дома.<br>

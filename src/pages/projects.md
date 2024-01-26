@@ -85,6 +85,12 @@ Incomplete list of&nbsp;my&nbsp;projects and experiments.
 
   <a href='https://github.com/He4eT/desolate.nvim' target='_blank'>repository</a>
 
+- #### tabswitcher
+  Switch between Firefox tabs and manage them with a&nbsp;fuzzy search and basic command toolset.
+
+  <a href='https://github.com/He4eT/tabswitcher' target='_blank'>repository</a>
+  | <a href='https://addons.mozilla.org/en-GB/firefox/addon/tabswitcher/' target='_blank'>extension</a>
+
 - #### tabswiper
   Firefox extension that makes trimming your tabs as&nbsp;effortless as&nbsp;swiping on&nbsp;a&nbsp;dating app.
 

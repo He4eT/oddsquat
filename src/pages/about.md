@@ -12,6 +12,7 @@ Hello, my&nbsp;name is&nbsp;**He4eT**.<br>
 I'm a&nbsp;frontend developer, a&nbsp;big fan of&nbsp;Open Source, and a&nbsp;member of&nbsp;the <a href="https://t.me/barbadbar" target="_blank">BadBar</a> crew.
 
 **Oddsquat** is&nbsp;my&nbsp;own private fanzine about experiments, code and other cyberpunk stuff.
+<br>[RSS feed](/rss.xml) available.
 
 ---
 

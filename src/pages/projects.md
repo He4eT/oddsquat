@@ -66,52 +66,57 @@ Incomplete list of&nbsp;my&nbsp;projects and experiments.
 
 ### Hardware
   - #### oddkb
-  My&nbsp;custom ergonomic mechanical Dactyl-Manuform (5x6) keyboard.
+  My&nbsp;custom ergonomic mechanical Dactyl-Manuform (5&times;6) keyboard.
 
   <a href='https://github.com/He4eT/oddkb' target='_blank'>repository</a>
 
 ---
 
-### Software, Plugins and Tools
-- #### dotfiles
+### Settings
+  - #### dotfiles
   Custom-made desktop environment based on&nbsp;i3wm.
   <br>It&nbsp;comes with settings for
   i3wm, Polybar, Rofi, dunst, NeoVim, and some other applications.
 
   <a href='https://github.com/He4eT/dotfiles' target='_blank'>repository</a>
 
-- #### desolate.nvim
+---
+
+### Software, Plugins and Tools
+  - #### desolate.nvim
   Another customizable not-so-colorful NeoVim colorscheme.
 
   <a href='https://github.com/He4eT/desolate.nvim' target='_blank'>repository</a>
 
-- #### tabswitcher
+  - #### tabswitcher
   Switch between Firefox tabs and manage them with a&nbsp;fuzzy search and basic command toolset.
 
   <a href='https://github.com/He4eT/tabswitcher' target='_blank'>repository</a>
   | <a href='https://addons.mozilla.org/en-GB/firefox/addon/tabswitcher/' target='_blank'>extension</a>
 
-- #### tabswiper
+  - #### tabswiper
   Firefox extension that makes trimming your tabs as&nbsp;effortless as&nbsp;swiping on&nbsp;a&nbsp;dating app.
 
   <a href='https://github.com/He4eT/tabswiper' target='_blank'>repository</a>
   | <a href='https://addons.mozilla.org/en-GB/firefox/addon/tabswiper/' target='_blank'>extension</a>
 
-- #### fuzzsoma
-
-  SomaFM CLI station-selector.
+  - #### fuzzsoma
+  SomaFM CLI station selector.
 
   <a href='https://github.com/He4eT/fuzzsoma' target='_blank'>repository</a>
 
-- #### huge-link
+  - #### fuzzy-bitwarden-clipboard
+  Interactive Bitwarden CLI clipboard selector.
 
+  <a href='https://github.com/He4eT/fuzzy-bitwarden-clipboard' target='_blank'>repository</a>
+
+  - #### huge-link
   Minimalistic serverless publishing tool for small markdown posts.
 
   <a href='https://github.com/He4eT/huge-link' target='_blank'>repository</a>
   | <a href='https://he4et.github.io/huge-link/' target='_blank'>app</a>
 
-- #### conky-dashboard
-
+  - #### conky-dashboard
   Desktop widgets for monitoring system status.
 
   <a href='https://github.com/He4eT/conky-dashboard' target='_blank'>repository</a>

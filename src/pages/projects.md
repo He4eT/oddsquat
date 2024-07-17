@@ -118,7 +118,7 @@ Incomplete list of&nbsp;my&nbsp;projects and experiments.
   | <a href='https://he4et.github.io/huge-link/' target='_blank'>app</a>
 
   - #### conky-dashboard
-  Desktop widgets for monitoring system status.
+  Desktop widgets for system status monitoring.
 
   <a href='https://github.com/He4eT/conky-dashboard' target='_blank'>repository</a>
 

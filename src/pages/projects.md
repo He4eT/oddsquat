@@ -27,6 +27,7 @@ Incomplete list of&nbsp;my&nbsp;projects and experiments.
   - [IF Games](#ifgames)
 - [Inventory](#inventory)
   - [Hardware](#hardware)
+  - [Settings](#settings)
   - [Software, Plugins and Tools](#software-plugins-and-tools)
 
 ---

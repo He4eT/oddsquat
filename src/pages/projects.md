@@ -107,7 +107,7 @@ Incomplete list of&nbsp;my&nbsp;projects and experiments.
   <a href='https://github.com/He4eT/fuzzsoma' target='_blank'>repository</a>
 
   - #### fuzzy-bitwarden-clipboard
-  Interactive Bitwarden CLI clipboard selector.
+  Interactive Bitwarden CLI wrapper.
 
   <a href='https://github.com/He4eT/fuzzy-bitwarden-clipboard' target='_blank'>repository</a>
 

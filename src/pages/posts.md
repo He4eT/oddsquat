@@ -11,6 +11,10 @@ description: 'Сomplete list of posts'
 
 ## 2024
 
+- [RU] [wrapped bw](/posts/2024/wrapped_bw_ru/)
+
+  Превращаем fully-featured Bitwarden command-line interface в удобный.
+
 - [RU] [selfhosted LLM](/posts/2024/selfhosted_llm/)
 
   Персональные LLM в docker-контейнере на твоём компьютере.

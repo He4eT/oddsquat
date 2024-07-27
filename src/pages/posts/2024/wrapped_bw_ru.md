@@ -3,7 +3,7 @@
 layout: post
 
 lang: 'ru'
-date: '2024-07-19'
+date: '2024-07-27'
 
 year: '2024'
 section: 'posts'

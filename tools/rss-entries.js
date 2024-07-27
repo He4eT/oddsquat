@@ -5,6 +5,11 @@
  * description
  */
 const feed = [[
+  '2024-07-27',
+  'https://oddsquat.org/posts/2024/wrapped_bw_ru/',
+  '[RU] wrapped bw',
+  'Превращаем fully-featured Bitwarden command-line interface в удобный.'
+], [
   '2024-01-15',
   'https://oddsquat.org/posts/2024/selfhosted_llm/',
   '[RU] selfhosted LLM',

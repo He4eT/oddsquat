@@ -61,9 +61,9 @@ Incomplete list of&nbsp;my&nbsp;projects and experiments.
   | <a href='https://ifdb.org/viewgame?id=rsssdo3anjpwnt6e' target='_blank'>ifdb</a>
   | <a href='https://he4et.github.io/elseifplayer/#/focus/https%3A%2F%2Fifarchive.org%2Fif-archive%2Fgames%2Ftads%2Fyet_another_experiment.t3/serika_dark/' target='_blank'>play</a>
 
-## Inventory
-
 ---
+
+## Inventory
 
 ### Hardware
   - #### oddkb

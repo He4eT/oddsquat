@@ -89,6 +89,11 @@ Incomplete list of&nbsp;my&nbsp;projects and experiments.
 
   <a href='https://github.com/He4eT/desolate.nvim' target='_blank'>repository</a>
 
+  - #### desolate-gtk
+  Another customizable not-so-colorful GTK theme for your tiling WM.
+
+  <a href='https://github.com/He4eT/Desolate-GTK' target='_blank'>repository</a>
+
   - #### tabswitcher
   Switch between Firefox tabs and manage them with a&nbsp;fuzzy search and basic command toolset.
 

@@ -66,8 +66,13 @@ Incomplete list of&nbsp;my&nbsp;projects and experiments.
 ## Inventory
 
 ### Hardware
+  - #### cantor mx tastatura
+  Small custom ergonomic mechanical keyboard.
+
+  <a href='https://github.com/He4eT/cantor-mx-tastatura' target='_blank'>repository</a>
+
   - #### oddkb
-  My&nbsp;custom ergonomic mechanical Dactyl-Manuform (5&times;6) keyboard.
+  Huge custom ergonomic mechanical Dactyl-Manuform (5&times;6) keyboard.
 
   <a href='https://github.com/He4eT/oddkb' target='_blank'>repository</a>
 

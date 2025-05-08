@@ -25,7 +25,7 @@ filters — including [Setext](http://docutils.sourceforge.net/mirror/setext.htm
 [Grutatext](http://www.triptico.com/software/grutatxt.html), and [EtText](http://ettext.taint.org/doc/) — the single biggest source of
 inspiration for Markdown's syntax is the format of plain text email.
 
-**Note:** This document is itself written using Markdown
+**Note:** This document is itself written using Markdown.
 
 ---
 
@@ -42,7 +42,6 @@ inspiration for Markdown's syntax is the format of plain text email.
     *   [Links](#links)
     *   [Emphasis](#emphasis)
     *   [Code](#code)
-
 
 ---
 
@@ -66,14 +65,9 @@ end a line with two or more spaces, then type return.
 
 ### Headers
 
-Markdown supports two styles of headers, [Setext] [1] and [atx] [2].
-
-Optionally, you may "close" atx-style headers. This is purely
-cosmetic — you can use this if you think it looks better. The
-closing hashes don't even need to match the number of hashes
-used to open the header. (The number of opening hashes
-determines the header level.)
-
+Headers are lines that start with the `#` symbol.
+The number of characters defines the header level,
+from one (`#`) for `<h1>` to six (`######`) for `<h6>`.
 
 ### Blockquotes
 
@@ -111,19 +105,19 @@ adding additional levels of `>`:
 Blockquotes can contain other Markdown elements, including headers, lists,
 and code blocks:
 
-> ## This is a header.
+> ### Here's a list
 >
 > 1.   This is the first list item.
 > 2.   This is the second list item.
 >
-> Here's some example code:
->
->     return shell_exec("echo $input | $markdown_script");
+> ### Here's an example code block
+> ```
+> const PI = 3.1415`
+> ```
 
 Any decent text editor should make email-style quoting easy. For
 example, with BBEdit, you can make a selection and choose Increase
 Quote Level from the Text menu.
-
 
 ### Lists
 
@@ -226,11 +220,14 @@ delimiters need to be indented:
     > inside a list item.
 
 To put a code block within a list item, the code block needs
-to be indented *twice* — 8 spaces or two tabs:
+to be indented with list item indentation in mind:
 
 *   A list item with a code block:
 
-        <code goes here>
+    ```
+    code goes here
+        code goes here
+    ```
 
 ### Code Blocks
 
@@ -239,61 +236,64 @@ markup source code. Rather than forming normal paragraphs, the lines
 of a code block are interpreted literally. Markdown wraps a code block
 in both `<pre>` and `<code>` tags.
 
-To produce a code block in Markdown, simply indent every line of the
-block by at least 4 spaces or 1 tab.
-
-This is a normal paragraph:
-
-    This is a code block.
-
-Here is an example of AppleScript:
-
-    tell application "Foo"
-        beep
-    end tell
-
-A code block continues until it reaches a line that is not indented
-(or the end of the article).
-
-Within a code block, ampersands (`&`) and angle brackets (`<` and `>`)
-are automatically converted into HTML entities. This makes it very
-easy to include example HTML source code using Markdown — just paste
-it and indent it, and Markdown will handle the hassle of encoding the
-ampersands and angle brackets. For example, this:
-
-    <div class="footer">
-        &copy; 2004 Foo Corporation
-    </div>
-
-Regular Markdown syntax is not processed within code blocks. E.g.,
-asterisks are just literal asterisks within a code block. This means
-it's also easy to use Markdown to write about Markdown's own syntax.
-
 ```
 tell application "Foo"
     beep
 end tell
 ```
 
+Regular Markdown syntax is not processed within code blocks. E.g.,
+asterisks are just literal asterisks within a code block. This means
+it's also easy to use Markdown to write about Markdown's own syntax.
+
+```
+## This is **not** a Markdown
+```
+
 ### Tables
 
-| Column 1       | Column 2     | Column 3       |
-| :------------- | :----------: | -----------:   |
-|  Cell Contents | More Stuff   | And Again      |
-| You Can Also   | Put Pipes In | Like this [\|] |
+Markdown tables are created using pipes (|) to separate columns and hyphens (-) to define the header row. Here’s the basic structure:
+
+1. Header Row: The first row contains column names.
+2. Divider Line: The second row uses hyphens to separate the header from the data.
+3. Data Rows: The rows below the divider contain the actual data.
+
+| Name  | Age |  City    |
+|-------|-----|-------|
+| Alice | 25  | New York |
+| Bob   | 30  | London   |
+
+You can style text inside Markdown table cells just like regular Markdown.
+This includes making text bold, italic, monospaced, or adding links or code.
 
 Column 1 | Column 2 | Column 3
 --- | --- | ---
 **Things** | _Don't_ | [Need](/)
 To | *__Look__* | `Pretty`
 
+You can align text in Markdown table columns to the left, right, or center by placing a colon (:) in different positions within the header divider row.
+
+1. Left-aligned: `:---` (Colon on the left)
+2. Right-aligned: `---:` (Colon on the right)
+3. Center-aligned: `:---:` (Colons on both sides)
+
+| Column 1       | Column 2     | Column 3       |
+| :------------- | :----------: | -----------:   |
+|  Cell Contents | More Stuff   | And Again      |
+| You Can Also   | Put Pipes In | Like this [\|] |
+
+Markdown tables don’t support merging cells (like in HTML).
+Each cell is treated separately.
+But if you want an empty space, just leave it blank.
+
+| Header 1 | Header 2 |
+|----------|----------|
+| Cell 1   |          |
+| Cell 3   | Cell 4   |
+
 ## Span Elements
 
 ### Links
-
-Markdown supports two style of links: *inline* and *reference*.
-
-In both styles, the link text is delimited by [square brackets].
 
 To create an inline link, use a set of regular parentheses immediately
 after the link text's closing square bracket. Inside the parentheses,
@@ -302,7 +302,7 @@ title for the link, surrounded in quotes. For example:
 
 This is [an example](http://example.com/) inline link.
 
-[This link](/example) has no title attribute.
+[This link](/test/markdown/ "This is an example title") has a title attribute.
 
 ### Emphasis
 

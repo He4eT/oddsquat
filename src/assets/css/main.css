@@ -11,8 +11,9 @@ a {
   text-decoration: none;
 }
 
-a:focus {
-  background-color: hsl(0, 0%, 0%, 0.1);
+a:focus-visible {
+  outline: 4px solid hsl(0, 0%, 0%, 0.7);
+  outline-offset: 4px;
 }
 
 a:hover {

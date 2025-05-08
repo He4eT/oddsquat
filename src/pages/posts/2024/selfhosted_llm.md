@@ -104,6 +104,8 @@ summon phi
 
 Ollama позволяет на&nbsp;основе существующих создавать производные модели с&nbsp;заранее определёнными инструкциями или параметрами. Для этого нужно создать специальный файл, в&nbsp;котором указана родительская модель и&nbsp;определены желаемые значения параметров. Подробнее о&nbsp;формате этих файлов можно прочесть в&nbsp;документации: [Modelfile](https://github.com/jmorganca/ollama/blob/main/docs/modelfile.md).
 
+> В&nbsp;какой-то момент Ollama Web UI&nbsp;превратился в&nbsp;Open WebUI, а&nbsp;OllamaHub прекратил существовать. Все ссылки в&nbsp;следующем абзаце больше не&nbsp;представляют какой-либо ценности.
+
 Чтобы посмотреть, как должен выглядеть Modelfile, можно посетить [OllamaHub](https://ollamahub.com/) от&nbsp;разработчиков стороннего [Ollama Web UI](https://github.com/ollama-webui/ollama-webui/). На&nbsp;сайте есть [примеры очень тонкой настройки множества параметров](https://ollamahub.com/m/smoothbrainape/hu-tao:latest) модели для соответствия образу конкретного персонажа, но&nbsp;в&nbsp;качестве образца я&nbsp;буду использовать небольшой [English Teacher Modelfile](https://ollamahub.com/m/kamjin/english-teacher:latest):
 
 #### EnglishTeacher.Modelfile
@@ -181,6 +183,8 @@ summon EnglishTeacher
 <div id='fake-open-ai'></div>
 
 ### Мимикрия под API от&nbsp;OpenAI
+
+> В&nbsp;какой-то момент в&nbsp;Ollama [появилась поддержка совместимости с&nbsp;форматом API от&nbsp;OpenAI](https://ollama.com/blog/openai-compatibility) и&nbsp;этот раздел потерял актуальность.
 
 API Ollama используется в&nbsp;меньшем числе продуктов, чем API от&nbsp;OpenAI. К&nbsp;счастью, это не&nbsp;проблема: с&nbsp;помощью прокси-прослойки под названием [LiteLLM](https://github.com/BerriAI/litellm) можно сделать их&nbsp;совместимыми. Инструкция по&nbsp;установке и&nbsp;использованию в&nbsp;общем случае есть в&nbsp;репозитории и&nbsp;довольно тривиальна, но&nbsp;мне опять потребовалось немного кода, чтобы заставить их&nbsp;работать вместе на&nbsp;моих условиях.
 

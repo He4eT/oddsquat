@@ -52,6 +52,16 @@ ul {
   list-style: square;
 }
 
+/* Tables */
+
+@media (max-width: 500px) {
+  table {
+    display: block;
+    overflow: auto;
+    width: 100%;
+  }
+}
+
 /* Layout */
 
 html, body {

@@ -8,8 +8,8 @@ date: '2020-10-30'
 year: '2020'
 section: 'posts'
 
-title: 'Markdown test page'
-description: 'A test document written using Markdown'
+title: 'markdown test page'
+description: 'A test document written using the Markdown language.'
 
 ---
 

@@ -5,7 +5,7 @@ lang: 'en'
 section: 'projects'
 
 title: 'project list'
-description: 'Incomplete list of projects and experiments'
+description: 'Incomplete list of projects and experiments.'
 
 ---
 <style>

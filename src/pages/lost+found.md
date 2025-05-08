@@ -5,7 +5,7 @@ lang: 'en'
 section: 'lost+found'
 
 title: 'issue list'
-description: 'Irregular Link Digest'
+description: 'Irregular Link Digest.'
 
 ---
 

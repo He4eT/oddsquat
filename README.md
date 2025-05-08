@@ -2,6 +2,10 @@
 
 Oddsquat is my own private fanzine about experiments, code and other cyberpunk stuff.
 
+## Conventions
+
+- Descriptions should end with a period.
+
 ## New Post Internal Checklist
 
 ### Content

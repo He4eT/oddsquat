@@ -184,7 +184,7 @@ summon EnglishTeacher
 
 ### Мимикрия под API от&nbsp;OpenAI
 
-> В&nbsp;какой-то момент в&nbsp;Ollama [появилась поддержка совместимости с&nbsp;форматом API от&nbsp;OpenAI](https://ollama.com/blog/openai-compatibility) и&nbsp;этот раздел потерял актуальность.
+> В&nbsp;какой-то момент [в&nbsp;Ollama появилась поддержка совместимости с&nbsp;форматом API от&nbsp;OpenAI](https://ollama.com/blog/openai-compatibility) и&nbsp;этот раздел потерял актуальность.
 
 API Ollama используется в&nbsp;меньшем числе продуктов, чем API от&nbsp;OpenAI. К&nbsp;счастью, это не&nbsp;проблема: с&nbsp;помощью прокси-прослойки под названием [LiteLLM](https://github.com/BerriAI/litellm) можно сделать их&nbsp;совместимыми. Инструкция по&nbsp;установке и&nbsp;использованию в&nbsp;общем случае есть в&nbsp;репозитории и&nbsp;довольно тривиальна, но&nbsp;мне опять потребовалось немного кода, чтобы заставить их&nbsp;работать вместе на&nbsp;моих условиях.
 

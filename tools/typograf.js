@@ -19,17 +19,20 @@ const tp = new Typograf({
   locale: [locale, 'en-US'],
   htmlEntity: {
     type: 'name',
-    onlyInvisible: true
+    onlyInvisible: true,
   }
 })
 
-tp.disableRule('*');[
-  'common/punctuation/quote',
+const enabledRules = [
   'common/nbsp/*',
-  'ru/nbsp/*',
-  'ru/dash/main',
+  'common/punctuation/quote',
   'en-US/dash/main',
-].forEach(rule =>
+  'ru/dash/main',
+  'ru/nbsp/*',
+]
+
+tp.disableRule('*')
+enabledRules.forEach(rule =>
   tp.enableRule(rule))
 
 void writeFile(

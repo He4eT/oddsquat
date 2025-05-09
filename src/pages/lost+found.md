@@ -5,7 +5,7 @@ lang: 'en'
 section: 'lost+found'
 
 title: 'link list'
-description: 'Irregular Link Digest.'
+description: 'Unsorted pile of links I sometimes urgently need in the middle of a conversation.'
 
 ---
 

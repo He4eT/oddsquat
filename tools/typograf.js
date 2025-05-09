@@ -27,7 +27,8 @@ tp.disableRule('*');[
   'common/punctuation/quote',
   'common/nbsp/*',
   'ru/nbsp/*',
-  'ru/dash/main'
+  'ru/dash/main',
+  'en-US/dash/main',
 ].forEach(rule =>
   tp.enableRule(rule))
 

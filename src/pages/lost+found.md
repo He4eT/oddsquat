@@ -32,7 +32,7 @@ in&nbsp;the middle of&nbsp;a&nbsp;conversation.
 - **[The Cursed Computer Iceberg Meme](https://suricrasia.online/iceberg/)**
 
   An&nbsp;endless hall of&nbsp;shame and weirdness of&nbsp;computers.
-  
+
 - **[The Evolution of&nbsp;Trust](https://ncase.me/trust/)**
 
   A&nbsp;briliant interactive guide to&nbsp;the game theory
@@ -105,7 +105,7 @@ in&nbsp;the middle of&nbsp;a&nbsp;conversation.
   what kind of&nbsp;power outlets a&nbsp;country uses before you get there.
 
 - **[Rules for Writing Software Tutorials](https://refactoringenglish.com/chapters/rules-for-software-tutorials/)**
-  
+
   Most software tutorials suck. Here's how to&nbsp;make one that doesn't.
 
 - **[Pangram](https://en.wikipedia.org/wiki/Pangram)**

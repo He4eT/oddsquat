@@ -22,6 +22,10 @@ in&nbsp;the middle of&nbsp;a&nbsp;conversation.
 
 ---
 
+- **[Learn X&nbsp;in&nbsp;Y&nbsp;minutes](https://learnxinyminutes.com/)**
+
+  A&nbsp;fast-paced intro to&nbsp;a&nbsp;new programming language or&nbsp;tool.
+
 - **[Ithkuil](https://en.wikipedia.org/wiki/Ithkuil)**
 
   An&nbsp;experimental constructed language designed to&nbsp;express
@@ -29,8 +33,8 @@ in&nbsp;the middle of&nbsp;a&nbsp;conversation.
 
 - **[Xah Keyboard Guide](http://xahlee.info/kbd/keyboarding.html)**
 
-  A&nbsp;never-ending blog exploring keyboards, input devices,
-  shortcuts, typing habits, and the ergonomics behind it&nbsp;all.<br>
+  Keyboards, input devices, shortcuts, typing habits,
+  and the ergonomics behind it&nbsp;all.<br>
   See [the list of&nbsp;Do-It-Yourself Keyboards](http://www.xahlee.info/kbd/diy_keyboards_index.html).
 
 - **[Our World In&nbsp;Data](https://ourworldindata.org/)**
@@ -42,14 +46,10 @@ in&nbsp;the middle of&nbsp;a&nbsp;conversation.
   Good online communities die primarily by&nbsp;refusing to&nbsp;defend themselves.<br>
   Also [available in&nbsp;Russian](https://lesswrong.ru/w/%D0%9F%D0%B0%D1%86%D0%B8%D1%84%D0%B8%D0%B7%D0%BC_%D0%B3%D1%83%D0%B1%D0%B8%D1%82_%D1%83%D1%85%D0%BE%D0%B6%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5_%D1%81%D0%B0%D0%B4%D1%8B).
 
-- **[Learn X&nbsp;in&nbsp;Y&nbsp;minutes](https://learnxinyminutes.com/)**
-
-  A&nbsp;fast-paced intro to&nbsp;a&nbsp;new programming language or&nbsp;tool.
-
 - **[Articles by&nbsp;Bartosz Ciechanowski](https://ciechanow.ski/archives/)**
 
-  Interactive articles about physics, math, and engineering.<br>
-  This is&nbsp;probably the best website on&nbsp;the entire internet.
+  Interactive articles about physics, math, and engineering.
+  It's&nbsp;probably the best website on&nbsp;the entire internet.<br>
   My&nbsp;favorite post is&nbsp;the one about
   [bicycles](https://ciechanow.ski/bicycle/).
 

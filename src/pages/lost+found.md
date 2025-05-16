@@ -22,6 +22,10 @@ in&nbsp;the middle of&nbsp;a&nbsp;conversation.
 
 ---
 
+- **[Our World In&nbsp;Data](https://ourworldindata.org/)**
+
+  An&nbsp;overview of&nbsp;global data and long-term trends.
+
 - **[Well-Kept Gardens Die By&nbsp;Pacifism](https://www.lesswrong.com/posts/tscc3e5eujrsEeFN4/well-kept-gardens-die-by-pacifism)**
 
   Good online communities die primarily by&nbsp;refusing to&nbsp;defend themselves.<br>

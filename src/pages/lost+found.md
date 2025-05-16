@@ -22,6 +22,11 @@ in&nbsp;the middle of&nbsp;a&nbsp;conversation.
 
 ---
 
+- **[Well-Kept Gardens Die By&nbsp;Pacifism](https://www.lesswrong.com/posts/tscc3e5eujrsEeFN4/well-kept-gardens-die-by-pacifism)**
+
+  Good online communities die primarily by&nbsp;refusing to&nbsp;defend themselves.<br>
+  Also [available in&nbsp;Russian](https://lesswrong.ru/w/%D0%9F%D0%B0%D1%86%D0%B8%D1%84%D0%B8%D0%B7%D0%BC_%D0%B3%D1%83%D0%B1%D0%B8%D1%82_%D1%83%D1%85%D0%BE%D0%B6%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5_%D1%81%D0%B0%D0%B4%D1%8B).
+
 - **[Learn X&nbsp;in&nbsp;Y&nbsp;minutes](https://learnxinyminutes.com/)**
 
   A&nbsp;fast-paced intro to&nbsp;a&nbsp;new programming language or&nbsp;tool.

@@ -22,9 +22,15 @@ in&nbsp;the middle of&nbsp;a&nbsp;conversation.
 
 ---
 
+- **[Ithkuil](https://en.wikipedia.org/wiki/Ithkuil)**
+
+  An&nbsp;experimental constructed language designed to&nbsp;express
+  more profound levels of&nbsp;human cognition briefly and clearly.
+
 - **[Xah Keyboard Guide](http://xahlee.info/kbd/keyboarding.html)**
 
-  A&nbsp;never-ending blog exploring keyboards, input devices, shortcuts, typing habits, and the ergonomics behind it&nbsp;all.<br>
+  A&nbsp;never-ending blog exploring keyboards, input devices,
+  shortcuts, typing habits, and the ergonomics behind it&nbsp;all.<br>
   See [the list of&nbsp;Do-It-Yourself Keyboards](http://www.xahlee.info/kbd/diy_keyboards_index.html).
 
 - **[Our World In&nbsp;Data](https://ourworldindata.org/)**

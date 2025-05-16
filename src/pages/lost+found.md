@@ -22,6 +22,10 @@ in&nbsp;the middle of&nbsp;a&nbsp;conversation.
 
 ---
 
+- **[Learn X&nbsp;in&nbsp;Y&nbsp;minutes](https://learnxinyminutes.com/)**
+
+  A&nbsp;fast-paced intro to&nbsp;a&nbsp;new programming language or&nbsp;tool.
+
 - **[Articles by&nbsp;Bartosz Ciechanowski](https://ciechanow.ski/archives/)**
 
   Interactive articles about physics, math, and engineering.<br>
@@ -142,9 +146,9 @@ in&nbsp;the middle of&nbsp;a&nbsp;conversation.
 - **[Common Mythconceptions](https://informationisbeautiful.net/visualizations/common-mythconceptions)**
 
   A&nbsp;list of&nbsp;the world’s biggest
-  myths and misconceptions &mdash; with myth-busting included.
+  myths and misconceptions&nbsp;— with myth-busting included.
 
-- **[A Mathematician’s Lament &mdash; by&nbsp;Paul Lockhart](https://en.wikipedia.org/wiki/A_Mathematician's_Lament)**
+- **[A Mathematician’s Lament&nbsp;— by&nbsp;Paul Lockhart](https://en.wikipedia.org/wiki/A_Mathematician's_Lament)**
 
   A&nbsp;passionate critique of&nbsp;how math is&nbsp;taught
   and a&nbsp;vision of&nbsp;how beautiful it&nbsp;could be&nbsp;instead.<br>

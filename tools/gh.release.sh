@@ -14,7 +14,7 @@ git checkout -b $RELEASE_BRANCH
 rm -rf "$GIT_ROOT/$BUILD_DIR"
 npm run build
 
-git add "$GIT_ROOT/$BUILD_DIR"
+git add -f "$GIT_ROOT/$BUILD_DIR"
 git commit -m "release: $CURRENT_TIMESTAMP"
 
 git push -f origin $RELEASE_BRANCH

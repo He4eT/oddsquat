@@ -22,6 +22,15 @@ in&nbsp;the middle of&nbsp;a&nbsp;conversation.
 
 ---
 
+- **[EndOfLife.date](https://endoflife.date/)**
+
+  End-of-life (EOL) and support information is&nbsp;often hard to&nbsp;track,
+  or&nbsp;very badly presented.
+
+- **[Atlas Obscura](https://www.atlasobscura.com/)**
+
+  A&nbsp;comprehensive database of&nbsp;the world’s most wondrous places and foods.
+
 - **[Learn X&nbsp;in&nbsp;Y&nbsp;minutes](https://learnxinyminutes.com/)**
 
   A&nbsp;fast-paced intro to&nbsp;a&nbsp;new programming language or&nbsp;tool.
@@ -49,7 +58,7 @@ in&nbsp;the middle of&nbsp;a&nbsp;conversation.
 - **[Articles by&nbsp;Bartosz Ciechanowski](https://ciechanow.ski/archives/)**
 
   Interactive articles about physics, math, and engineering.
-  It's&nbsp;probably the best website on&nbsp;the entire internet.<br>
+  It's probably the best website on&nbsp;the entire internet.<br>
   My&nbsp;favorite post is&nbsp;the one about
   [bicycles](https://ciechanow.ski/bicycle/).
 

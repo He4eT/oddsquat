@@ -19,7 +19,7 @@ description: 'Сomplete list of posts'
       </strong>
     </header>
     <section class='description'>
-      Превращаем fully-featured Bitwarden command-line interface в удобный.
+      Превращаем fully-featured Bitwarden command-line interface в&nbsp;удобный.
     </section>
   </article>
 
@@ -31,7 +31,7 @@ description: 'Сomplete list of posts'
       </strong>
     </header>
     <section class='description'>
-      Персональные LLM в docker-контейнере на твоём компьютере.
+      Персональные LLM в&nbsp;docker-контейнере на&nbsp;твоём компьютере.
     </section>
   </article>
 

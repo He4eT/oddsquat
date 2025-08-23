@@ -22,9 +22,9 @@ Incomplete list of&nbsp;my&nbsp;projects and experiments.
 
 ---
 
-- [Interactive Fiction](#interactive-fiction)
-  - [IF Tools](#iftools)
-  - [IF Games](#ifgames)
+- [Interactive Fiction Tools](#interactive-fiction-tools)
+- [Games](#games)
+- [Services](#services)
 - [Inventory](#inventory)
   - [Hardware](#hardware)
   - [Settings](#settings)
@@ -32,9 +32,8 @@ Incomplete list of&nbsp;my&nbsp;projects and experiments.
 
 ---
 
-## Interactive Fiction
+## Interactive Fiction Tools
 
-### IF&nbsp;Tools
   - #### ElseIFPlayer
   Interactive fiction player for the web.
 
@@ -51,9 +50,15 @@ Incomplete list of&nbsp;my&nbsp;projects and experiments.
 
 ---
 
-### IF&nbsp;Games
+## Games
 
-  - #### yet another experiment
+  - #### DASH DOT PIT
+  Endless top-down shooter for TIC-80 where Morse code is your weapon.
+
+  <a href='https://github.com/He4eT/DotDashPit' target='_blank'>repository</a>
+  | <a href='https://tic80.com/play?cart=4301' target='_blank'>play</a>
+
+  - #### Yet Another Experiment
   Tiny “escape the room” style TADS3&nbsp;game.
   <br>Designed as&nbsp;a&nbsp;set of&nbsp;examples for developing interactive fiction.
 
@@ -63,10 +68,19 @@ Incomplete list of&nbsp;my&nbsp;projects and experiments.
 
 ---
 
+## Services
+
+  - #### Simple SpaceAPI
+  A lightweight SpaceAPI server with both web and REST interfaces.
+
+  <a href='https://github.com/He4eT/simple-spaceapi' target='_blank'>repository</a>
+
+---
+
 ## Inventory
 
 ### Hardware
-  - #### cantor mx tastatura
+  - #### Cantor MX Tastatura
   Small custom ergonomic mechanical keyboard.
 
   <a href='https://github.com/He4eT/cantor-mx-tastatura' target='_blank'>repository</a>

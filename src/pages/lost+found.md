@@ -25,6 +25,19 @@ in&nbsp;the middle of&nbsp;a&nbsp;conversation.
 - <article class='entry'>
     <header>
       <strong>
+        <a href='https://freesewing.eu/' target='_blank'>
+          FreeSewing
+        </a>
+      </strong>
+    </header>
+    <section class='description'>
+      Like GitHub, but for clothes.
+    </section>
+  </article>
+
+- <article class='entry'>
+    <header>
+      <strong>
         <a href='https://endoflife.date/' target='_blank'>
           EndOfLife.date
         </a>

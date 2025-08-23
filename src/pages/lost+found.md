@@ -170,7 +170,7 @@ in&nbsp;the middle of&nbsp;a&nbsp;conversation.
     <header>
       <strong>
         <a href='https://iknowwhatyoudownload.com/' target='_blank'>
-          I Know What You Download
+          I&nbsp;Know What You Download
         </a>
       </strong>
     </header>
@@ -199,7 +199,7 @@ in&nbsp;the middle of&nbsp;a&nbsp;conversation.
     <header>
       <strong>
         <a href='https://hadihariri.com/2014/06/24/no-tabs-in-intellij-idea/' target='_blank'>
-          No Tabs in&nbsp;IntelliJ IDEA
+          No&nbsp;Tabs in&nbsp;IntelliJ IDEA
         </a>
       </strong>
     </header>
@@ -217,7 +217,7 @@ in&nbsp;the middle of&nbsp;a&nbsp;conversation.
     <header>
       <strong>
         <a href='https://sfwriter.com/wordstar.htm' target='_blank'>
-          An Interface Designed for Touch Typists
+          An&nbsp;Interface Designed for Touch Typists
         </a>
       </strong>
     </header>
@@ -260,7 +260,7 @@ in&nbsp;the middle of&nbsp;a&nbsp;conversation.
     <header>
       <strong>
         <a href='https://www.yr.no/en/' target='_blank'>
-          Yr from NRK and Meteorologisk Institutt
+          Yr&nbsp;from NRK and Meteorologisk Institutt
         </a>
       </strong>
     </header>
@@ -359,7 +359,7 @@ in&nbsp;the middle of&nbsp;a&nbsp;conversation.
       A&nbsp;sentence using every letter of&nbsp;a&nbsp;given alphabet
       at&nbsp;least once.<br>
       <a href='https://www.artlebedev.ru/kovodstvo/sections/33/' target='_blank'>
-        An additional list in&nbsp;Russian and other languages</a>.
+        An&nbsp;additional list in&nbsp;Russian and other languages</a>.
     </section>
   </article>
 
@@ -379,7 +379,7 @@ in&nbsp;the middle of&nbsp;a&nbsp;conversation.
     <header>
       <strong>
         <a href='https://datagubbe.se/noconf/' target='_blank'>
-          No Config for Old Men
+          No&nbsp;Config for Old Men
         </a>
       </strong>
     </header>
@@ -452,7 +452,7 @@ in&nbsp;the middle of&nbsp;a&nbsp;conversation.
     <header>
       <strong>
         <a href="https://en.wikipedia.org/wiki/A_Mathematician's_Lament">
-          A Mathematician’s Lament&nbsp;— by&nbsp;Paul Lockhart
+          A&nbsp;Mathematician’s Lament&nbsp;— by&nbsp;Paul Lockhart
         </a>
       </strong>
     </header>

@@ -80,7 +80,8 @@ Incomplete list of&nbsp;my&nbsp;projects and experiments.
         </strong>
       </header>
       <p>
-        Endless top-down shooter for TIC-80 where Morse code is your weapon.
+        Endless top-down shooter for TIC-80&nbsp;where Morse code
+        is&nbsp;your weapon.
       </p>
       <a href='https://github.com/He4eT/DotDashPit' target='_blank'>repository</a>
       | <a href='https://tic80.com/play?cart=4301' target='_blank'>play</a>
@@ -113,7 +114,7 @@ Incomplete list of&nbsp;my&nbsp;projects and experiments.
         </strong>
       </header>
       <p>
-        A lightweight SpaceAPI server with both web and REST interfaces.
+        A&nbsp;lightweight SpaceAPI server with both web and REST interfaces.
       </p>
       <a href='https://github.com/He4eT/simple-spaceapi' target='_blank'>repository</a>
     </article>

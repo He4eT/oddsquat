@@ -131,6 +131,7 @@ body > footer {
   margin-bottom: 1.5rem;
 }
 
+.entry > header,
 .entry > .description {
   margin-bottom: 0.5rem;
 }

@@ -11,20 +11,53 @@ description: 'Сomplete list of posts'
 
 ## 2024
 
-- [RU] [wrapped bw](/posts/2024/wrapped_bw_ru/)
+- <article class='entry'>
+    <header>
+      [ru]
+      <strong>
+        <a href='/posts/2024/wrapped_bw_ru/'>wrapped bw</a>
+      </strong>
+    </header>
+    <section class='description'>
+      Превращаем fully-featured Bitwarden command-line interface в удобный.
+    </section>
+  </article>
 
-  Превращаем fully-featured Bitwarden command-line interface в удобный.
-
-- [RU] [selfhosted LLM](/posts/2024/selfhosted_llm/)
-
-  Персональные LLM в docker-контейнере на твоём компьютере.
+- <article class='entry'>
+    <header>
+      [ru]
+      <strong>
+        <a href='/posts/2024/selfhosted_llm/'>selfhosted LLM</a>
+      </strong>
+    </header>
+    <section class='description'>
+      Персональные LLM в docker-контейнере на твоём компьютере.
+    </section>
+  </article>
 
 ## 2020
 
-- [RU] [typographic linter](/posts/2020/typographic_linter/)
+- <article class='entry'>
+    <header>
+      [ru]
+      <strong>
+        <a href='/posts/2020/typographic_linter/'>typographic linter</a>
+      </strong>
+    </header>
+    <section class='description'>
+      Prettier для текста. Автоматизация рутинной типографики.
+    </section>
+  </article>
 
-  Prettier для текста. Автоматизация рутинной типографики.
+- <article class='entry'>
+    <header>
+      [ru]
+      <strong>
+        <a href='/posts/2020/initial_post/'>initial post</a>
+      </strong>
+    </header>
+    <section class='description'>
+      Какие инструменты были использованы для создания этого сайта, какие решения были приняты и&nbsp;почему.
+    </section>
+  </article>
 
-- [RU] [initial post](/posts/2020/initial_post/)
-
-  Какие инструменты были использованы для создания этого сайта, какие решения были приняты и&nbsp;почему.

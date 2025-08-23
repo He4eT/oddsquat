@@ -123,3 +123,14 @@ body > footer {
     transparent 100%);
   background-size: 30.00px 30.00px;
 }
+
+/* Lists */
+
+.entry:last-child,
+.entry {
+  margin-bottom: 1.5rem;
+}
+
+.entry > .description {
+  margin-bottom: 0.5rem;
+}

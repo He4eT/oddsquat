@@ -94,7 +94,8 @@ Incomplete list of&nbsp;my&nbsp;projects and experiments.
       </header>
       <p>
         Tiny “escape the room” style TADS3&nbsp;game.
-        <br>Designed as&nbsp;a&nbsp;set of&nbsp;examples for developing interactive fiction.
+        <br>Designed as&nbsp;a&nbsp;set of&nbsp;examples
+        for developing interactive fiction.
       </p>
       <a href='https://github.com/He4eT/yet-another-experiment' target='_blank'>repository</a>
       | <a href='https://ifdb.org/viewgame?id=rsssdo3anjpwnt6e' target='_blank'>ifdb</a>
@@ -200,7 +201,8 @@ Incomplete list of&nbsp;my&nbsp;projects and experiments.
         </strong>
       </header>
       <p>
-        Switch between Firefox tabs and manage them with a&nbsp;fuzzy search and basic command toolset.
+        Switch between Firefox tabs and manage them with a&nbsp;fuzzy search
+        and basic command toolset.
       </p>
       <a href='https://github.com/He4eT/tabswitcher' target='_blank'>repository</a>
       | <a href='https://addons.mozilla.org/en-GB/firefox/addon/tabswitcher/' target='_blank'>extension</a>
@@ -213,7 +215,8 @@ Incomplete list of&nbsp;my&nbsp;projects and experiments.
         </strong>
       </header>
       <p>
-        Firefox extension that makes trimming your tabs as&nbsp;effortless as&nbsp;swiping on&nbsp;a&nbsp;dating app.
+        Firefox extension that makes trimming your tabs as&nbsp;effortless
+        as&nbsp;swiping on&nbsp;a&nbsp;dating app.
       </p>
       <a href='https://github.com/He4eT/tabswiper' target='_blank'>repository</a>
       | <a href='https://addons.mozilla.org/en-GB/firefox/addon/tabswiper/' target='_blank'>extension</a>

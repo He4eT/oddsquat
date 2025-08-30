@@ -4,7 +4,7 @@ layout: post
 lang: 'en'
 section: 'posts'
 
-title: 'post list'
+title: 'list of posts'
 description: 'Сomplete list of posts'
 
 ---

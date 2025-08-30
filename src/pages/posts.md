@@ -9,6 +9,12 @@ description: 'Сomplete list of posts'
 
 ---
 
+# Posts
+
+Announcements are available via [RSS](/rss.xml).
+
+---
+
 ## 2024
 
 - <article class='entry'>

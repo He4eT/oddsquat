@@ -124,6 +124,12 @@ body > footer {
   background-size: 30.00px 30.00px;
 }
 
+/* Headers */
+
+h1, h2, h3, h4, h5 {
+  scroll-margin-top: 0.5em;
+}
+
 /* Lists */
 
 .entry:last-child,

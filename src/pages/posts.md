@@ -2,9 +2,8 @@
 
 layout: post
 lang: 'en'
-section: 'posts'
 
-title: 'list of posts'
+title: 'posts'
 description: 'Сomplete list of posts'
 
 ---

@@ -2,9 +2,8 @@
 
 layout: post
 lang: 'en'
-section: 'lost+found'
 
-title: 'list of links'
+title: 'lost+found'
 description: 'Unsorted pile of links I sometimes urgently need in the middle of a conversation.'
 
 ---

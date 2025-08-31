@@ -2,9 +2,8 @@
 
 layout: post
 lang: 'en'
-section: 'projects'
 
-title: 'list of projects'
+title: 'projects'
 description: 'Incomplete list of projects and experiments.'
 
 ---

@@ -24,6 +24,20 @@ in&nbsp;the middle of&nbsp;a&nbsp;conversation.
 - <article class='entry'>
     <header>
       <strong>
+        <a href='https://deaddrops.com/' target='_blank'>
+          Dead Drops
+        </a>
+      </strong>
+    </header>
+    <section class='description'>
+        A&nbsp;global network of&nbsp;anonymous,
+        cemented USB drives for offline file sharing.
+    </section>
+  </article>
+
+- <article class='entry'>
+    <header>
+      <strong>
         <a href='https://freesewing.eu/' target='_blank'>
           FreeSewing
         </a>

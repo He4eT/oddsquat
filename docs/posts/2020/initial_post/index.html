@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" href="/icon.svg" type="image/svg+xml">
+
+
+  <title>
+    initial post | oddsquat
+  </title>
+  <meta name="description" content="Первый пост в этом фэнзине, рассказывающий о его внутреннем устойстве.">
+
+  <link rel="stylesheet" type="text/css" href="/css/fonts.css">
+<link rel="stylesheet" type="text/css" href="/css/typography.css">
+<link rel="stylesheet" type="text/css" href="/css/main.css">
+
+</head>
+<body>
+  <div class="stripesContainer">
+  <div class="stripes">
+  </div>
+</div>
+
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/">oddsquat</a></li>
+
+        
+          <li><a href="/posts/">
+            posts</a></li>
+        
+        
+          <li><a href="/posts/#2020">
+            2020</a></li>
+        
+
+        <li>initial post</li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <article>
+      <h1 id="initial-post">Initial Post</h1>
+<p><strong>Oddsquat</strong>&nbsp;— мой маленький личный фэнзин про эксперименты, код и&nbsp;прочий киберпанк. Обычно такие сайты называются блогами, но&nbsp;в&nbsp;слове «фэнзин» есть приятный отголосок панк-культуры и&nbsp;её&nbsp;неотъемлемой DIY-составляющей.</p>
+<p>Основные причины, побудившие меня на&nbsp;создание своего уютного куска интернета:</p>
+<ul>
+<li>Хочется писать буквы, а&nbsp;возвращаться в&nbsp;ЖЖ&nbsp;не&nbsp;хочется.</li>
+<li>Фронтендер без портфолио&nbsp;— подозрительный фронтендер.</li>
+<li>Современный веб&nbsp;— памятник оверинженирингу. Лендинг с&nbsp;двумя абзацами текста, тремя картинками и&nbsp;мегабайтным бандлом из&nbsp;модных библиотек&nbsp;— одновременно безумие и&nbsp;норма в&nbsp;текущих реалиях. Мне больно на&nbsp;это смотреть, поэтому пришлось строить себе персональный оазис.</li>
+</ul>
+<p>В&nbsp;первом посте хочется рассказать, какие инструменты были использованы для создания этого сайта, какие решения были приняты и&nbsp;почему.</p>
+<h2 id="-">Название</h2>
+<p>Я&nbsp;вырос в&nbsp;девяностые, поэтому квикимобиль, бэтпещера и&nbsp;пузиблинчики для меня не&nbsp;пустой звук, а&nbsp;образец системы нейминга. Вот, например, у&nbsp;меня есть <a href="https://github.com/He4eT/oddkb" target="_blank">oddkb</a>.</p>
+<p>Свою квартиру с&nbsp;момента заселения я&nbsp;называю oddsquat (даже локация в&nbsp;Foursquare была), так пусть теперь и&nbsp;мой форпост в&nbsp;сети называется так же.</p>
+<p>Назвал сайт в&nbsp;честь SSID домашнего Wi-Fi, потому что не&nbsp;смог придумать более достойного названия :)</p>
+<h2 id="-">Платформа</h2>
+<p>Для статического сайта не&nbsp;нужен серверный код, поэтому WordPress и&nbsp;прочие CMS в&nbsp;качестве платформы я&nbsp;даже не&nbsp;рассматривал.</p>
+<p>Про генераторы статических сайтов раньше слышал, но&nbsp;подробно не&nbsp;изучал. Их&nbsp;оказалось так много (тут есть <a href="https://jamstack.org/generators/">длинный список</a>), что даже страшно.</p>
+<p>Посмотрев на&nbsp;самые популярные решения, я&nbsp;понял, что как-то неправильно понимаю значение термина «генератор статических сайтов», потому что все хором предлагают мне сгенерировать Progressive Web Application из&nbsp;React-компонентов с&nbsp;импортом данных из&nbsp;GraphQL-сервера вместо россыпи HTML-документов.</p>
+<p>Уверен, что уютный бложик&nbsp;— это точно не&nbsp;Web&nbsp;Application, а&nbsp;от&nbsp;Progressive&nbsp;в&nbsp;данном случае всем будет только хуже: искусственные трудности с&nbsp;роутингом, серверным рендерингом и&nbsp;сохранением позиции скрола успешно решены, когда каждая страница&nbsp;— это отдельный документ. Браузеры восхитительно умеют работать с&nbsp;HTML-документами!</p>
+<p>После непродолжительных поисков был найден <a href="https://doug2k1.github.io/nanogen/">Nanogen</a>, который делает именно то, что нужно, и&nbsp;не&nbsp;похож на&nbsp;космический корабль:</p>
+<ul>
+<li>Умеет Markdown и&nbsp;HTML (ejs);</li>
+<li>Имеет очень гибкую систему шаблонов;</li>
+<li>Не&nbsp;выходит за&nbsp;рамки стека Node.js.</li>
+</ul>
+<p>Да, в&nbsp;репозитории проекта давно не&nbsp;было коммитов, но&nbsp;хочется думать, что это по&nbsp;причине надёжности и&nbsp;закончености :)</p>
+<h2 id="-">Типографика</h2>
+<p>Я&nbsp;люблю текст и&nbsp;не&nbsp;умею в&nbsp;дизайн. Oddsquat&nbsp;— проект про буквы, значит, буквы должны быть красивыми и&nbsp;удобными.</p>
+<p>К&nbsp;теме типографики в&nbsp;вебе я&nbsp;подходил несколько раз, но&nbsp;безуспешно. Не&nbsp;получается структурировать и&nbsp;сохранить в&nbsp;голове все эти сакральные знания про кернинг и&nbsp;засечки, потому что не&nbsp;вижу никакой связи между теорией и&nbsp;практикой.</p>
+<p>Очередное погружение системных знаний опять не&nbsp;принесло, зато принесло удобный инструмент: <a href="https://github.com/KyleAMathews/typography.js">Typography.js</a>.</p>
+<p>Этот тулкит позволяет, покрутив ручки <a href="http://kyleamathews.github.io/typography.js/">интерактивного демо</a>, получить новое, но&nbsp;при этом гармоничное сочетание абзацев, заголовков и&nbsp;отступов между ними.
+Идеальный инструмент для тех, кто хочет поиграть со&nbsp;шрифтами, но&nbsp;не&nbsp;до&nbsp;конца понимает, как.</p>
+<p>Авторы настолько заботливые, что даже подключают <code>normalize.css</code> при генерации своих стилей, снимая с&nbsp;вас ещё одну головную боль. Благодаря им&nbsp;весь мой дополнительный css для стилизации сайта уложился в&nbsp;сто строк кода и&nbsp;хорошо работает в&nbsp;любых браузерах и&nbsp;на&nbsp;любых экранах.</p>
+<p>Со&nbsp;шрифтами всё просто:</p>
+<ul>
+<li><strong>Open Sans</strong> для текста и&nbsp;<strong>Open Sans Condensed</strong> для заголовков, потому что мне нравится слово «Open»;</li>
+<li><strong>Fira Code</strong> для кода, потому что лигатуры (<code>--&gt;</code>, <code>!==</code>)&nbsp;— это красиво.</li>
+</ul>
+<h2 id="-">Аналитика</h2>
+<p>Я&nbsp;долго думал, можно&nbsp;ли собирать аналитику просмотров, или нужно играть в&nbsp;идеальный веб до&nbsp;конца и&nbsp;полностью отказаться от&nbsp;слежки за&nbsp;пользователями. С&nbsp;одной стороны высокая идея, с&nbsp;другой&nbsp;— любопытство.</p>
+<p>После непродолжительного исследования пришёл к&nbsp;выводу, что Метрика и&nbsp;Аналитика от&nbsp;поисковых гигантов мне точно не&nbsp;подходят, а&nbsp;вот автор <a href="https://goatcounter.com/">GoatCounter</a> полностью понимает мою боль.</p>
+<p><a href="https://www.goatcounter.com/why/">Why I&nbsp;made GoatCounter</a>&nbsp;— отличный пост, где создатель сервиса ответил на&nbsp;все вопросы, которые у&nbsp;меня к&nbsp;нему возникли. Вот, например, замечательный абзац про причины бесплатности начального тарифа:</p>
+<blockquote>
+<p>I&nbsp;think it’s important to&nbsp;make the barrier of&nbsp;entry for software like this low as&nbsp;feasible to&nbsp;make actual meaningful inroads to&nbsp;“de-Google-fi” the internet a&nbsp;bit, and make pervasive tracking less common. Making it&nbsp;freely available (for personal use) is&nbsp;part of&nbsp;that.</p>
+</blockquote>
+<h2 id="-">Содержание</h2>
+<p>Самое главное. С&nbsp;формой и&nbsp;техническими вопросами всё ясно, но&nbsp;что&nbsp;же я&nbsp;буду складывать внутрь? Пока план такой:</p>
+<ul>
+<li>Я&nbsp;довольно часто изучаю штуки из&nbsp;разных областей и&nbsp;хочу описывать эти опыты. Вот, например, описал создание легковесного сайта.</li>
+<li>Мне нравится настраивать инструменты и&nbsp;рассказывать об&nbsp;этом.</li>
+<li>Есть несколько почтовых рассылок, которые я&nbsp;очень хочу начать переводить, чтобы начать читать.</li>
+</ul>
+<p>Признаюсь, что был очарован сайтом от&nbsp;ребят из&nbsp;команды <a href="https://100r.co/site/home.html">Hundred Rabbits</a> и&nbsp;захотел такое&nbsp;же, только своё.</p>
+<p>Stay tuned!</p>
+
+    </article>
+  </main>
+
+  <footer>
+    2020-11-08
+  </footer>
+
+  <script async
+  data-goatcounter="https://he4et.goatcounter.com/count"
+  src="https://gc.zgo.at/count.js"></script>
+
+
+</body>
+</html>

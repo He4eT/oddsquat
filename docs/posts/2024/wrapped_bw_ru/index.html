@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" href="/icon.svg" type="image/svg+xml">
+
+
+  <title>
+    wrapped bw | oddsquat
+  </title>
+  <meta name="description" content="Превращаем fully-featured Bitwarden command-line interface в удобный.">
+
+  <link rel="stylesheet" type="text/css" href="/css/fonts.css">
+<link rel="stylesheet" type="text/css" href="/css/typography.css">
+<link rel="stylesheet" type="text/css" href="/css/main.css">
+
+</head>
+<body>
+  <div class="stripesContainer">
+  <div class="stripes">
+  </div>
+</div>
+
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/">oddsquat</a></li>
+
+        
+          <li><a href="/posts/">
+            posts</a></li>
+        
+        
+          <li><a href="/posts/#2024">
+            2024</a></li>
+        
+
+        <li>wrapped bw</li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <article>
+      <h1 id="-bitwarden-cli-fzf-">Интеграция Bitwarden CLI с&nbsp;fzf и&nbsp;буфером обмена</h1>
+<p>Менеджер паролей&nbsp;— это специальное приложение, которое помогает делать вид, что я&nbsp;помню разные пароли для разных аккаунтов, а&nbsp;не&nbsp;ввожу везде один и&nbsp;тот&nbsp;же. Мне нравится Bitwarden: открытый исходный код, возможность поднять собственный сервер, клиенты под разные устройства и&nbsp;расширения под разные браузеры.</p>
+<p>Самым удобным, внезапно, оказался клиент для Android, который не&nbsp;заставляет меня каждый раз вводить 12+ знаков мастер-пароля (такую длину требуют Bitwarden и&nbsp;здравый смысл), а&nbsp;может быть разблокирован с&nbsp;помощью биометрии. Похожего удобства захотелось достичь и&nbsp;на&nbsp;Linux.</p>
+<h2 id="-cli">Дикий CLI</h2>
+<p>На&nbsp;ноутбуке я&nbsp;использую <a href="https://bitwarden.com/help/cli/">Bitwarden CLI</a>. Это powerful, fully-featured tool, которым на&nbsp;практике оказалось не&nbsp;слишком удобно пользоваться, если ты&nbsp;человек.</p>
+<h3 id="-">Ключи от&nbsp;ключей</h3>
+<blockquote>
+<p>You are responsible for maintaining your session key.</p>
+</blockquote>
+<p>Bitwarden CLI поддерживает <a href="https://bitwarden.com/help/cli/#using-a-session-key">механизм сессий</a>, который призван избавить пользователя от&nbsp;бесконечного ввода мастер-пароля. Приложение позволяет разблокировать хранилище и&nbsp;получить временный сессионный ключ, который можно либо хранить в&nbsp;беззащитной переменной окружения, либо прикладывать к&nbsp;каждому запросу вручную. </p>
+<p>По&nbsp;сути своей, сессионный ключ отличается от&nbsp;мастер-пароля тем, что его можно моментально деактивировать, но&nbsp;совершенно невозможно запомнить, а, значит, нужно где-то хранить. Хочется делать это удобно и&nbsp;безопасно, а&nbsp;не&nbsp;в&nbsp;общедоступной переменной окружения.</p>
+<h3 id="-stdout">Пароли в&nbsp;stdout</h3>
+<blockquote>
+<p>The get command can only return one result, so&nbsp;you should use specific search terms. If&nbsp;multiple results are found, the CLI will return an&nbsp;error.</p>
+</blockquote>
+<p>Где-то в&nbsp;этот момент чтения документации я&nbsp;окончательно начал подозревать, что официальный CLI предназначен для скриптов: всё строго, никакого автодополнения, никакого интерактивного поиска, а&nbsp;пароли лаконично вываливаются в&nbsp;стандартный вывод терминала, откуда их&nbsp;ещё нужно как-то переправить в&nbsp;место назначения.</p>
+<h2 id="-cli">Приручение CLI</h2>
+<p>Может показаться, что я&nbsp;ругаюсь, но&nbsp;отсутствие удобств и&nbsp;излишеств в&nbsp;официальном CLI&nbsp;— это хорошо:</p>
+<ul>
+<li>Отсутствие фич всегда приятнее, чем кривые фичи.</li>
+<li>Минимализм упрощает жизнь мейнтейнерам.</li>
+<li>Минимализм повышает надёжность.</li>
+<li>Меньше сторонних зависимостей.</li>
+<li>Стандартные интерфейсы идеально подходят для автоматизации.</li>
+</ul>
+<p>Идея сделать Bitwarden CLI удобнее, разумеется, пришла в&nbsp;голову не&nbsp;только мне, так что на&nbsp;GitHub предсказуемо быстро нашёлся <a href="https://gist.github.com/loeschzwerg/c2b9d0b50f712a026aa6454af3b58598">скрипт-обёртка</a> от&nbsp;<a href="https://github.com/loeschzwerg">@loeschzwerg</a>. Этот ZSH-скрипт менее требователен к&nbsp;пользователю и&nbsp;позволяет в&nbsp;случае, когда под пользовательский поисковый запрос подходит несколько аккаунтов, выбрать нужный из&nbsp;списка с&nbsp;помощью fzf и&nbsp;автоматически скопировать логин, пароль и&nbsp;даже TOTP в&nbsp;буфер обмена.</p>
+<p>К&nbsp;сожалению, найденный скрипт никак не&nbsp;решал проблему управления сессиями, так что я&nbsp;решил его немного доработать, избавив заодно от&nbsp;избытка многоточий в&nbsp;интерфейсе.</p>
+<h3 id="-">«Безопасное» хранение сессионного ключа</h3>
+<p>Как я&nbsp;писал выше, мне нравится подход Android-клиента: нужно один раз ввести свой невероятно длинный мастер-пароль, после чего можно разблокировать хранилище отпечатком пальца. В&nbsp;ходе непродолжительных размышлений я&nbsp;решил, что самое простое и&nbsp;надёжное подобие для приложения в&nbsp;терминале&nbsp;— один раз получить сессионный ключ и&nbsp;сохранить его в&nbsp;файл, который будет доступен для чтения только пользователю <code>root</code> и&nbsp;недоступен любым другим приложениям, запущенным от&nbsp;имени текущего пользователя.</p>
+<p>Приятный бонус для владельцев биометрических сканеров: они отлично интегрируются с&nbsp;утилитой <code>sudo</code>.</p>
+<p>В&nbsp;результате скрипт обогатился двумя функциями и&nbsp;одной проверкой:</p>
+<pre><code class="language-zsh">local sessionfile=&quot;$HOME/.bitwarden_session&quot;
+
+get_saved_sessionkey () {
+  sudo touch $sessionfile
+  echo $(sudo cat $sessionfile)
+}
+
+save_sessionkey () {
+  local sessionkey=$1
+  sudo chmod 600 $sessionfile
+  sudo sh -c &quot;echo $sessionkey &gt; $sessionfile&quot;
+} </code></pre>
+<pre><code>local sessionkey=$(get_saved_sessionkey)
+
+if [[ -z $sessionkey ]] ; then
+  # Get and save a new session key
+  sessionkey=$(bw unlock --raw)
+  save_sessionkey $sessionkey
+else
+  echo &quot;Using the existing session key from &#39;$sessionfile&#39;.&quot;
+fi</code></pre><p>При первом запуске сессионный ключ, полученный после ввода мастер-пароля, записывается в&nbsp;файл, который после выполнения команды <code>chmod 600</code> становится недоступен для чтения никому, кроме суперпользователя:</p>
+<pre><code>~ » ls -lah
+...
+-rw-------. 1 root root   89 Jul 24 22:15 .bitwarden_session
+...
+
+~ » less .bitwarden_session 
+.bitwarden_session: Permission denied</code></pre><p>Парольный менеджер и&nbsp;скрипт-обёртка запускаются от&nbsp;имени текущего пользователя, повышение привилегий требуется только в&nbsp;момент записи и&nbsp;чтения сессионного ключа.</p>
+<p>Деактивировать сохранённый ключ можно с&nbsp;помощью команды <code>bw lock</code>.
+К&nbsp;сожалению, я&nbsp;так и&nbsp;не&nbsp;понял, как с&nbsp;помощью утилиты <code>bw</code> можно проверить, валиден&nbsp;ли ключ, так что после деактивации придётся удалить файл <code>~/.bitwarden_session</code> вручную, иначе скрипт так и&nbsp;будет подставлять протухший сохранённый ключ, а&nbsp;<code>bw</code> будет каждый раз игнорировать его и&nbsp;настойчиво спрашивать мастер-пароль.</p>
+<h2 id="-">Применять с&nbsp;осторожностью</h2>
+<p>Взаимодействие с&nbsp;менеджером паролей выглядит для меня теперь примерно так:</p>
+<pre><code>~ » bwc github 
+[sudo] password for $USER: 
+Using the existing session key from &#39;/home/$USER/.bitwarden_session&#39;.
+Searching for &#39;github&#39;...
+
+abcdefgh-ijkl-mnop-qrst-uvwxyz123456
+github.com
+
+Username &#39;Username&#39; copied to clipboard.
+Press any key to copy the password...
+Password copied to clipboard.</code></pre><p>Финальный вариант скрипта можно найти в&nbsp;репозитории <a href="https://github.com/He4eT/fuzzy-bitwarden-clipboard">He4eT/fuzzy-bitwarden-clipboard</a>. </p>
+<p>Настоятельно рекомендую читать любой код перед тем, как запускать&nbsp;его. Особенно в&nbsp;тех случаях, когда речь идёт о&nbsp;настолько чувствительных данных.</p>
+<p><strong>Важно!</strong> На&nbsp;системах без шифрования диска все эти танцы с&nbsp;правами на&nbsp;доступ к&nbsp;файлу не&nbsp;несут никакой пользы и&nbsp;превращают затею в&nbsp;увлекательный цирк.</p>
+<p>Нельзя исключать, что я&nbsp;что-то совершенно неправильно понимаю в&nbsp;принципах работы системы прав доступа в&nbsp;Linux и&nbsp;совершил какие-нибудь грубейшие, с&nbsp;точки зрения настоящих специалистов по&nbsp;информационной безопасности, ошибки. Пожалуйста, сообщите, если я&nbsp;где-то неправ.</p>
+<p>Нужно помнить, что такое упрощение жизни ведёт к&nbsp;новым рискам: теперь любой, кто знает ваш пароль для учётной записи системного пользователя и&nbsp;имеет доступ к&nbsp;компьютеру, будет также иметь доступ и&nbsp;ко&nbsp;всем паролям, сохранённым в&nbsp;Bitwarden.</p>
+<p>Пользуйтесь с&nbsp;осторожностью и/или храните свои пароли в&nbsp;надёжных местах =)</p>
+
+    </article>
+  </main>
+
+  <footer>
+    2024-07-27
+  </footer>
+
+  <script async
+  data-goatcounter="https://he4et.goatcounter.com/count"
+  src="https://gc.zgo.at/count.js"></script>
+
+
+</body>
+</html>

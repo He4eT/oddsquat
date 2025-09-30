@@ -30,7 +30,7 @@ in&nbsp;the middle of&nbsp;a&nbsp;conversation.
       </strong>
     </header>
     <section class='description'>
-      A&nbsp;short game that illustrates how one simple rule can mean
+      A&nbsp;short game that illustrates how one rule can mean
       different things to&nbsp;different people.
     </section>
   </article>

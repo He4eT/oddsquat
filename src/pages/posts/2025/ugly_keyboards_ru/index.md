@@ -490,7 +490,8 @@ C появлением персональных компьютеров и кла
 Те, кто родились в прошлом веке могли видеть их Natural Keyboard при
 [установке Windows 95](https://windowswallpaper.miraheze.org/wiki/Windows_95#/media/File:Setup_(Windows_95).png).
 Похожие клавиатуры можно встретить и у других производителей:
-[ERGO K860](https://www.logitech.com/en-us/shop/p/k860-split-ergonomic.920-009166) от Logitech, например.
+[ERGO K860](https://www.logitech.com/en-us/shop/p/k860-split-ergonomic.920-009166)
+от Logitech, например.
 
 Аналогичный популярный форм-фактор называется
 [Alice Layout](https://keeb-finder.com/keyboards/filter/alice).
@@ -658,12 +659,12 @@ C появлением персональных компьютеров и кла
 и огромное множество самодельных и совсем уж нестандартных устройств.
 
 Фантазия людей в приделывании подставок, подсветок,
-трекпадов, трекболов, трекпоинтов, стиков от геймпадов
+трекпадов, трекболов, трекпоинтов, стиков от геймпадов, крутилок
 и всего-такого прочего поистине безгранична.
 
 Некоторые разработчики устройств вообще ставят под сомнение
 необходимость наличия в клавиатуре клавиш и создают совершенно
-футуристические вещи:
+дикие и футуристичные вещи:
 
 > https://svalboard.com/cdn/shop/files/ABS_Dual_Ball_NW_View.png
 
@@ -700,7 +701,14 @@ C появлением персональных компьютеров и кла
 смогли найти для себя клавиатуру лучше, чем стандартная.
 
 ### Cantor
+
+- [34 keys is all you need](https://www.youtube.com/watch?v=unMXQTSQEak)
+- https://precondition.github.io/home-row-mods
+
 ### Dactyl Manuform
+
+- [Wrist rests](https://www.aliexpress.com/item/1005006443764748.html)
+- https://ryanis.cool/cosmos/
 
 ---
 
@@ -786,21 +794,25 @@ C появлением персональных компьютеров и кла
 
 # Links
 
-- [On the Prehistory of QWERTY (2011)](https://repository.kulib.kyoto-u.ac.jp/server/api/core/bitstreams/dc434be9-80cd-499b-a984-f9fa35954c3b/content)
-- https://habr.com/ru/companies/selectel/articles/948408/#ergonomic
+## Lists
+
 - https://aposymbiont.github.io/split-keyboards/
 - https://github.com/Keycapsss/awesome-mechanical-keyboard
-- https://optozorax.github.io/moonlander-layout
-- https://getreuer.info/posts/keyboards/tour/index.html
-- https://www.kickstarter.com/projects/mwichary/shift-happens
-- https://www.keybr.com/
-- [34 keys is all you need](https://www.youtube.com/watch?v=unMXQTSQEak)
-- [Fake sounds](https://mechvibes.com/sound-packs/)
-- [Wrist rests](https://www.aliexpress.com/item/1005006443764748.html)
+- https://www.keyderboard.com/ergo
+- https://yal-tools.github.io/ergo-keyboards/
+- https://golem.hu/boards/
+
+## Blogs
+
+- https://optozorax.github.io/p/my-keyboard-layout/
+- https://habr.com/ru/companies/selectel/articles/948408/#ergonomic
+- https://www.justinmklam.com/posts/2026/02/beginners-guide-split-keyboards/
 - https://getreuer.info/posts/keyboards/tour/index.html
 - https://getreuer.info/posts/keyboards/faqs/index.html
-- https://ryanis.cool/cosmos/
-- https://yal-tools.github.io/ergo-keyboards/
-- https://www.keyderboard.com/ergo
+- https://kbd.news/
+
+## Trash
 - https://blog.crashspace.org/2025/06/diy-split-keyboards-your-next-maker-rabbit-hole/
-- https://www.justinmklam.com/posts/2026/02/beginners-guide-split-keyboards/
+- [Fake sounds](https://mechvibes.com/sound-packs/)
+- [On the Prehistory of QWERTY (2011)](https://repository.kulib.kyoto-u.ac.jp/server/api/core/bitstreams/dc434be9-80cd-499b-a984-f9fa35954c3b/content)
+- https://www.kickstarter.com/projects/mwichary/shift-happens

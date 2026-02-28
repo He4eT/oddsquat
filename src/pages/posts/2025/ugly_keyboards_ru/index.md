@@ -949,6 +949,7 @@ TODO replace photo
 - https://www.keyderboard.com/ergo
 - https://yal-tools.github.io/ergo-keyboards/
 - https://golem.hu/boards/
+- https://compare.splitkb.com/
 
 ## Blogs
 

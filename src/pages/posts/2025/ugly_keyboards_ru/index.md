@@ -964,14 +964,25 @@ TODO replace photo
   Уверен, что автору FiraCode
   и фразы "у человека с такой клавиатурой нет друзей" можно доверять =)
 
-- https://danis.one/keyboard-post/
-- https://optozorax.github.io/p/my-keyboard-layout/
-- https://habr.com/ru/companies/selectel/articles/948408/#ergonomic
-- https://www.justinmklam.com/posts/2026/02/beginners-guide-split-keyboards/
-- https://blog.crashspace.org/2025/06/diy-split-keyboards-your-next-maker-rabbit-hole/
-- https://getreuer.info/posts/keyboards/tour/index.html
-- https://getreuer.info/posts/keyboards/faqs/index.html
-- https://kbd.news/
+- Как-то раз Данис оказался со мной в одной комнате.
+  Так у него появилась новая клавиатура и
+  [текст о том, как он к ней привыкал](https://danis.one/keyboard-post/).
+
+- Монументальный пост
+  ["Раскладка Ильи Шепрута"](https://optozorax.github.io/p/my-keyboard-layout/)
+  о том, как проектировать собственную раскладку и зачем.
+
+- Какой-то [пост на Хабре](https://habr.com/ru/companies/selectel/articles/948408/).
+  Уверен, что не единственный, по тегам можно найти другие.
+
+- [Tour of split ergo keyboards](https://getreuer.info/posts/keyboards/tour/index.html)
+  и
+  [Keyboard FAQs](https://getreuer.info/posts/keyboards/faqs/index.html)
+  от Pascal Getreuer.
+- Ещё пара случайных англоязычных постов:
+  [A Beginner’s Guide to Split Keyboards](https://www.justinmklam.com/posts/2026/02/beginners-guide-split-keyboards/),
+  [DIY Split Keyboards: Your Next Maker Rabbit Hole](https://blog.crashspace.org/2025/06/diy-split-keyboards-your-next-maker-rabbit-hole/).
+- Регулярный [дайджест клавиатуростроения](https://kbd.news/).
 
 ---
 
@@ -997,9 +1008,10 @@ TODO replace photo
 можно самостоятельно сделать шаг навстречу менее сумасшедшему миру.
 
 Искренне верю, что каждая такая "маленькая персональная революция"
-слегка приближает нас к миру, где наконец-то можно будет прийти в магазин
-и купить нотубук, который сделали для удобства человеческих рук,
-а не в погоне за случайными трендами XIX-века.
+слегка приближает нас к будущему,
+где наконец-то можно будет прийти в магазин и купить ноутбук,
+который сделали для удобства человеческих рук,
+а не в погоне за случайными трендами XIX-го века.
 
 ---
 
@@ -1013,3 +1025,4 @@ TODO replace photo
 - style photos
 - style photo labels
 - check the photos and labels
+- format the links

@@ -733,9 +733,16 @@ https://github.com/jamessa/Angel
 Потом вот этот список.
 Потом вот этот список.
 
+- https://aposymbiont.github.io/split-keyboards/
+- https://github.com/Keycapsss/awesome-mechanical-keyboard
+- https://www.keyderboard.com/ergo
+- https://yal-tools.github.io/ergo-keyboards/
+- https://golem.hu/boards/
+
 На отдельном сайте можно сравнить несколько моделей между собой по размеру,
 распечатать понравившуюся на бумаге и проверить,
 насколько она подходит к конкретным рукам.
+- https://compare.splitkb.com/
 
 Я сам рассматривал и трогал очень разные устройства.
 Подробно расскажу про две клавиатуры,
@@ -1006,21 +1013,3 @@ TODO replace photo
 - style photos
 - style photo labels
 - check the photos and labels
-- spread the links
-
-# Links
-
-## Lists
-
-- https://aposymbiont.github.io/split-keyboards/
-- https://github.com/Keycapsss/awesome-mechanical-keyboard
-- https://www.keyderboard.com/ergo
-- https://yal-tools.github.io/ergo-keyboards/
-- https://golem.hu/boards/
-- https://compare.splitkb.com/
-
-## Trash
-
-- [Fake sounds](https://mechvibes.com/sound-packs/)
-- [On the Prehistory of QWERTY (2011)](https://repository.kulib.kyoto-u.ac.jp/server/api/core/bitstreams/dc434be9-80cd-499b-a984-f9fa35954c3b/content)
-- https://www.kickstarter.com/projects/mwichary/shift-happens

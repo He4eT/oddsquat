@@ -3,7 +3,7 @@
 layout: post
 lang: 'ru'
 year: '2026'
-date: '2026-00-00'
+date: '2026-03-06'
 section: 'posts'
 
 title: 'ugly_keyboards'
@@ -128,8 +128,15 @@ description: 'Почему нас окружают уродливые клави
 мизинцев находится больше двадцати клавиш** (и в том числе все модификаторы),
 а **большие пальцы всё ещё призваны нажимать вдвоём на один пробел**.
 
-![Зоны слепой десятипальцевой печати для классической клавиатуры](/images/posts/ugly_keyboards/typing_zones_default.png)
-> Зоны для десятипальцевого метода печати с https://keybr.com
+<figure class='image'>
+  <img
+    src='/images/posts/ugly_keyboards/typing_zones_default.png'
+    alt='Зоны слепой десятипальцевой печати для классической клавиатуры.'
+  />
+  <figcaption>
+    Зоны для десятипальцевого метода печати с [keybr.com](https://keybr.com/).
+  </figcaption>
+</figure>
 
 На всякий случай напомню,
 что противопоставленный большой палец — это вообще-то могучее и ловкое
@@ -166,8 +173,15 @@ description: 'Почему нас окружают уродливые клави
 Это значит, что нельзя просто расположить кнопки друг над другом,
 **у каждой клавиши печатной машинки должна быть своя уникальная X координата**.
 
-![Фотография клавиатуры механической печатной машинки](/images/posts/ugly_keyboards/typewriter.jpg)
-> Рычаги классической печатной машинки. Источник: [PublicDomainPictures](https://www.publicdomainpictures.net/en/view-image.php?image=166278&picture=typewriter).
+<figure class='image bordered'>
+  <img
+    src='/images/posts/ugly_keyboards/typewriter.jpg'
+    alt='Фотография клавиш и рычагов механической печатной машинки.'
+  />
+  <figcaption>
+    Рычаги классической печатной машинки. Источник: [PublicDomainPictures](https://www.publicdomainpictures.net/en/view-image.php?image=166278&picture=typewriter).
+  </figcaption>
+</figure>
 
 Одним из возможных решений этой проблемы
 как раз и стал горизонтальный сдвиг рядов.
@@ -349,8 +363,15 @@ C появлением персональных компьютеров и кла
 пытались учитывать её существование
 во время проектирования клавиатур:
 
-![Печатная машинка с симметричной клавиатурой](/images/posts/ugly_keyboards/typewriter_ergo.jpg)
-> Rheinmetall Portable Ergonomic. Источник: [vintagetechobsessions.blogspot.com](https://vintagetechobsessions.blogspot.com/2013/09/the-reveal-rheinmetall-portable.html).
+<figure class='image bordered'>
+  <img
+    src='/images/posts/ugly_keyboards/typewriter_ergo.jpg'
+    alt='Фотография печатной машинки с симметричной клавиатурой.'
+  />
+  <figcaption>
+    Rheinmetall Portable Ergonomic. Источник: [vintagetechobsessions.blogspot.com](https://vintagetechobsessions.blogspot.com/2013/09/the-reveal-rheinmetall-portable.html).
+  </figcaption>
+</figure>
 
 Если бы когда-то давно компания Remington
 не достигла впечатляющих экономических успехов,
@@ -388,8 +409,15 @@ C появлением персональных компьютеров и кла
 называют их эргономичными (**Ergonomic Keyboards**)
 и получают армию преданных среднестатистических фанатов.
 
-![Microsoft Natural Keyboard Elite](/images/posts/ugly_keyboards/keyboard_microsoft-natural-keyboard-elite.jpg)
-> Microsoft Natural Keyboard Elite от [u/Ang_xl9](https://www.reddit.com/r/keyboards/comments/1lq0t7m/old_but_gold_microsoft_natural_keyboard_elite/).
+<figure class='image bordered'>
+  <img
+    src='/images/posts/ugly_keyboards/keyboard_microsoft-natural-keyboard-elite.jpg'
+    alt='Фотография Microsoft Natural Keyboard Elite.'
+  />
+  <figcaption>
+    Microsoft Natural Keyboard Elite от [u/Ang_xl9](https://www.reddit.com/r/keyboards/comments/1lq0t7m/old_but_gold_microsoft_natural_keyboard_elite/).
+  </figcaption>
+</figure>
 
 Самая известная
 [линейка таких клавиатур принадлежит Microsoft](https://en.wikipedia.org/wiki/Microsoft_ergonomic_keyboards).
@@ -420,8 +448,15 @@ C появлением персональных компьютеров и кла
 и повернуть на любой угол.
 Такие распиленные пополам устройства назвают **Split Keyboards**.
 
-![Kinesis Freestyle 2](/images/posts/ugly_keyboards/keyboard_kinesis-freestyle-2.jpg)
-> Kinesis Freestyle 2. Источник: [kinesis-ergo.com](https://kinesis-ergo.com/keyboards/freestyle2-keyboard/).
+<figure class='image bordered'>
+  <img
+    src='/images/posts/ugly_keyboards/keyboard_kinesis-freestyle-2.jpg'
+    alt='Фотография Kinesis Freestyle 2.'
+  />
+  <figcaption>
+    Kinesis Freestyle 2. Источник: [kinesis-ergo.com](https://kinesis-ergo.com/keyboards/freestyle2-keyboard/).
+  </figcaption>
+</figure>
 
 Именитые производители заигрывали
 с регулируемыми углами между половинками клавиатуры ещё в начале 90-х:
@@ -439,8 +474,15 @@ C появлением персональных компьютеров и кла
 
 Такие устройства называют **Ortholinear Keyboards**.
 
-![Keychron Q15 Max](/images/posts/ugly_keyboards/keyboard_keychron-q15.jpg)
-> Keychron Q15 Max. Источник: [keychron.com](https://www.keychron.com/products/keychron-q15-max-qmk-wireless-custom-mechanical-keyboard).
+<figure class='image bordered'>
+  <img
+    src='/images/posts/ugly_keyboards/keyboard_keychron-q15.jpg'
+    alt='Фотография Keychron Q15 Max.'
+  />
+  <figcaption>
+    Keychron Q15 Max. Источник: [keychron.com](https://www.keychron.com/products/keychron-q15-max-qmk-wireless-custom-mechanical-keyboard).
+  </figcaption>
+</figure>
 
 Самыми известными ортолинейными клавиатурами долгое время были
 [Planck от OLKB](https://olkb.com/collections/planck),
@@ -463,9 +505,15 @@ C появлением персональных компьютеров и кла
 Разделение такой клавиатуры на две половинки, кстати, делает её
 гораздо более дружелюбной по отношению к запястьям.
 
-![Helix Keyboard](/images/posts/ugly_keyboards/keyboard_helix.jpg)
-> [Helix](https://github.com/MakotoKurauchi/helix) от
-[u/toramorigan](https://www.reddit.com/r/MechanicalKeyboards/comments/u8ue10/jumped_into_the_deep_end_to_make_my_first_ever/).
+<figure class='image bordered'>
+  <img
+    src='/images/posts/ugly_keyboards/keyboard_helix.jpg'
+    alt='Фотография Helix Keyboard.'
+  />
+  <figcaption>
+    [Helix](https://github.com/MakotoKurauchi/helix) от [u/toramorigan](https://www.reddit.com/r/MechanicalKeyboards/comments/u8ue10/jumped_into_the_deep_end_to_make_my_first_ever/).
+  </figcaption>
+</figure>
 
 Такие клавиатуры называют
 **Split Ortholinear Keyboard**.
@@ -477,9 +525,15 @@ C появлением персональных компьютеров и кла
 сдвиг рядов делает её довольно анатомичной.
 Очевидный шаг — сделать левую половину такой же удобной.
 
-![Katana60 Keyboard](/images/posts/ugly_keyboards/keyboard_katana60.jpg)
-> [Katana60](https://deskthority.net/viewtopic.php?t=16287) от
-[u/Rogue_Jellybean](https://www.reddit.com/r/MechanicalKeyboards/comments/9oiltb/sa_wob_on_katana60/).
+<figure class='image bordered'>
+  <img
+    src='/images/posts/ugly_keyboards/keyboard_katana60.jpg'
+    alt='Фотография Katana60 Keyboard.'
+  />
+  <figcaption>
+    [Katana60](https://deskthority.net/viewtopic.php?t=16287) от [u/Rogue_Jellybean](https://www.reddit.com/r/MechanicalKeyboards/comments/9oiltb/sa_wob_on_katana60/).
+  </figcaption>
+</figure>
 
 Очевидно, что раскладку такого типа
 можно было реализовать и на печатных машинках.
@@ -492,8 +546,15 @@ MacBook продавался бы с
 [подобной](https://github.com/jamessa/Angel)
 раскладкой.
 
-![Angel Keyboard Prototype](/images/posts/ugly_keyboards/keyboard_angel.jpg)
-> Бумажный Angel. Источник: [github.com/jamessa/Angel](https://github.com/jamessa/Angel).
+<figure class='image bordered'>
+  <img
+    src='/images/posts/ugly_keyboards/keyboard_angel.jpg'
+    alt='Фотография бумажного прототипа Angel Keyboard.'
+  />
+  <figcaption>
+    Бумажный Angel. Источник: [github.com/jamessa/Angel](https://github.com/jamessa/Angel).
+  </figcaption>
+</figure>
 
 Самая приятная особенность такого расположения клавиш в том,
 что получившаяся клавиатура такая же компактная, как классическая,
@@ -515,9 +576,15 @@ MacBook продавался бы с
 (который учитывает реальную анатомию человеческой кисти),
 то окажется, что нажимать даже самые неудобные клавиши стало удобно.
 
-![Sofle Keyboard](/images/posts/ugly_keyboards/keyboard_sofle.jpg)
-> [Sofle](https://github.com/josefadamcik/SofleKeyboard) от
-[u/Raithmir](https://www.reddit.com/r/MechanicalKeyboards/comments/17pw8k9/sofle_rgb/).
+<figure class='image bordered'>
+  <img
+    src='/images/posts/ugly_keyboards/keyboard_sofle.jpg'
+    alt='Фотография Sofle Keyboard.'
+  />
+  <figcaption>
+    [Sofle](https://github.com/josefadamcik/SofleKeyboard) от [u/Raithmir](https://www.reddit.com/r/MechanicalKeyboards/comments/17pw8k9/sofle_rgb/).
+  </figcaption>
+</figure>
 
 Такие устройства называют **Column-Staggered Keyboards**.
 
@@ -527,8 +594,15 @@ MacBook продавался бы с
 Заставить его трудиться легко — нужно просто перенести несколько кнопок
 из неудобных углов поближе к большим пальцам.
 
-![ErgoDox EZ Keyboard](/images/posts/ugly_keyboards/keyboard_ergodox-ez.jpg)
-> ErgoDox EZ. Источник: [ergodox-ez.com](https://ergodox-ez.com/).
+<figure class='image bordered'>
+  <img
+    src='/images/posts/ugly_keyboards/keyboard_ergodox-ez.jpg'
+    alt='Фотография ErgoDox EZ.'
+  />
+  <figcaption>
+    ErgoDox EZ. Источник: [ergodox-ez.com](https://ergodox-ez.com/).
+  </figcaption>
+</figure>
 
 Нажимать `Backspace` большим пальцем без необходимости
 двигать рукой или тянуть мизинец — не что иное, как суперспособность,
@@ -550,8 +624,15 @@ MacBook продавался бы с
 
 Такие устройства называют **Contoured Keyboards**.
 
-![Kinesis Advantage2](/images/posts/ugly_keyboards/keyboard_kinesis-advantage2.jpg)
-> Kinesis Advantage2. Источник: [kinesis-ergo.com](https://kinesis-ergo.com/keyboards/advantage2-keyboard/).
+<figure class='image bordered'>
+  <img
+    src='/images/posts/ugly_keyboards/keyboard_kinesis-advantage2.jpg'
+    alt='Фотография Kinesis Advantage2.'
+  />
+  <figcaption>
+    Kinesis Advantage2. Источник: [kinesis-ergo.com](https://kinesis-ergo.com/keyboards/advantage2-keyboard/).
+  </figcaption>
+</figure>
 
 Плоские настольные клавиатуры часто пытаются достичь похожего эффекта
 с помощью колпачков (кейкапов):
@@ -586,8 +667,15 @@ MacBook продавался бы с
 или
 [CharaChorder](https://www.charachorder.com/).
 
-![Svalboard](/images/posts/ugly_keyboards/keyboard_svalboard.jpg)
-> Svalboard. Источник: [svalboard.com](https://svalboard.com/).
+<figure class='image bordered'>
+  <img
+    src='/images/posts/ugly_keyboards/keyboard_svalboard.jpg'
+    alt='Фотография Svalboard.'
+  />
+  <figcaption>
+    Svalboard. Источник: [svalboard.com](https://svalboard.com/).
+  </figcaption>
+</figure>
 
 Все эти эксперименты вызывают интерес и трепетное уважение,
 но как-то комментировать их полезность и удобство я не имею морального права:
@@ -612,9 +700,15 @@ MacBook продавался бы с
 - Больше двух кнопок для больших пальцев.
 - Вертикальный сдвиг рядов и/или вогнутая форма.
 
->
-![Glove80](/images/posts/ugly_keyboards/keyboard_glove80.jpg)
-> [Glove80](https://www.moergo.com/pages/glove80) от [Fatih Arslan](https://arslan.io/2024/04/22/review-of-the-moergo-glove80-keyboard/).
+<figure class='image bordered'>
+  <img
+    src='/images/posts/ugly_keyboards/keyboard_glove80.jpg'
+    alt='Фотография Glove80.'
+  />
+  <figcaption>
+    [Glove80](https://www.moergo.com/pages/glove80) от [Fatih Arslan](https://arslan.io/2024/04/22/review-of-the-moergo-glove80-keyboard/).
+  </figcaption>
+</figure>
 
 Такие клавиатуры лаконично называются
 **Column-Staggered Ergonomic Split Keyboards**.
@@ -694,8 +788,15 @@ MacBook продавался бы с
 Пребывая в полном неведении относительно проблем классических клавиатур,
 я на каком-то интуитивном уровне моментально понял: "Мне надо!"
 
-![Dactyl Manuform](/images/posts/ugly_keyboards/keyboard_dactyl-manuform.jpg)
-> Dactyl-Manuform 5×6. Источник: [github.com/He4eT/oddkb](https://github.com/He4eT/oddkb).
+<figure class='image bordered'>
+  <img
+    src='/images/posts/ugly_keyboards/keyboard_dactyl-manuform.jpg'
+    alt='Фотография Dactyl Manuform.'
+  />
+  <figcaption>
+    Dactyl-Manuform 5×6. Источник: [github.com/He4eT/oddkb](https://github.com/He4eT/oddkb).
+  </figcaption>
+</figure>
 
 Не буду подробно рассказывать про все перипетии,
 с которыми пришлось столкнуться в процессе сборки и прошивки,
@@ -753,8 +854,15 @@ MacBook продавался бы с
 по меньшей мере десятка таких клавиатур и не собираюсь останавливаться.
 Однажды за компанию собрал одну и для себя.
 
-![Cantor MX](/images/posts/ugly_keyboards/keyboard_cantor-mx.jpg)
-> Cantor MX. Источник: [github.com/He4eT/cantor-mx-tastatura](https://github.com/He4eT/cantor-mx-tastatura).
+<figure class='image bordered'>
+  <img
+    src='/images/posts/ugly_keyboards/keyboard_cantor-mx.jpg'
+    alt='Фотография Cantor MX.'
+  />
+  <figcaption>
+    Cantor MX. Источник: [github.com/He4eT/cantor-mx-tastatura](https://github.com/He4eT/cantor-mx-tastatura).
+  </figcaption>
+</figure>
 
 Не могу сказать, что мне так уж нужна была ещё одна самодельная клавиатура,
 но когда она у меня появилась, применение ей сразу же нашлось.
@@ -987,3 +1095,8 @@ MacBook продавался бы с
 ознакомлюсь с предложениями и замечаниями к тексту поста,
 помогу выбрать клавиатуру или даже приду к вам в подкаст для дискуссии.
 <br>Не стесняйтесь написать мне [любым удобным способом](/about).
+
+TODO
+
+- links
+- anchors

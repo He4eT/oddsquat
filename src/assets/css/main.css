@@ -47,10 +47,39 @@ code {
   padding: 0.2rem 0.4rem;
 }
 
+/* Images */
+
+figure.image img {
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 0;
+}
+
+figure.image.bordered img {
+  border: 4px solid hsl(0, 0%, 0%, 0.7);
+}
+
+figure.image figcaption {
+  border-left: 4px solid hsl(0, 0%, 0%, 0.2);
+  padding-left: 1.0rem;
+  padding-right: 1.0rem;
+  margin-top: 1.0rem;
+}
+
 /* Lists */
 
 ul {
   list-style: square;
+}
+
+.entry:last-child,
+.entry {
+  margin-bottom: 1.5rem;
+}
+
+.entry > header,
+.entry > .description {
+  margin-bottom: 0.5rem;
 }
 
 /* Tables */
@@ -128,16 +157,4 @@ body > footer {
 
 h1, h2, h3, h4, h5 {
   scroll-margin-top: 0.5em;
-}
-
-/* Lists */
-
-.entry:last-child,
-.entry {
-  margin-bottom: 1.5rem;
-}
-
-.entry > header,
-.entry > .description {
-  margin-bottom: 0.5rem;
 }

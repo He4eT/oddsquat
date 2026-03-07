@@ -64,7 +64,7 @@ description: 'Почему нас окружают уродливые клави
 (та, где расположены буквы и цифры)
 уже более 100 лет остаётся неизменной.
 
-![Классическая ANSI клавиатура](/images/posts/ugly_keyboards/default_keyboard.svg)
+![Классическая ANSI клавиатура](/images/posts/ugly_keyboards/keyboard_default.svg)
 
 Все клавиатуры, похожие на эту, я дальше буду называть **классическими**.
 
@@ -128,7 +128,7 @@ description: 'Почему нас окружают уродливые клави
 мизинцев находится больше двадцати клавиш** (и в том числе все модификаторы),
 а **большие пальцы всё ещё призваны нажимать вдвоём на один пробел**.
 
-![Зоны слепой десятипальцевой печати для классической клавиатуры](/images/posts/ugly_keyboards/typing_zones_default_no_hands.png)
+![Зоны слепой десятипальцевой печати для классической клавиатуры](/images/posts/ugly_keyboards/typing_zones_default.png)
 > Зоны для десятипальцевого метода печати с https://keybr.com
 
 На всякий случай напомню,
@@ -167,14 +167,11 @@ description: 'Почему нас окружают уродливые клави
 **у каждой клавиши печатной машинки должна быть своя уникальная X координата**.
 
 ![Фотография клавиатуры механической печатной машинки](/images/posts/ugly_keyboards/typewriter.jpg)
-> Рычаги классической печатной машинки. Источник:
-[PublicDomainPictures](https://www.publicdomainpictures.net/en/view-image.php?image=166278&picture=typewriter).
+> Рычаги классической печатной машинки. Источник: [PublicDomainPictures](https://www.publicdomainpictures.net/en/view-image.php?image=166278&picture=typewriter).
 
 Одним из возможных решений этой проблемы
 как раз и стал горизонтальный сдвиг рядов.
-На <a target='_blank' href='https://www.publicdomainpictures.net/en/view-image.php?image=166278&picture=typewriter'>
-  фотографии
-</a> видно,
+На фотографии видно,
 что `A` расположена почти ровно под `Q`,
 а `Z` почти ровно под `A`.
 Именно в этом "почти" и скрывается вся магия:
@@ -196,7 +193,7 @@ description: 'Почему нас окружают уродливые клави
 чтобы не нужно было тянуться за ними в соседнюю комнату,
 и сохранили при этом простоту механизма.
 
-![Зоны слепой десятипальцевой печати для классической клавиатуры](/images/posts/ugly_keyboards/typing_zones_default.png)
+![Зоны слепой десятипальцевой печати для классической клавиатуры](/images/posts/ugly_keyboards/typing_zones_default_hands.png)
 
 С другой стороны, нельзя не отметить, что,
 как и многие другие инженерные решения,
@@ -224,9 +221,9 @@ description: 'Почему нас окружают уродливые клави
 снижает количество асимметричных движений до нуля**:
 симметричные руки наконец-то могут двигаться симметрично!
 В подарок мы получаем сокращение расстояний между кнопками,
-а так же предсказуемые, очевидные и понятные зоны для слепой печати:
+а так же предсказуемые, очевидные и понятные зоны для слепой печати.
 
-![Зоны слепой десятипальцевой печати для ортолинейной клавиатуры](/images/posts/ugly_keyboards/typing_zones_ergo.png)
+![Зоны слепой десятипальцевой печати для ортолинейной клавиатуры](/images/posts/ugly_keyboards/typing_zones_ergo_hand_handss.png)
 
 Более подробно слепую печать я хочу отдельно обсудить в отдельном посте,
 а в этом разделе я просто хотел озвучить свою главную претензию:
@@ -352,7 +349,7 @@ C появлением персональных компьютеров и кла
 пытались учитывать её существование
 во время проектирования клавиатур:
 
-![Симметричная клавиатура печатной машинки](/images/posts/ugly_keyboards/typewriter_ergo.jpg)
+![Печатная машинка с симметричной клавиатурой](/images/posts/ugly_keyboards/typewriter_ergo.jpg)
 > Rheinmetall Portable Ergonomic. Источник: [vintagetechobsessions.blogspot.com](https://vintagetechobsessions.blogspot.com/2013/09/the-reveal-rheinmetall-portable.html).
 
 Если бы когда-то давно компания Remington
@@ -391,8 +388,8 @@ C появлением персональных компьютеров и кла
 называют их эргономичными (**Ergonomic Keyboards**)
 и получают армию преданных среднестатистических фанатов.
 
-![Microsoft Natural Keyboard Gen1/V1](/images/posts/ugly_keyboards/MicrosoftNaturalKeyboardGen1.jpg)
-> Фотография: <a target='_blank' href='https://commons.wikimedia.org/w/index.php?curid=49643109'>Microsoft Natural Keyboard Gen1/V1 от DeanW77</a>.
+![Microsoft Natural Keyboard Elite](/images/posts/ugly_keyboards/keyboard_microsoft-natural-keyboard-elite.png)
+> Microsoft Natural Keyboard Elite от [u/Ang_xl9](https://www.reddit.com/r/keyboards/comments/1lq0t7m/old_but_gold_microsoft_natural_keyboard_elite/).
 
 Самая известная
 [линейка таких клавиатур принадлежит Microsoft](https://en.wikipedia.org/wiki/Microsoft_ergonomic_keyboards).
@@ -423,8 +420,8 @@ C появлением персональных компьютеров и кла
 и повернуть на любой угол.
 Такие распиленные пополам устройства назвают **Split Keyboards**.
 
-![Kinesis Freestyle](/images/posts/ugly_keyboards/Kinesis_Freestyle.jpg)
-> Фотография: <a target='_blank' href='https://commons.wikimedia.org/w/index.php?curid=123893277'>Kinesis Freestyle от Casey Marshall</a>.
+![Kinesis Freestyle 2](/images/posts/ugly_keyboards/keyboard_kinesis-freestyle-2.jpg)
+> Kinesis Freestyle 2. Источник: [kinesis-ergo.com](https://kinesis-ergo.com/keyboards/freestyle2-keyboard/).
 
 Именитые производители заигрывали
 с регулируемыми углами между половинками клавиатуры ещё в начале 90-х:
@@ -442,7 +439,8 @@ C появлением персональных компьютеров и кла
 
 Такие устройства называют **Ortholinear Keyboards**.
 
-> **TODO: Вставить фотографию**
+![Keychron Q15 Max](/images/posts/ugly_keyboards/keyboard_keychron-q15.jpg)
+> Keychron Q15 Max. Источник: [keychron.com](https://www.keychron.com/products/keychron-q15-max-qmk-wireless-custom-mechanical-keyboard).
 
 Самыми известными ортолинейными клавиатурами долгое время были
 [Planck от OLKB](https://olkb.com/collections/planck),
@@ -463,11 +461,10 @@ C появлением персональных компьютеров и кла
 [ортолинейную клавиатуру в ноутбуке](https://shop.mntre.com/products/mnt-pocket-reform).
 
 Разделение такой клавиатуры на две половинки, кстати, делает её
-гораздо более дружелюбной по отношению к запястьям:
+гораздо более дружелюбной по отношению к запястьям.
 
-> https://www.reddit.com/r/MechanicalKeyboards/comments/u8ue10/jumped_into_the_deep_end_to_make_my_first_ever/
-
-На фотографии [Helix](https://github.com/MakotoKurauchi/helix) от
+![Helix Keyboard](/images/posts/ugly_keyboards/keyboard_helix.jpg)
+> [Helix](https://github.com/MakotoKurauchi/helix) от
 [u/toramorigan](https://www.reddit.com/r/MechanicalKeyboards/comments/u8ue10/jumped_into_the_deep_end_to_make_my_first_ever/).
 
 Такие клавиатуры называют
@@ -478,12 +475,11 @@ C появлением персональных компьютеров и кла
 Вообще, если долго смотреть на классическую клавиатуру,
 то станет заметно, что правая её часть не так уж и плоха:
 сдвиг рядов делает её довольно анатомичной.
-Очевидный шаг — сделать левую половину такой же удобной:
+Очевидный шаг — сделать левую половину такой же удобной.
 
-> https://www.reddit.com/r/MechanicalKeyboards/comments/98evrj/my_girlfriends_new_katana60_with_fake_miami/
-
-На фотографии [Katana60](https://deskthority.net/viewtopic.php?t=16287) от
-[u/maxmalrichtig](https://www.reddit.com/r/MechanicalKeyboards/comments/98evrj/my_girlfriends_new_katana60_with_fake_miami/)
+![Katana60 Keyboard](/images/posts/ugly_keyboards/keyboard_katana60.jpg)
+> [Katana60](https://deskthority.net/viewtopic.php?t=16287) от
+[u/Rogue_Jellybean](https://www.reddit.com/r/MechanicalKeyboards/comments/9oiltb/sa_wob_on_katana60/).
 
 Очевидно, что раскладку такого типа
 можно было реализовать и на печатных машинках.
@@ -494,9 +490,10 @@ MacBook продавался бы с
 [такой](https://github.com/mtei/SemiErgo_Layout?tab=readme-ov-file#c-1-draft-of-macbookimac-us-key-set-mapping),
 либо
 [подобной](https://github.com/jamessa/Angel)
-раскладкой:
+раскладкой.
 
-> https://raw.githubusercontent.com/jamessa/Angel/master/attachments/notebook.jpg
+![Angel Keyboard Prototype](/images/posts/ugly_keyboards/keyboard_angel.jpg)
+> Бумажный Angel. Источник: [github.com/jamessa/Angel](https://github.com/jamessa/Angel).
 
 Самая приятная особенность такого расположения клавиш в том,
 что получившаяся клавиатура такая же компактная, как классическая,
@@ -518,9 +515,9 @@ MacBook продавался бы с
 (который учитывает реальную анатомию человеческой кисти),
 то окажется, что нажимать даже самые неудобные клавиши стало удобно.
 
-> https://www.reddit.com/media?url=https%3A%2F%2Fpreview.redd.it%2Fiuzo5p7pxxyb1.jpg%3Fwidth%3D1080%26crop%3Dsmart%26auto%3Dwebp%26s%3Dc9b0a87c5f217db630f695a4083716b234795a3b
-> https://www.reddit.com/r/MechanicalKeyboards/comments/17pw8k9/sofle_rgb/
-> https://github.com/josefadamcik/SofleKeyboard
+![Sofle Keyboard](/images/posts/ugly_keyboards/keyboard_sofle.webp)
+> [Sofle](https://github.com/josefadamcik/SofleKeyboard) от
+[u/Raithmir](https://www.reddit.com/r/MechanicalKeyboards/comments/17pw8k9/sofle_rgb/).
 
 Такие устройства называют **Column-Staggered Keyboards**.
 
@@ -530,11 +527,8 @@ MacBook продавался бы с
 Заставить его трудиться легко — нужно просто перенести несколько кнопок
 из неудобных углов поближе к большим пальцам.
 
-> https://cdn.shopify.com/s/files/1/1152/3264/products/4dabaa5e604462d4464b4d0daaac908d_954b2ecd-0149-44d7-88ab-69ca036fb843.jpg?v=1570475754
-> https://cdn.shopify.com/s/files/1/1152/3264/products/e1fbe3297b62fb3a394029694f7d3d90_95ac7869-4eec-4249-a80b-b49b1e14e50e.jpg?v=1570475753
-> https://www.reddit.com/r/ergodox/comments/91p5ig/my_first_ergodox_arrived_they_are_huge_i_love_them/
-
-Фотография с сайта https://ergodox-ez.com/.
+![ErgoDox EZ Keyboard](/images/posts/ugly_keyboards/keyboard_ergodox-ez.jpg)
+> ErgoDox EZ. Источник: [ergodox-ez.com](https://ergodox-ez.com/).
 
 Нажимать `Backspace` большим пальцем без необходимости
 двигать рукой или тянуть мизинец — не что иное, как суперспособность,
@@ -556,9 +550,8 @@ MacBook продавался бы с
 
 Такие устройства называют **Contoured Keyboards**.
 
-> https://kinesis-ergo.com/wp-content/uploads/kb600-ls2a.jpg
-
-Фотография с сайта https://kinesis-ergo.com/
+![Kinesis Advantage2](/images/posts/ugly_keyboards/keyboard_kinesis-advantage2.jpg)
+> Kinesis Advantage2. Источник: [kinesis-ergo.com](https://kinesis-ergo.com/keyboards/advantage2-keyboard/).
 
 Плоские настольные клавиатуры часто пытаются достичь похожего эффекта
 с помощью колпачков (кейкапов):
@@ -593,8 +586,8 @@ MacBook продавался бы с
 или
 [CharaChorder](https://www.charachorder.com/).
 
-> https://svalboard.com/cdn/shop/files/ABS_Dual_Ball_NW_View.png
-Фотография с сайта https://svalboard.com/
+![Svalboard](/images/posts/ugly_keyboards/keyboard_svalboard.png)
+> Svalboard. Источник: [svalboard.com](https://svalboard.com/).
 
 Все эти эксперименты вызывают интерес и трепетное уважение,
 но как-то комментировать их полезность и удобство я не имею морального права:
@@ -619,7 +612,9 @@ MacBook продавался бы с
 - Больше двух кнопок для больших пальцев.
 - Вертикальный сдвиг рядов и/или вогнутая форма.
 
-> Glove80
+>
+![Glove80](/images/posts/ugly_keyboards/keyboard_glove80.webp)
+> [Glove80](https://www.moergo.com/pages/glove80) от [Fatih Arslan](https://arslan.io/2024/04/22/review-of-the-moergo-glove80-keyboard/).
 
 Такие клавиатуры лаконично называются
 **Column-Staggered Ergonomic Split Keyboards**.
@@ -656,8 +651,7 @@ MacBook продавался бы с
   или [Go60](https://www.moergo.com/pages/go60)
   от [MoErgo](https://www.moergo.com/).
 
-- [Advantage2](https://kinesis-ergo.com/keyboards/advantage2-keyboard/)
-  или [Advantage360](https://kinesis-ergo.com/keyboards/advantage360/)
+- [Advantage360](https://kinesis-ergo.com/keyboards/advantage360/)
   от [Kinesis](https://kinesis-ergo.com/).
 
 Если же есть решимость, делать что-нибудь своими руками или искать людей,
@@ -681,7 +675,7 @@ MacBook продавался бы с
 Существует множество специализированных магазинов, которые предлагают
 готовые клавиатуры, наборы для самостоятельной сборки и отдельные запчасти.
 Список таких площадок есть в
-[Wiki от r/ErgoMechKeyboards](https://www.reddit.com/r/ErgoMechKeyboards/wiki/resources/#wiki_vendors).
+[wiki от r/ErgoMechKeyboards](https://www.reddit.com/r/ErgoMechKeyboards/wiki/resources/#wiki_vendors).
 Популярные модели вроде народной
 [Corne](https://github.com/foostan/crkbd)
 регулярно продаются и перепродаются на локальных и глобальных маркетплейсах.
@@ -700,8 +694,8 @@ MacBook продавался бы с
 Пребывая в полном неведении относительно проблем классических клавиатур,
 я на каком-то интуитивном уровне моментально понял: "Мне надо!"
 
-![Kinesis Freestyle](/images/posts/ugly_keyboards/Kinesis_Freestyle.jpg)
-> TODO replace photo
+![Dactyl Manuform](/images/posts/ugly_keyboards/keyboard_dactyl-manuform.jpg)
+> Dactyl-Manuform 5×6. Источник: [github.com/He4eT/oddkb](https://github.com/He4eT/oddkb).
 
 Не буду подробно рассказывать про все перипетии,
 с которыми пришлось столкнуться в процессе сборки и прошивки,
@@ -759,8 +753,8 @@ MacBook продавался бы с
 по меньшей мере десятка таких клавиатур и не собираюсь останавливаться.
 Однажды за компанию собрал одну и для себя.
 
-![Kinesis Freestyle](/images/posts/ugly_keyboards/Kinesis_Freestyle.jpg)
-> TODO replace photo
+![Cantor MX](/images/posts/ugly_keyboards/keyboard_cantor-mx.jpg)
+> Cantor MX. Источник: [github.com/He4eT/cantor-mx-tastatura](https://github.com/He4eT/cantor-mx-tastatura).
 
 Не могу сказать, что мне так уж нужна была ещё одна самодельная клавиатура,
 но когда она у меня появилась, применение ей сразу же нашлось.
@@ -950,7 +944,7 @@ MacBook продавался бы с
 - Пара случайных англоязычных постов:
   [A Beginner’s Guide to Split Keyboards](https://www.justinmklam.com/posts/2026/02/beginners-guide-split-keyboards/),
   [DIY Split Keyboards: Your Next Maker Rabbit Hole](https://blog.crashspace.org/2025/06/diy-split-keyboards-your-next-maker-rabbit-hole/).
-- Регулярный [дайджест клавиатуростроения](https://kbd.news/).
+- [Регулярный дайджест клавиатуростроения](https://kbd.news/).
 
 ---
 
@@ -994,6 +988,15 @@ MacBook продавался бы с
 помогу выбрать клавиатуру или даже приду к вам в подкаст для дискуссии.
 <br>Не стесняйтесь написать мне [любым удобным способом](/about).
 
--- add photos
--- format the links
--- style photos and labels
+---
+
+
+- adapt photos
+- format the links
+- style photos and labels
+<style>
+img {
+  display: block;
+  box-sizing: border-box;
+  border: 4px solid black;
+</style>

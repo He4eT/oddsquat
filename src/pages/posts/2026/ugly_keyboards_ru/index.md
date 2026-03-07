@@ -225,8 +225,8 @@ description: 'Почему нас окружают уродливые клави
 
 ![Зоны слепой десятипальцевой печати для ортолинейной клавиатуры](/images/posts/ugly_keyboards/typing_zones_ergo_hands.png)
 
-Более подробно слепую печать я хочу отдельно обсудить в отдельном посте,
-а в этом разделе я просто хотел озвучить свою главную претензию:
+Более подробно слепую печать я хочу подробнее обсудить в отдельном посте,
+а в этом разделе просто хотел озвучить свою главную претензию:
 **горизонтальный сдвиг рядов — это компромиссное решение проблемы,
 которой у нас больше нет**!
 
@@ -388,7 +388,7 @@ C появлением персональных компьютеров и кла
 называют их эргономичными (**Ergonomic Keyboards**)
 и получают армию преданных среднестатистических фанатов.
 
-![Microsoft Natural Keyboard Elite](/images/posts/ugly_keyboards/keyboard_microsoft-natural-keyboard-elite.png)
+![Microsoft Natural Keyboard Elite](/images/posts/ugly_keyboards/keyboard_microsoft-natural-keyboard-elite.jpg)
 > Microsoft Natural Keyboard Elite от [u/Ang_xl9](https://www.reddit.com/r/keyboards/comments/1lq0t7m/old_but_gold_microsoft_natural_keyboard_elite/).
 
 Самая известная
@@ -515,7 +515,7 @@ MacBook продавался бы с
 (который учитывает реальную анатомию человеческой кисти),
 то окажется, что нажимать даже самые неудобные клавиши стало удобно.
 
-![Sofle Keyboard](/images/posts/ugly_keyboards/keyboard_sofle.webp)
+![Sofle Keyboard](/images/posts/ugly_keyboards/keyboard_sofle.jpg)
 > [Sofle](https://github.com/josefadamcik/SofleKeyboard) от
 [u/Raithmir](https://www.reddit.com/r/MechanicalKeyboards/comments/17pw8k9/sofle_rgb/).
 
@@ -586,7 +586,7 @@ MacBook продавался бы с
 или
 [CharaChorder](https://www.charachorder.com/).
 
-![Svalboard](/images/posts/ugly_keyboards/keyboard_svalboard.png)
+![Svalboard](/images/posts/ugly_keyboards/keyboard_svalboard.jpg)
 > Svalboard. Источник: [svalboard.com](https://svalboard.com/).
 
 Все эти эксперименты вызывают интерес и трепетное уважение,
@@ -613,7 +613,7 @@ MacBook продавался бы с
 - Вертикальный сдвиг рядов и/или вогнутая форма.
 
 >
-![Glove80](/images/posts/ugly_keyboards/keyboard_glove80.webp)
+![Glove80](/images/posts/ugly_keyboards/keyboard_glove80.jpg)
 > [Glove80](https://www.moergo.com/pages/glove80) от [Fatih Arslan](https://arslan.io/2024/04/22/review-of-the-moergo-glove80-keyboard/).
 
 Такие клавиатуры лаконично называются

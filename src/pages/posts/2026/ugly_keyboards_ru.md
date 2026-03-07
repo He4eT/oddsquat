@@ -50,7 +50,9 @@ description: 'Почему нас окружают уродливые клави
 
 Вообще, большинство клавиатур, при всём кажущемся разнообразии,
 так или иначе следует стандартам:
-[чаще ANSI, реже ISO](https://switchandclick.com/ansi-vs-iso-layout/).
+<a target='_blank'
+  href='https://switchandclick.com/ansi-vs-iso-layout/'>
+  чаще ANSI, реже ISO</a>.
 
 Клавиатуры могут быть разных цветов и размеров,
 производители могут переносить
@@ -134,7 +136,8 @@ description: 'Почему нас окружают уродливые клави
     alt='Зоны слепой десятипальцевой печати для классической клавиатуры.'
   />
   <figcaption>
-    Зоны для десятипальцевого метода печати с [keybr.com](https://keybr.com/).
+    Зоны для десятипальцевого метода печати с
+    <a target='_blank' href='https://keybr.com/'>keybr.com</a>.
   </figcaption>
 </figure>
 
@@ -179,7 +182,10 @@ description: 'Почему нас окружают уродливые клави
     alt='Фотография клавиш и рычагов механической печатной машинки.'
   />
   <figcaption>
-    Рычаги классической печатной машинки. Источник: [PublicDomainPictures](https://www.publicdomainpictures.net/en/view-image.php?image=166278&picture=typewriter).
+    Рычаги классической печатной машинки. Источник:
+    <a target='_blank'
+      href='https://www.publicdomainpictures.net/en/view-image.php?image=166278&picture=typewriter'>
+      PublicDomainPictures</a>.
   </figcaption>
 </figure>
 
@@ -288,7 +294,9 @@ description: 'Почему нас окружают уродливые клави
 
 Я не имею достаточной медицинской экспертизы, чтобы в этом разбираться,
 поэтому сошлюсь на
-[подборку страшилок с сайта Kinesis](https://kinesis-ergo.com/solutions/keyboard-risk-factors/):
+<a target='_blank'
+  href='https://kinesis-ergo.com/solutions/keyboard-risk-factors/'>
+  подборку страшилок с сайта Kinesis</a>:
 там показывают картинки и предлагают опасаться
 избыточного разгибания или локтевого отклонения кисти,
 загадочной пронации предплечья
@@ -369,7 +377,10 @@ C появлением персональных компьютеров и кла
     alt='Фотография печатной машинки с симметричной клавиатурой.'
   />
   <figcaption>
-    Rheinmetall Portable Ergonomic. Источник: [vintagetechobsessions.blogspot.com](https://vintagetechobsessions.blogspot.com/2013/09/the-reveal-rheinmetall-portable.html).
+    Rheinmetall Portable Ergonomic. Источник:
+    <a target='_blank'
+      href='https://vintagetechobsessions.blogspot.com/2013/09/the-reveal-rheinmetall-portable.html'>
+      vintagetechobsessions.blogspot.com</a>.
   </figcaption>
 </figure>
 
@@ -383,7 +394,9 @@ C появлением персональных компьютеров и кла
 Некоторые из этих попыток я ещё упомяну ниже,
 но масштаб и временные рамки экспериментов
 можно поверхностно оценить на странице
-[Ergonomic Keyboard History](http://xahlee.info/kbd/ergonomic_keyboard_history_index.html)
+<a target='_blank'
+  href='http://xahlee.info/kbd/ergonomic_keyboard_history_index.html'>
+  Ergonomic Keyboard History</a>
 от Xah Lee.
 
 В XXI веке эксперименты над клавиатурами стали доступны энтузиастам
@@ -415,20 +428,31 @@ C появлением персональных компьютеров и кла
     alt='Фотография Microsoft Natural Keyboard Elite.'
   />
   <figcaption>
-    Microsoft Natural Keyboard Elite от [u/Ang_xl9](https://www.reddit.com/r/keyboards/comments/1lq0t7m/old_but_gold_microsoft_natural_keyboard_elite/).
+    Microsoft Natural Keyboard Elite от
+    <a target='_blank'
+      href='https://www.reddit.com/r/keyboards/comments/1lq0t7m/old_but_gold_microsoft_natural_keyboard_elite/'>
+      u/Ang_xl9</a>.
   </figcaption>
 </figure>
 
 Самая известная
-[линейка таких клавиатур принадлежит Microsoft](https://en.wikipedia.org/wiki/Microsoft_ergonomic_keyboards).
-Те, кто родились в прошлом веке, могли видеть их Natural Keyboard при
-[установке Windows 95](https://windowswallpaper.miraheze.org/wiki/Windows_95#/media/File:Setup_(Windows_95).png).
+<a target='_blank'
+  href='https://en.wikipedia.org/wiki/Microsoft_ergonomic_keyboards'>
+  линейка таких клавиатур принадлежит Microsoft</a>.
+Те, кто родились в прошлом веке,
+могли видеть их Natural Keyboard при
+<a target='_blank'
+  href='https://windowswallpaper.miraheze.org/wiki/Windows_95#/media/File:Setup_(Windows_95).png'>
+  установке Windows 95</a>.
 
 Аналогичные модели можно встретить и у других производителей:
-[ERGO K860](https://www.logitech.com/en-us/shop/p/k860-split-ergonomic.920-009166)
-от Logitech, например.
+<a target='_blank'
+  href='https://www.logitech.com/en-us/shop/p/k860-split-ergonomic.920-009166'>
+  ERGO K860</a> от Logitech, например.
 Похожий популярный форм-фактор называется
-[Alice Layout](https://keeb-finder.com/keyboards/filter/alice).
+<a target='_blank'
+  href='https://keeb-finder.com/keyboards/filter/alice'>
+  Alice Layout</a>.
 
 Подобные клавиатуры обычно выбирают те,
 у кого уже начали болеть руки,
@@ -454,14 +478,21 @@ C появлением персональных компьютеров и кла
     alt='Фотография Kinesis Freestyle 2.'
   />
   <figcaption>
-    Kinesis Freestyle 2. Источник: [kinesis-ergo.com](https://kinesis-ergo.com/keyboards/freestyle2-keyboard/).
+    Kinesis Freestyle 2. Источник:
+    <a target='_blank'
+      href='https://kinesis-ergo.com/keyboards/freestyle2-keyboard/'>
+      kinesis-ergo.com</a>.
   </figcaption>
 </figure>
 
 Именитые производители заигрывали
 с регулируемыми углами между половинками клавиатуры ещё в начале 90-х:
-- [Apple Adjustable, 1993](https://en.wikipedia.org/wiki/Apple_Adjustable_Keyboard)
-- [IBM Model M15, 1994](http://xahlee.info/kbd/ibm_model_15_keyboard.html)
+- <a target='_blank'
+    href='https://en.wikipedia.org/wiki/Apple_Adjustable_Keyboard'>
+    Apple Adjustable, 1993</a>
+- <a target='_blank'
+    href='http://xahlee.info/kbd/ibm_model_15_keyboard.html'>
+    IBM Model M15, 1994</a>
 
 Сейчас разделение клавиатуры пополам встречается довольно часто,
 но обычно в комплекте с какими-нибудь другими нововведениями.
@@ -480,18 +511,27 @@ C появлением персональных компьютеров и кла
     alt='Фотография Keychron Q15 Max.'
   />
   <figcaption>
-    Keychron Q15 Max. Источник: [keychron.com](https://www.keychron.com/products/keychron-q15-max-qmk-wireless-custom-mechanical-keyboard).
+    Keychron Q15 Max. Источник:
+    <a target='_blank'
+      href='https://www.keychron.com/products/keychron-q15-max-qmk-wireless-custom-mechanical-keyboard'>
+      keychron.com</a>.
   </figcaption>
 </figure>
 
 Самыми известными ортолинейными клавиатурами долгое время были
-[Planck от OLKB](https://olkb.com/collections/planck),
+<a target='_blank'
+  href='https://olkb.com/collections/planck'>
+  Planck от OLKB</a>,
 но со временем и более именитые
-[производители стали экспериментировать](https://worklouder.cc/xyz-work-board-2)
+<a target='_blank'
+  href='https://worklouder.cc/xyz-work-board-2'>
+  производители стали экспериментировать</a>
 с этим форм-фактором.
 Даже Keychron, производитель дефолтных клавиатур для программистов,
 предлагает
-[ортолинейную модель](https://www.keychron.com/products/keychron-q15-max-qmk-wireless-custom-mechanical-keyboard).
+<a target='_blank'
+  href='https://www.keychron.com/products/keychron-q15-max-qmk-wireless-custom-mechanical-keyboard'>
+  ортолинейную модель</a>.
 
 При всей своей красоте, симметрии и логичности,
 ортолинейная раскладка всё ещё может считаться
@@ -500,7 +540,9 @@ C появлением персональных компьютеров и кла
 
 Я, лично, не хотел бы держать такую клавиатуру на столе,
 но был бы не против иметь
-[ортолинейную клавиатуру в ноутбуке](https://shop.mntre.com/products/mnt-pocket-reform).
+<a target='_blank'
+  href='https://shop.mntre.com/products/mnt-pocket-reform'>
+  ортолинейную клавиатуру в ноутбуке</a>.
 
 Разделение такой клавиатуры на две половинки, кстати, делает её
 гораздо более дружелюбной по отношению к запястьям.
@@ -511,7 +553,12 @@ C появлением персональных компьютеров и кла
     alt='Фотография Helix Keyboard.'
   />
   <figcaption>
-    [Helix](https://github.com/MakotoKurauchi/helix) от [u/toramorigan](https://www.reddit.com/r/MechanicalKeyboards/comments/u8ue10/jumped_into_the_deep_end_to_make_my_first_ever/).
+    <a target='_blank'
+      href='https://github.com/MakotoKurauchi/helix'>
+      Helix</a> от
+    <a target='_blank'
+      href='https://www.reddit.com/r/MechanicalKeyboards/comments/u8ue10/jumped_into_the_deep_end_to_make_my_first_ever/'>
+      u/toramorigan</a>.
   </figcaption>
 </figure>
 
@@ -531,7 +578,12 @@ C появлением персональных компьютеров и кла
     alt='Фотография Katana60 Keyboard.'
   />
   <figcaption>
-    [Katana60](https://deskthority.net/viewtopic.php?t=16287) от [u/Rogue_Jellybean](https://www.reddit.com/r/MechanicalKeyboards/comments/9oiltb/sa_wob_on_katana60/).
+    <a target='_blank'
+      href='https://deskthority.net/viewtopic.php?t=16287'>
+      Katana60</a> от
+    <a target='_blank'
+      href='https://www.reddit.com/r/MechanicalKeyboards/comments/9oiltb/sa_wob_on_katana60/'>
+      u/Rogue_Jellybean</a>.
   </figcaption>
 </figure>
 
@@ -541,9 +593,12 @@ C появлением персональных компьютеров и кла
 а какой-нибудь другой производитель,
 стандартная клавиатура гораздо лучше бы подходила стандартным рукам, а
 MacBook продавался бы с
-[такой](https://github.com/mtei/SemiErgo_Layout?tab=readme-ov-file#c-1-draft-of-macbookimac-us-key-set-mapping),
-либо
-[подобной](https://github.com/jamessa/Angel)
+<a target='_blank'
+  href='https://github.com/mtei/SemiErgo_Layout?tab=readme-ov-file#c-1-draft-of-macbookimac-us-key-set-mapping'>
+  такой</a> либо
+<a target='_blank'
+  href='https://github.com/jamessa/Angel'>
+  подобной</a>
 раскладкой.
 
 <figure class='image bordered'>
@@ -552,7 +607,10 @@ MacBook продавался бы с
     alt='Фотография бумажного прототипа Angel Keyboard.'
   />
   <figcaption>
-    Бумажный Angel. Источник: [github.com/jamessa/Angel](https://github.com/jamessa/Angel).
+    Бумажный Angel. Источник:
+    <a target='_blank'
+      href='https://github.com/jamessa/Angel'>
+      github.com/jamessa/Angel</a>.
   </figcaption>
 </figure>
 
@@ -582,7 +640,12 @@ MacBook продавался бы с
     alt='Фотография Sofle Keyboard.'
   />
   <figcaption>
-    [Sofle](https://github.com/josefadamcik/SofleKeyboard) от [u/Raithmir](https://www.reddit.com/r/MechanicalKeyboards/comments/17pw8k9/sofle_rgb/).
+    <a target='_blank'
+      href='https://github.com/josefadamcik/SofleKeyboard'>
+      Sofle</a> от
+    <a target='_blank'
+      href='https://www.reddit.com/r/MechanicalKeyboards/comments/17pw8k9/sofle_rgb/'>
+      u/Raithmir</a>.
   </figcaption>
 </figure>
 
@@ -600,7 +663,10 @@ MacBook продавался бы с
     alt='Фотография ErgoDox EZ.'
   />
   <figcaption>
-    ErgoDox EZ. Источник: [ergodox-ez.com](https://ergodox-ez.com/).
+    ErgoDox EZ. Источник:
+    <a target='_blank'
+      href='https://ergodox-ez.com/'>
+      ergodox-ez.com</a>.
   </figcaption>
 </figure>
 
@@ -630,7 +696,10 @@ MacBook продавался бы с
     alt='Фотография Kinesis Advantage2.'
   />
   <figcaption>
-    Kinesis Advantage2. Источник: [kinesis-ergo.com](https://kinesis-ergo.com/keyboards/advantage2-keyboard/).
+    Kinesis Advantage2. Источник:
+    <a target='_blank'
+      href='https://kinesis-ergo.com/keyboards/advantage2-keyboard/'>
+      kinesis-ergo.com</a>.
   </figcaption>
 </figure>
 
@@ -638,7 +707,9 @@ MacBook продавался бы с
 с помощью колпачков (кейкапов):
 если посмотреть сбоку на случайную (не встроенную в ноутбук)
 клавиатуру, то можно разглядеть
-[OEM, Cherry или какой-нибудь иной профиль](https://www.reddit.com/r/MechanicalKeyboards/comments/j484j5/keycap_profiles_i_compiled_a_direct_comparison/).
+<a target='_blank'
+  href='https://www.reddit.com/r/MechanicalKeyboards/comments/j484j5/keycap_profiles_i_compiled_a_direct_comparison/'>
+  OEM, Cherry или какой-нибудь иной профиль</a>.
 
 Изогнутые клавиатуры идут дальше и располагают кнопки
 на поверхности, похожей на полусферу,
@@ -663,9 +734,12 @@ MacBook продавался бы с
 Некоторые творцы вообще ставят под сомнение
 необходимость наличия в клавиатуре клавиш и создают
 пугающе дикие и футуристичные вещи, вроде
-[Svalboard](https://svalboard.com/)
-или
-[CharaChorder](https://www.charachorder.com/).
+<a target='_blank'
+  href='https://svalboard.com/'>
+  Svalboard</a> или
+<a target='_blank'
+  href='https://www.charachorder.com/'>
+  CharaChorder</a>.
 
 <figure class='image bordered'>
   <img
@@ -673,7 +747,10 @@ MacBook продавался бы с
     alt='Фотография Svalboard.'
   />
   <figcaption>
-    Svalboard. Источник: [svalboard.com](https://svalboard.com/).
+    Svalboard. Источник:
+    <a target='_blank'
+      href='https://svalboard.com/'>
+      svalboard.com</a>.
   </figcaption>
 </figure>
 
@@ -706,7 +783,12 @@ MacBook продавался бы с
     alt='Фотография Glove80.'
   />
   <figcaption>
-    [Glove80](https://www.moergo.com/pages/glove80) от [Fatih Arslan](https://arslan.io/2024/04/22/review-of-the-moergo-glove80-keyboard/).
+    <a target='_blank'
+      href='https://www.moergo.com/pages/glove80'>
+      Glove80 </a> от
+    <a target='_blank'
+      href='https://arslan.io/2024/04/22/review-of-the-moergo-glove80-keyboard/'>
+      Fatih Arslan</a>.
   </figcaption>
 </figure>
 
@@ -731,22 +813,42 @@ MacBook продавался бы с
 Несмотря на нишевость и не самую высокую популярность явления,
 количество моделей "хороших клавиатур" давно превышает все разумные пределы.
 Масштаб трагедии можно оценить на
-[r/ErgoMechKeyboards](https://www.reddit.com/r/ErgoMechKeyboards/top/?t=all).
+<a target='_blank'
+  href='https://www.reddit.com/r/ErgoMechKeyboards/top/?t=all'>
+  r/ErgoMechKeyboards</a>.
 
 Если очень хочется купить что-то серийное и фабричное,
 то можно рассмотреть такие варианты:
 
-- [ErgoDox EZ](https://ergodox-ez.com/),
-  [Moonlander](https://www.zsa.io/moonlander)
-  или [Voyager](https://www.zsa.io/voyager)
-  от [ZSA](https://www.zsa.io/).
+- <a target='_blank'
+    href='https://ergodox-ez.com/'>
+    ErgoDox EZ</a>,
+  <a target='_blank'
+    href='https://www.zsa.io/moonlander'>
+    Moonlander</a> или
+  <a target='_blank'
+    href='https://www.zsa.io/voyager'>
+    Voyager</a> от
+  <a target='_blank'
+    href='https://www.zsa.io/'>
+    ZSA</a>.
 
-- [Glove80](https://www.moergo.com/pages/glove80)
-  или [Go60](https://www.moergo.com/pages/go60)
-  от [MoErgo](https://www.moergo.com/).
+- <a target='_blank'
+    href='https://www.moergo.com/pages/glove80'>
+    Glove80</a> или
+  <a target='_blank'
+    href='https://www.moergo.com/pages/go60'>
+    Go60</a> от
+  <a target='_blank'
+    href='https://www.moergo.com/'>
+    MoErgo</a>.
 
-- [Advantage360](https://kinesis-ergo.com/keyboards/advantage360/)
-  от [Kinesis](https://kinesis-ergo.com/).
+- <a target='_blank'
+    href='https://kinesis-ergo.com/keyboards/advantage360/'>
+    Advantage360</a> от
+  <a target='_blank'
+    href='https://kinesis-ergo.com/'>
+    Kinesis</a>.
 
 Если же есть решимость, делать что-нибудь своими руками или искать людей,
 которые готовы сделать это что-нибудь за вас,
@@ -754,14 +856,22 @@ MacBook продавался бы с
 
 Составление списка хороших клавиатур — популярное в интернете развлечение.
 Вот неполный список списков разной степени красоты и полноты:
-- https://aposymbiont.github.io/split-keyboards/
-- https://keebfolio.netlify.app/
-- https://golem.hu/boards/
-- https://www.keyderboard.com/ergo
-- https://yal-tools.github.io/ergo-keyboards/
+
+- <a target='_blank' href='https://aposymbiont.github.io/split-keyboards/'>
+  https://aposymbiont.github.io/split-keyboards/</a>
+- <a target='_blank' href='https://keebfolio.netlify.app/'>
+  https://keebfolio.netlify.app/</a>
+- <a target='_blank' href='https://golem.hu/boards/'>
+  https://golem.hu/boards/</a>
+- <a target='_blank' href='https://www.keyderboard.com/ergo/'>
+  https://www.keyderboard.com/ergo/</a>
+- <a target='_blank' href='https://yal-tools.github.io/ergo-keyboards/'>
+  https://yal-tools.github.io/ergo-keyboards/</a>
 
 Кроме того, на
-[compare.splitkb.com](https://compare.splitkb.com/)
+<a target='_blank'
+  href='https://compare.splitkb.com/'>
+  compare.splitkb.com</a>
 можно сравнить некоторые популярные модели между собой по размеру,
 распечатать понравившуюся на бумаге и проверить,
 насколько она подходит к конкретным рукам.
@@ -769,9 +879,13 @@ MacBook продавался бы с
 Существует множество специализированных магазинов, которые предлагают
 готовые клавиатуры, наборы для самостоятельной сборки и отдельные запчасти.
 Список таких площадок есть в
-[wiki от r/ErgoMechKeyboards](https://www.reddit.com/r/ErgoMechKeyboards/wiki/resources/#wiki_vendors).
+<a target='_blank'
+  href='https://www.reddit.com/r/ErgoMechKeyboards/wiki/resources/#wiki_vendors'>
+  wiki от r/ErgoMechKeyboards</a>.
 Популярные модели вроде народной
-[Corne](https://github.com/foostan/crkbd)
+<a target='_blank'
+  href='https://github.com/foostan/crkbd'>
+  Corne</a>
 регулярно продаются и перепродаются на локальных и глобальных маркетплейсах.
 
 Я сам рассматривал и трогал очень разные устройства.
@@ -781,8 +895,14 @@ MacBook продавался бы с
 ### Dactyl-Manuform
 
 Изначально Дактиль привлёк меня исключительно с эстетической точки зрения.
-Сначала я натыкался на него в [r/MechKeyboards](#), а потом целенаправленно
-высматривал в [r/ErgoMechKeyboards](#).
+Сначала я натыкался на него в
+<a target='_blank'
+  href='https://www.reddit.com/r/MechanicalKeyboards/top/?t=all'>
+  r/MechanicalKeyboards</a>,
+а потом целенаправленно высматривал в
+<a target='_blank'
+  href='https://www.reddit.com/r/ErgoMechKeyboards/top/?t=all'>
+  r/ErgoMechKeyboards</a>.
 
 Я даже и не подозревал, что мне очень нужно что-то подобное, пока не увидел.
 Пребывая в полном неведении относительно проблем классических клавиатур,
@@ -794,7 +914,10 @@ MacBook продавался бы с
     alt='Фотография Dactyl Manuform.'
   />
   <figcaption>
-    Dactyl-Manuform 5×6. Источник: [github.com/He4eT/oddkb](https://github.com/He4eT/oddkb).
+    Dactyl-Manuform 5×6. Источник:
+    <a target='_blank'
+      href='https://github.com/He4eT/oddkb'>
+      github.com/He4eT/oddkb</a>.
   </figcaption>
 </figure>
 
@@ -820,7 +943,9 @@ MacBook продавался бы с
 Минусы у этой модели тоже, конечно же, есть:
 - Такая клавиатура требует много места и некоторой дисциплины:
 для комфортной работы нужно держать на столе дополнительные
-[подставки под руки](https://www.aliexpress.com/item/1005006443764748.html)
+<a target='_blank'
+  href='https://www.aliexpress.com/item/1005006443764748.html'>
+  подставки под руки</a>
 и постоянно проверять,
 что эта система из шести тел расставлена симметрично.
 Да, именно шести: кроме половинок клавиатуры и подставок,
@@ -836,7 +961,9 @@ MacBook продавался бы с
 вдумчиво и неторопясь заново собирать себе совершенную клавиатуру,
 то начал бы с того,
 что попытался сгенерировать идеальный кластер для большого пальца в
-[Cosmos Keyboard Generator](https://ryanis.cool/cosmos/)
+<a target='_blank'
+  href='https://ryanis.cool/cosmos/'>
+  Cosmos Keyboard Generator</a>
 и распечатал бы несколько пробных вариантов перед окончательной сборкой.
 
 ### Cantor
@@ -860,7 +987,10 @@ MacBook продавался бы с
     alt='Фотография Cantor MX.'
   />
   <figcaption>
-    Cantor MX. Источник: [github.com/He4eT/cantor-mx-tastatura](https://github.com/He4eT/cantor-mx-tastatura).
+    Cantor MX. Источник:
+    <a target='_blank'
+      href='https://github.com/He4eT/cantor-mx-tastatura'>
+      github.com/He4eT/cantor-mx-tastatura</a>.
   </figcaption>
 </figure>
 
@@ -879,12 +1009,18 @@ MacBook продавался бы с
 из раскладки обязательно придётся что-то выбросить.
 В реальности же 42 клавиши легко превращаются и в 100, и в 200.
 Подробно рассказывать про слои, макросы, комбо,
-[home row modifiers](https://precondition.github.io/home-row-mods)
+<a target='_blank'
+  href='https://precondition.github.io/home-row-mods'>
+  home row modifiers</a>
 и остальные возможности современных прошивок я не буду,
 на всё подробно и с примерами лучше посмотреть в классическом видео
-["34 keys is all you need"](https://www.youtube.com/watch?v=unMXQTSQEak).
+<a target='_blank'
+  href='https://www.youtube.com/watch?v=unMXQTSQEak'>
+  "34 keys is all you need"</a>.
 Свою раскладку для этой клавиатуры я однажды довольно подробно описал на
-[форуме Decentrala](https://forum.dmz.rs/t/cantor-mx-keyboard/700/2).
+<a target='_blank'
+  href='https://forum.dmz.rs/t/cantor-mx-keyboard/700/2'>
+  форуме Decentrala</a>.
 
 В конечном счёте,
 после вдумчивой настройки и некоторого времени на привыкание,
@@ -1029,30 +1165,53 @@ MacBook продавался бы с
 
 - Как-то раз Данис оказался со мной в одном помещении.
   Так у него появилась новая клавиатура и
-  [текст о том, как он к ней привыкал](https://danis.one/keyboard-post/).
+  <a target='_blank'
+    href='https://danis.one/keyboard-post/'>
+    текст о том, как он к ней привыкал</a>.
 
 - Доисторический пессимистичный ЖЖ-пост
-  ["Клавиатуры и дизайн"](https://tonsky.livejournal.com/321097.html)
-  от [Никиты Прокопова (@nikitonsky)](https://tonsky.me/).
+  <a target='_blank'
+    href='https://tonsky.livejournal.com/321097.html'>
+    "Клавиатуры и дизайн"</a>
+  от
+  <a target='_blank'
+    href='https://tonsky.me/'>
+    Никиты Прокопова (@nikitonsky)</a>.
   Уверен, что автор FiraCode
   и фразы "у человека с такой клавиатурой нет друзей"
   пытался быть объективным.
 
 - Монументальный пост
-  ["Раскладка Ильи Шепрута"](https://optozorax.github.io/p/my-keyboard-layout/)
+  <a target='_blank'
+    href='https://optozorax.github.io/p/my-keyboard-layout/'>
+    "Раскладка Ильи Шепрута"</a>
   о том, как проектировать собственную раскладку и зачем.
 
-- Какой-то [пост на Хабре](https://habr.com/ru/companies/selectel/articles/948408/).
+- Какой-то
+  <a target='_blank'
+    href='https://habr.com/ru/companies/selectel/articles/948408/'>
+    пост на Хабре</a>.
   Уверен, что не единственный, по тегам можно найти другие.
 
-- [Tour of split ergo keyboards](https://getreuer.info/posts/keyboards/tour/index.html)
-  и
-  [Keyboard FAQs](https://getreuer.info/posts/keyboards/faqs/index.html)
+- <a target='_blank'
+    href='https://getreuer.info/posts/keyboards/tour/index.html'>
+    Tour of split ergo keyboards</a> и
+  <a target='_blank'
+    href='https://getreuer.info/posts/keyboards/faqs/index.html'>
+    Keyboard FAQs</a>
   от Pascal Getreuer.
+
 - Пара случайных англоязычных постов:
-  [A Beginner’s Guide to Split Keyboards](https://www.justinmklam.com/posts/2026/02/beginners-guide-split-keyboards/),
-  [DIY Split Keyboards: Your Next Maker Rabbit Hole](https://blog.crashspace.org/2025/06/diy-split-keyboards-your-next-maker-rabbit-hole/).
-- [Регулярный дайджест клавиатуростроения](https://kbd.news/).
+  <a target='_blank'
+    href='https://www.justinmklam.com/posts/2026/02/beginners-guide-split-keyboards/'>
+    A Beginner’s Guide to Split Keyboards</a>,
+  <a target='_blank'
+    href='https://blog.crashspace.org/2025/06/diy-split-keyboards-your-next-maker-rabbit-hole/'>
+    DIY Split Keyboards: Your Next Maker Rabbit Hole</a>.
+
+- <a target='_blank'
+    href='https://kbd.news/'>
+    Регулярный дайджест клавиатуростроения</a>.
 
 ---
 
@@ -1066,13 +1225,17 @@ MacBook продавался бы с
 есть также и множество вещей поменьше,
 которые можно было бы сделать как-то пооптимальнее:
 английский алфавит, непредсказуемый календарь, неровные часовые пояса,
-[возвратный гортанный нерв жирафа](https://ru.wikipedia.org/wiki/%D0%92%D0%BE%D0%B7%D0%B2%D1%80%D0%B0%D1%82%D0%BD%D1%8B%D0%B9_%D0%B3%D0%BE%D1%80%D1%82%D0%B0%D0%BD%D0%BD%D1%8B%D0%B9_%D0%BD%D0%B5%D1%80%D0%B2)
+<a target='_blank'
+  href='https://ru.wikipedia.org/wiki/%D0%92%D0%BE%D0%B7%D0%B2%D1%80%D0%B0%D1%82%D0%BD%D1%8B%D0%B9_%D0%B3%D0%BE%D1%80%D1%82%D0%B0%D0%BD%D0%BD%D1%8B%D0%B9_%D0%BD%D0%B5%D1%80%D0%B2'>
+  возвратный гортанный нерв жирафа</a>
 и прочие тысячи и тысячи разных штук,
 которые мы уже в силу привычки перестали замечать вообще.
 
 Клавиатуры, как мне кажется, выгодно выделяются из этого списка тем,
 что они, пусть даже и подвержены
-[сетевому эффекту](https://ru.wikipedia.org/wiki/%D0%A1%D0%B5%D1%82%D0%B5%D0%B2%D0%BE%D0%B9_%D1%8D%D1%84%D1%84%D0%B5%D0%BA%D1%82),
+<a target='_blank'
+  href='https://ru.wikipedia.org/wiki/%D0%A1%D0%B5%D1%82%D0%B5%D0%B2%D0%BE%D0%B9_%D1%8D%D1%84%D1%84%D0%B5%D0%BA%D1%82'>
+  сетевому эффекту</a>,
 но всё равно остаются персональными устройствами.
 Не обязательно ждать, пока за голову возьмётся всё человечество,
 можно самостоятельно сделать шаг навстречу менее сумасшедшему миру.
@@ -1088,15 +1251,19 @@ MacBook продавался бы с
 ## Комментарии
 
 Публично обсудить пост можно на этих площадках:
-- [**Telegram**]()
-- [**Fediverse**]()
+
+- <a target='_blank'
+    href='#'>
+    Telegram</a>
+
+- <a target='_blank'
+    href='#'>
+    Fediverse</a>
 
 Кроме того, я с радостью отвечу на любые вопросы,
 ознакомлюсь с предложениями и замечаниями к тексту поста,
 помогу выбрать клавиатуру или даже приду к вам в подкаст для дискуссии.
-<br>Не стесняйтесь написать мне [любым удобным способом](/about).
-
-TODO
-
-- links
-- anchors
+Не стесняйтесь писать мне
+<a target='_blank'
+  href='/about'>
+  любым удобным способом</a>.

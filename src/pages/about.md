@@ -8,7 +8,19 @@ description: 'General info about this website and the author'
 
 ---
 
-Hello, my&nbsp;name is&nbsp;<strong>He4eT</strong>.<br>
+<p>
+  <details>
+    <summary>
+      Hello,
+      my&nbsp;name is&nbsp;<strong style='cursor: pointer;'>He4eT</strong>.
+    </summary>
+      It’s a&nbsp;Latin transliteration and
+      is&nbsp;read as&nbsp;“Nechet” [ˈnʲet͡ɕɪt].<br>
+      The name comes from the Russian word “нечет”,
+      a&nbsp;short form of&nbsp;“нечётный”,
+      a&nbsp;mathematical term meaning “odd”.
+  </details>
+</p>
 
 I'm a&nbsp;front-end developer and a&nbsp;big fan of&nbsp;open-source,
 customization, and minimalist software.<br>

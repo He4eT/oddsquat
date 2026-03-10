@@ -612,7 +612,7 @@ C появлением персональных компьютеров и кла
 MacBook продавался бы с
 <a target='_blank'
   href='https://github.com/mtei/SemiErgo_Layout?tab=readme-ov-file#c-1-draft-of-macbookimac-us-key-set-mapping'>
-  такой</a> либо
+  такой</a> или
 <a target='_blank'
   href='https://github.com/jamessa/Angel'>
   подобной</a>

@@ -1316,11 +1316,11 @@ MacBook продавался бы с
 Публично обсудить пост можно на этих площадках:
 
 - <a target='_blank'
-    href='#'>
+    href='https://t.me/barbadbar/'>
     Telegram</a>
 
 - <a target='_blank'
-    href='#'>
+    href='https://techhub.social/@He4eT/'>
     Fediverse</a>
 
 Кроме того, я с радостью отвечу на любые вопросы,

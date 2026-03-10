@@ -439,10 +439,10 @@ C появлением персональных компьютеров и кла
     alt='Фотография Microsoft Natural Keyboard Elite.'
   />
   <figcaption>
-    Microsoft Natural Keyboard Elite от
+    Microsoft Natural Keyboard Elite. Источник:
     <a target='_blank'
       href='https://www.reddit.com/r/keyboards/comments/1lq0t7m/old_but_gold_microsoft_natural_keyboard_elite/'>
-      u/Ang_xl9</a>.
+      Reddit, u/Ang_xl9</a>.
   </figcaption>
 </figure>
 
@@ -570,10 +570,10 @@ C появлением персональных компьютеров и кла
   <figcaption>
     <a target='_blank'
       href='https://github.com/MakotoKurauchi/helix'>
-      Helix</a> от
+      Helix</a>. Источник:
     <a target='_blank'
       href='https://www.reddit.com/r/MechanicalKeyboards/comments/u8ue10/jumped_into_the_deep_end_to_make_my_first_ever/'>
-      u/toramorigan</a>.
+      Reddit, u/toramorigan</a>.
   </figcaption>
 </figure>
 
@@ -597,10 +597,10 @@ C появлением персональных компьютеров и кла
   <figcaption>
     <a target='_blank'
       href='https://deskthority.net/viewtopic.php?t=16287'>
-      Katana60</a> от
+      Katana60</a>. Источник:
     <a target='_blank'
       href='https://www.reddit.com/r/MechanicalKeyboards/comments/9oiltb/sa_wob_on_katana60/'>
-      u/Rogue_Jellybean</a>.
+      Reddit, u/Rogue_Jellybean</a>.
   </figcaption>
 </figure>
 
@@ -661,10 +661,10 @@ MacBook продавался бы с
   <figcaption>
     <a target='_blank'
       href='https://github.com/josefadamcik/SofleKeyboard'>
-      Sofle</a> от
+      Sofle</a>. Источник:
     <a target='_blank'
       href='https://www.reddit.com/r/MechanicalKeyboards/comments/17pw8k9/sofle_rgb/'>
-      u/Raithmir</a>.
+      Reddit, u/Raithmir</a>.
   </figcaption>
 </figure>
 
@@ -818,10 +818,10 @@ MacBook продавался бы с
   <figcaption>
     <a target='_blank'
       href='https://www.moergo.com/pages/glove80'>
-      Glove80 </a> от
+      Glove80</a>. Источник:
     <a target='_blank'
       href='https://arslan.io/2024/04/22/review-of-the-moergo-glove80-keyboard/'>
-      Fatih Arslan</a>.
+      arslan.io, Fatih Arslan</a>.
   </figcaption>
 </figure>
 

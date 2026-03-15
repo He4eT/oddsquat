@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" href="/icon.svg" type="image/svg+xml">
+
+
+  <title>
+    selfhosted LLM | oddsquat
+  </title>
+  <meta name="description" content="Персональные LLM в docker-контейнере на твоём компьютере.">
+
+  <link rel="stylesheet" type="text/css" href="/css/fonts.css">
+<link rel="stylesheet" type="text/css" href="/css/typography.css">
+<link rel="stylesheet" type="text/css" href="/css/main.css">
+
+</head>
+<body>
+  <div class="stripesContainer">
+  <div class="stripes">
+  </div>
+</div>
+
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/">oddsquat</a></li>
+
+        
+          <li><a href="/posts/">
+            posts</a></li>
+        
+        
+          <li><a href="/posts/#2024">
+            2024</a></li>
+        
+
+        <li>selfhosted LLM</li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <article>
+      <h1 id="your-own-private-large-language-models">Your Own Private Large Language Models</h1>
+<p>С&nbsp;одной стороны, я&nbsp;сомневаюсь, что Большие Языковые Модели (LLM) смогут однажды эволюционировать в&nbsp;AGI. С&nbsp;другой&nbsp;— я&nbsp;по-настоящему впечатлён тем, что щепотка статистики справляется с&nbsp;написанием текстов лучше меня.</p>
+<p>В&nbsp;любом случае, джинна обратно в&nbsp;бутылку уже не&nbsp;вернуть, и&nbsp;все те&nbsp;письма в&nbsp;различные организации, которые я&nbsp;не&nbsp;хочу писать сам, будут теперь написаны месивом из&nbsp;байтиков.</p>
+<p>Действительно пугает меня в&nbsp;этой ситуации только то, что флагманом новой эры почему-то стала компания OpenAI, которая, вопреки названию, совершенно не&nbsp;Open.
+Множество компаний и&nbsp;людей вписали их&nbsp;продукты в&nbsp;свою рутину и&nbsp;не&nbsp;страшатся такой неподконтрольной зависимости.</p>
+<p>Я&nbsp;так не&nbsp;могу. К&nbsp;счастью, я&nbsp;не&nbsp;один такой, и&nbsp;на&nbsp;данный момент уже есть множество альтернативных моделей от&nbsp;разных вендоров. Они отличаются друг от&nbsp;друга качеством, размером, возможностями и&nbsp;лицензиями, так что при желании можно надолго занять себя знакомством с&nbsp;обширным ассортиментом. Например, на&nbsp;портале <a href="https://huggingface.co/">HuggingFace</a>, который можно описать как «GitHub для LLM и&nbsp;всего, что вокруг».</p>
+<p>Должен признаться, что очень слабо разбираюсь в&nbsp;параметрах и&nbsp;характеристиках языковых моделей, но&nbsp;оказалось, что для того, чтобы начать, эти знания не&nbsp;так уж&nbsp;и&nbsp;необходимы.</p>
+<p>Ниже инструкция, как запустить LLM на&nbsp;своём железе, как упаковать всё это в&nbsp;docker-контейнер, чтобы не&nbsp;размазать случайно по&nbsp;всей файловой системе, как получить совместимый с&nbsp;OpenAI API и&nbsp;как потом этим пользоваться.</p>
+<hr>
+<ul>
+<li><a href="#setup">Установка и&nbsp;настройка</a><ul>
+<li><a href="#setup-ollama">Установка Ollama</a></li>
+<li><a href="#setup-model">Загрузка модели и&nbsp;диалог с&nbsp;ней</a></li>
+<li><a href="#custom-model">Кастомные модели и&nbsp;их&nbsp;тонкая настройка</a></li>
+</ul>
+</li>
+<li><a href="#usage">Использование</a><ul>
+<li><a href="#fake-open-ai">Мимикрия под API от&nbsp;OpenAI</a></li>
+<li><a href="#ollama-nvim">Интеграция с&nbsp;NeoVim</a></li>
+</ul>
+</li>
+<li><a href="#update-delete">Обновление и&nbsp;удаление</a></li>
+<li><a href="#performance">Производительность</a></li>
+<li><a href="#why">Зачем всё это нужно?</a></li>
+</ul>
+<hr>
+<div id='setup'></div>
+
+<h2 id="-">Установка и&nbsp;настройка</h2>
+<p>Существует несколько продуктов, которые стараются избавить пользователя от&nbsp;головной боли и&nbsp;возни с&nbsp;инфраструктурой. Мне понятнее всего оказался проект <a href="https://ollama.ai/">Ollama</a>, с&nbsp;ним мы&nbsp;и&nbsp;будем экспериментировать.</p>
+<p>Кроме бинарников для Linux и&nbsp;MacOS, они <a href="https://ollama.ai/blog/ollama-is-now-available-as-an-official-docker-image">предоставляют</a> официальный <a href="https://hub.docker.com/r/ollama/ollama">docker-образ</a>, работу с&nbsp;которым я&nbsp;и&nbsp;опишу.</p>
+<p>Использование docker-контейнеров, к&nbsp;сожалению, слегка усложняет взаимодействие с&nbsp;Ollama, так что большая часть текста и&nbsp;кода в&nbsp;этом посте посвящены решению проблем, которые, по&nbsp;сути, я&nbsp;придумал себе сам.</p>
+<div id='setup-ollama'></div>
+
+<h3 id="-ollama">Установка Ollama</h3>
+<p>Для создания и&nbsp;первого запуска контейнера нужно выполнить команду:</p>
+<pre><code>docker run -d -v ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama</code></pre><p>Счастливые владельцы видеокарт от&nbsp;Nvidia могут установить <a href="https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html#installation">Nvidia container toolkit</a> и&nbsp;активировать поддержку GPU с&nbsp;помощью флага <code>--gpus=all</code>.</p>
+<p>После создания запускать и&nbsp;останавливать контейнер <code>ollama</code> можно так:</p>
+<pre><code>docker start ollama
+docker stop ollama</code></pre><p>Контейнер предоставляет доступ к&nbsp;<a href="https://github.com/jmorganca/ollama/blob/main/docs/api.md">Ollama API</a> на&nbsp;11434&nbsp;порту, а&nbsp;также позволяет устанавливать и&nbsp;общаться с&nbsp;установленными LLM через терминал.</p>
+<div id='setup-model'></div>
+
+<h3 id="-">Загрузка модели и&nbsp;диалог с&nbsp;ней</h3>
+<p>Ollama позволяет запускать любые GGUF, PyTorch или Safetensors модели (что&nbsp;бы это ни&nbsp;значило), но&nbsp;самый простой путь&nbsp;— загрузка моделей из&nbsp;специальной <a href="https://ollama.ai/library">библиотеки</a>.</p>
+<p>Для того, чтобы скачать модель и&nbsp;начать с&nbsp;ней диалог, нужно выполнить команду:</p>
+<pre><code>docker exec -it ollama ollama run mistral</code></pre><p>Вместо <code>mistral</code> от&nbsp;одноимённой комании можно выбрать любую другую модель из&nbsp;библиотеки, например, легкую <code>phi</code> от&nbsp;Microsoft Research.</p>
+<p>Кроме <code>run</code> доступны также <code>list</code>, <code>pull</code> и&nbsp;<code>rm</code> для просмотра списка, скачивания и&nbsp;удаления моделей соответственно.</p>
+<p>Чтобы не&nbsp;писать такие длинные заклинания каждый раз, я&nbsp;добавил в&nbsp;<code>.zshrc</code> пару алиасов:</p>
+<pre><code>alias summonable=&#39;docker exec -it ollama ollama list&#39;
+alias summon=&#39;clear &amp;&amp; docker exec -it ollama ollama run&#39;</code></pre><p>Теперь можно смотреть на&nbsp;список установленных моделей и&nbsp;запускать диалог с&nbsp;выбранной:</p>
+<pre><code>summonable
+summon phi</code></pre><div id='custom-model'></div>
+
+<h3 id="-">Кастомные модели и&nbsp;их&nbsp;тонкая настройка</h3>
+<p>Ollama позволяет на&nbsp;основе существующих создавать производные модели с&nbsp;заранее определёнными инструкциями или параметрами. Для этого нужно создать специальный файл, в&nbsp;котором указана родительская модель и&nbsp;определены желаемые значения параметров. Подробнее о&nbsp;формате этих файлов можно прочесть в&nbsp;документации: <a href="https://github.com/jmorganca/ollama/blob/main/docs/modelfile.md">Modelfile</a>.</p>
+<blockquote>
+<p>В&nbsp;какой-то момент Ollama Web UI&nbsp;превратился в&nbsp;Open WebUI, а&nbsp;OllamaHub прекратил существовать. Все ссылки в&nbsp;следующем абзаце больше не&nbsp;представляют какой-либо ценности.</p>
+</blockquote>
+<p>Чтобы посмотреть, как должен выглядеть Modelfile, можно посетить <a href="https://ollamahub.com/">OllamaHub</a> от&nbsp;разработчиков стороннего <a href="https://github.com/ollama-webui/ollama-webui/">Ollama Web UI</a>. На&nbsp;сайте есть <a href="https://ollamahub.com/m/smoothbrainape/hu-tao:latest">примеры очень тонкой настройки множества параметров</a> модели для соответствия образу конкретного персонажа, но&nbsp;в&nbsp;качестве образца я&nbsp;буду использовать небольшой <a href="https://ollamahub.com/m/kamjin/english-teacher:latest">English Teacher Modelfile</a>:</p>
+<h4 id="englishteacher-modelfile">EnglishTeacher.Modelfile</h4>
+<pre><code>FROM llama2
+SYSTEM &quot;&quot;&quot;
+I want you to act as a English teacher.
+Your main responsibility will be to instruct me in all aspects of English, including grammar, vocabulary, reading, writing and speaking.
+You should always take the initiative to correct my mistakes in grammar and vocabulary, and you can give me two or three examples at any appropriate time to help me understand better.
+&quot;&quot;&quot;</code></pre><p>Вообще, для загрузки кастомной модели достаточно выполнить команду <code>create</code>, но&nbsp;в&nbsp;случае использования Ollama внутри docker-контейнера возникает необходимость каким-то образом файл с&nbsp;моделью в&nbsp;этот контейнер передать.</p>
+<p>Для решения этой проблемы я&nbsp;набросал небольшой bash-скрипт:</p>
+<h4 id="applymodelfile-bash">applyModelfile.bash</h4>
+<pre><code class="language-bash">#!/bin/bash
+
+containerId=$(docker ps | grep ollama/ollama | cut -d&#39; &#39; -f1)
+
+echo &quot;Container ID:&quot;
+echo $containerId
+echo &quot;&quot;
+
+if [ -z &quot;$containerId&quot; ]; then
+  echo &quot;Container does not exist.&quot;
+  exit 1
+fi
+
+modelName=$1
+echo &quot;Model name:&quot;
+echo $modelName
+echo
+
+sourcePath=&quot;./models/${modelName}.Modefile&quot;
+targetPath=&quot;/home/${modelName}.Modefile&quot;
+
+if ! test -f $sourcePath; then
+  echo &quot;File does not exist.&quot;
+  echo $sourcePath
+  exit 1
+fi
+
+docker cp $sourcePath &quot;${containerId}:${targetPath}&quot;
+clear
+docker exec -it ollama ollama create $modelName -f $targetPath</code></pre>
+<p>Этот скрипт нужно поместить по&nbsp;соседству с&nbsp;директорией <code>models</code> и&nbsp;сделать исполняемым с&nbsp;помощью <code>chmod +x applyModelfile.bash</code>.
+Должна получиться примерно такая структура:</p>
+<pre><code>├── models
+│   └── EnglishTeacher.Modefile
+└── applyModelfile.bash</code></pre><p>После этого модель можно загрузить в&nbsp;контейнер и&nbsp;начать с&nbsp;ней диалог:</p>
+<pre><code>./applyModelfile.bash EnglishTeacher
+summon EnglishTeacher</code></pre><div id='usage'></div>
+
+<h2 id="-">Использование</h2>
+<p>Разговоры с&nbsp;галлюцинирующим искусственным интеллектом в&nbsp;терминале&nbsp;— это, конечно, волшебно, но&nbsp;потенциал больших языковых моделeй по-настоящему раскрывается, когда они начинают портить данные в&nbsp;соседних приложениях!</p>
+<p>В&nbsp;<a href="https://github.com/jmorganca/ollama#community-integrations">GitHub-репозитории Ollama</a> можно найти ссылки на&nbsp;множество веб-интерфейсов, библиотек и&nbsp;плагинов для текстовых редакторов и&nbsp;прочих Obsidian&#39;ов.</p>
+<p>Не&nbsp;ручаюсь за&nbsp;весь список, но&nbsp;расскажу про то, с&nbsp;чем экспериментировал сам.</p>
+<div id='fake-open-ai'></div>
+
+<h3 id="-api-openai">Мимикрия под API от&nbsp;OpenAI</h3>
+<blockquote>
+<p>В&nbsp;какой-то момент <a href="https://ollama.com/blog/openai-compatibility">в&nbsp;Ollama появилась поддержка совместимости с&nbsp;форматом API от&nbsp;OpenAI</a> и&nbsp;этот раздел потерял актуальность.</p>
+</blockquote>
+<p>API Ollama используется в&nbsp;меньшем числе продуктов, чем API от&nbsp;OpenAI. К&nbsp;счастью, это не&nbsp;проблема: с&nbsp;помощью прокси-прослойки под названием <a href="https://github.com/BerriAI/litellm">LiteLLM</a> можно сделать их&nbsp;совместимыми. Инструкция по&nbsp;установке и&nbsp;использованию в&nbsp;общем случае есть в&nbsp;репозитории и&nbsp;довольно тривиальна, но&nbsp;мне опять потребовалось немного кода, чтобы заставить их&nbsp;работать вместе на&nbsp;моих условиях.</p>
+<p>Я&nbsp;хотел, чтобы LiteLLM-прокси и&nbsp;Ollama работали на&nbsp;разных компьтерах, и&nbsp;не&nbsp;хотел ставить pip-пакеты в&nbsp;систему. В&nbsp;результате родилось решение из&nbsp;docker-файла с&nbsp;хаками и&nbsp;скрипта, который в&nbsp;нём запускается. Я&nbsp;не&nbsp;специалист в&nbsp;написании docker-файлов, так что уверен в&nbsp;неоптимальности финального решения. Точно можно и&nbsp;нужно обойтись без <code>run --net=host</code> и&nbsp;отдельного скрипта, например.</p>
+<p>Несмотря на&nbsp;костыльность связки, она справляется со&nbsp;своей задачей:</p>
+<h4 id="dockerfile">Dockerfile</h4>
+<pre><code class="language-Dockerfile">FROM python:3.10
+
+COPY startProxy.sh /usr/src/app/startProxy.sh
+RUN chmod +x /usr/src/app/startProxy.sh
+
+WORKDIR /usr/src/app
+
+# Prevent ollama run attempt
+RUN echo &#39;#!/bin/sh\necho &quot;$1&quot;&#39; &gt; /usr/bin/ollama &amp;&amp; \
+    chmod +x /usr/bin/ollama
+
+CMD [&quot;./startProxy.sh&quot;]</code></pre>
+<h4 id="startproxy-sh">startProxy.sh</h4>
+<pre><code class="language-sh">#!/bin/bash
+
+pip install litellm
+
+litellm --model ollama/mistral --api_base http://ollama.internal:11434 --drop_params</code></pre>
+<p>Собрать и&nbsp;запустить docker-контейнер можно с&nbsp;помощью этих двух команд:</p>
+<pre><code class="language-sh">docker build -t diy-ollama-proxy .
+docker run --net=host diy-ollama-proxy</code></pre>
+<p>После запуска вы&nbsp;получите API, который совместим с&nbsp;API от&nbsp;OpenAI и&nbsp;доступен по&nbsp;адресу <code>http://localhost:8000/</code>.</p>
+<div id='ollama-nvim'></div>
+
+<h3 id="-neovim">Интеграция с&nbsp;NeoVim</h3>
+<p>Языковые модели отлично умеют взаимодействовать с&nbsp;текстом, так что использование их&nbsp;в&nbsp;текстовом редакторе кажется разумной идеей.</p>
+<p>Мне не&nbsp;очень нравится идея Copilot, который зачем-то постоянно подсовывает тебе странные куски кода. Я&nbsp;пробовал использовать <a href="https://codeium.com/">Codeium</a> в&nbsp;ручном режиме, но&nbsp;оказалось, что странные куски кода по&nbsp;запросу мне тоже не&nbsp;очень нужны. Гораздо более привлекательной мне кажется возможность выделить существующий фрагмент текста или кода и&nbsp;попросить бездушную машину что-нибудь с&nbsp;ним сделать: упростить, дополнить, изменить или даже перевести с&nbsp;одного языка на&nbsp;другой. Идеальным для такого подхода оказался <a href="https://github.com/nomnivore/ollama.nvim">плагин ollama.nvim</a>.</p>
+<p>Кроме того, что он&nbsp;поддерживает кастомные промпты (в&nbsp;том числе интерактивные), он&nbsp;позволил мне обращаться к&nbsp;LLM, которая запущена на&nbsp;другом компьютере в&nbsp;локальной сети (для удобства я&nbsp;указал его адрес в&nbsp;<code>/etc/hosts/</code>).</p>
+<p>Установка и&nbsp;настройка с&nbsp;использованием пакетного менеджера lazy.nvim выглядит примерно так:</p>
+<pre><code>{
+  &#39;nomnivore/ollama.nvim&#39;,
+  dependencies = {
+    &#39;nvim-lua/plenary.nvim&#39;,
+  },
+  cmd = { &#39;Ollama&#39;, &#39;OllamaModel&#39; },
+  keys = {
+    {
+      &#39;&lt;leader&gt;j&#39;,
+      &#39;:Ollama&lt;CR&gt;&#39;,
+      desc = &#39;Ollama Menu&#39;,
+      mode = { &#39;v&#39; },
+    },
+    {
+      &#39;&lt;leader&gt;j&#39;,
+      &quot;:lua require(&#39;ollama&#39;).prompt(&#39;Generate_Code&#39;)&lt;cr&gt;&quot;,
+      desc = &#39;Ollama Code Generation&#39;,
+      mode = { &#39;n&#39; },
+    },
+  },
+  opts = {
+    model = &#39;mistral&#39;,
+    url = &#39;http://ollama.internal:11434&#39;, -- see /etc/hosts
+    prompts = {
+      Ask_About_Code = false,
+      Simplify_Code = false,
+      Improve_Text = {
+        prompt = &#39;Check the following sentence for grammar and clarity: &quot;$sel&quot;.\nRewrite it for better readability while maintaining its original meaning.&#39;,
+        extract = false,
+        action = &#39;replace&#39;,
+      },
+      Modify_Text = {
+        prompt = &#39;Modify this text in the following way: $input\n\n```$sel```&#39;,
+        extract = false,
+        action = &#39;replace&#39;,
+      },
+      Use_Selection_as_Prompt = {
+        prompt = &#39;$sel&#39;,
+        extract = false,
+        action = &#39;replace&#39;,
+      },
+    },
+  },
+},</code></pre><p>В&nbsp;этом конфиге я&nbsp;выключил несколько дефолтных промптов и&nbsp;добавил несколько своих:</p>
+<ul>
+<li><code>Improve_Text</code> заменяет выделенный кусок текста «улучшенным».</li>
+<li><code>Modify_Text</code> является аналогом встроенного <code>Modify_Code</code> и&nbsp;позволяет делать с&nbsp;выделенным текстом всякие глупости. Например, заменить все числа на&nbsp;слова.</li>
+<li><code>Use_Selection_as_Prompt</code> просто заменяет выделенный текст на&nbsp;ответ от&nbsp;LLM.</li>
+</ul>
+<p>В&nbsp;итоге получается два сценария использования, оба доступны по&nbsp;<code>&lt;leader&gt; + j</code>:</p>
+<ul>
+<li>В&nbsp;<code>normal</code> mode плагин спрашивает меня, какой код мне нужен, и&nbsp;вставляет его.</li>
+<li>В&nbsp;<code>visual</code> mode появляется меню действий над выделенным текстом.</li>
+</ul>
+<p>Как видно из&nbsp;конфига, я&nbsp;использую только <code>mistral</code>, но&nbsp;можно указать модель для кажого промпта и&nbsp;делегировать, например, манипуляции над кодом <code>codellama</code>, а&nbsp;операции над текстом&nbsp;— <code>llama2</code>.</p>
+<p>Возможность добавления кастомных промптов позволяет в&nbsp;будущем реализовать новые сценарии или вынести повторяющиеся действия в&nbsp;отдельный пункт меню или даже на&nbsp;отдельный шорткат.</p>
+<div id='update-delete'></div>
+
+<h2 id="-">Обновление и&nbsp;удаление</h2>
+<p>Для обновления и&nbsp;удаления моделей можно использовать команды <code>pull</code> и&nbsp;<code>rm</code>:</p>
+<pre><code>docker exec -it ollama ollama pull mixtral
+docker exec -it ollama ollama rm mistral</code></pre><p>Я&nbsp;знаю, что для обновления и&nbsp;удаления docker-образов и&nbsp;docker-контейнеров тоже есть специальные команды (это тоже <code>pull</code> и&nbsp;<code>rm</code>), но&nbsp;каждый раз ленюсь в&nbsp;этом разобраться, просто сношу всё с&nbsp;помощью утилиты <a href="https://github.com/TomasTomecek/sen">sen</a> и&nbsp;разворачиваю нужное заново.</p>
+<div id='performance'></div>
+
+<h2 id="-">Производительность</h2>
+<p>Для эксплуатации LLM требуется гораздо меньше ресурсов, чем для её&nbsp;обучения. Запустить 7b-модель средней тупости можно практически на&nbsp;любом CPU и&nbsp;8&nbsp;GB&nbsp;RAM, но&nbsp;нагрузка на&nbsp;систему и&nbsp;скорость генерации ответов часто будут далеки от&nbsp;комфортных значений.</p>
+<p>Например, на&nbsp;моём немолодом Intel Core i7-10510U @ 8x 4.9GHz неаккуратный запрос к&nbsp;<code>llama2</code> может заставить систему шуршать вентиляторами пару-тройку минут. При этом <code>phi</code> на&nbsp;этом&nbsp;же процессоре способна отвечать на&nbsp;какие-нибудь не&nbsp;очень сложные вопросы практически мгновенно.</p>
+<p>К&nbsp;счастью, у&nbsp;меня случайно завалялся MacBook на&nbsp;процессоре M1&nbsp;и&nbsp;он&nbsp;уже показывает куда более впечатляющие результаты. <code>Mistral</code> даже на&nbsp;непростые запросы отвечает за&nbsp;считанные секунды, а&nbsp;в&nbsp;режиме чата токены вылетают на&nbsp;экран заметно быстрее, чем в&nbsp;веб-интерфейсе ChatGPT.</p>
+<p>Неприятным открытием стало то, что docker-версия Ollama на&nbsp;MacOS выполняется заметно медленнее (от&nbsp;3&nbsp;до&nbsp;5&nbsp;раз, если верить ощущениям), чем нативная. Возможно, всё дело в&nbsp;том, что я&nbsp;как-то неправильно настроил docker или приложение в&nbsp;контейнере нужно запускать с&nbsp;какими-нибудь специальными флагами для максимальной утилизации ресурсов. В&nbsp;любом случае, к&nbsp;порядку на&nbsp;этом ноутбуке я&nbsp;отношусь гораздо менее трепетно, поэтому просто установил и&nbsp;использую приложение с&nbsp;сайта Ollama.</p>
+<div id='why'></div>
+
+<h2 id="-">Зачем всё это нужно?</h2>
+<p>Конечно, ChatGPT умнее и&nbsp;умеет из&nbsp;коробки гораздо больше.<br>
+Конечно, ChatGPT требует меньше телодвижений для использования.<br>
+Конечно, самые умные модели требуют внушительных ресурсов, ведь для запуска нашумевшей <a href="https://ollama.ai/library/mixtral">mixtral</a> или аналогичной модели нужно иметь 48&nbsp;Gb&nbsp;оперативной памяти.<br>
+Конечно, сидя в&nbsp;кафе задать вопрос Bard от&nbsp;Google гораздо проще, чем достучаться до&nbsp;модели в&nbsp;закрытом ноутбуке, который остался дома.<br></p>
+<p>Я&nbsp;всё это прекрасно понимаю, но&nbsp;ничего из&nbsp;этого не&nbsp;стоит того, чтобы добровольно ставить себя в&nbsp;зависимость от&nbsp;монополистов с&nbsp;их&nbsp;закрытыми чёрными ящиками.</p>
+<p>Даже если закрыть глаза на&nbsp;все идеологические вопросы, то&nbsp;любая локальная LLM отличается от&nbsp;любого облачного провайдера тем, что:</p>
+<ul>
+<li>Может работать в&nbsp;оффлайне.</li>
+<li>Не&nbsp;хранит и&nbsp;не&nbsp;сливает вашу переписку.</li>
+<li>Не&nbsp;станет завтра тупее, чем есть сегодня.</li>
+<li>Не&nbsp;забанит тебя за&nbsp;возмутивший кого-то там запрос.</li>
+<li>Обладает тем уровнем цензуры, который выбрал ты&nbsp;сам.</li>
+</ul>
+<p>Я&nbsp;искренне рад, что для доступа даже к&nbsp;передовым технологиям, всё ещё не&nbsp;обязательно поступаться своей приватностью и&nbsp;своими свободами.</p>
+<hr>
+<p>Этот пост написан без использования LLM =)</p>
+
+    </article>
+  </main>
+
+  <footer>
+    2024-01-15
+  </footer>
+
+  <script async
+  data-goatcounter="https://he4et.goatcounter.com/count"
+  src="https://gc.zgo.at/count.js"></script>
+
+
+</body>
+</html>

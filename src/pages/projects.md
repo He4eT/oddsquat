@@ -33,7 +33,7 @@ Incomplete list of&nbsp;my&nbsp;projects and experiments.
       </strong>
     </header>
     <section class='description'>
-      Interactive fiction player for the web.
+      Interactive Fiction player for the web.
     </section>
     <section>
       <a href='https://github.com/He4eT/elseifplayer' target='_blank'>repository</a>
@@ -87,7 +87,7 @@ Incomplete list of&nbsp;my&nbsp;projects and experiments.
     <section class='description'>
       Tiny “escape the room” style TADS3&nbsp;game.
       <br>Designed as&nbsp;a&nbsp;set of&nbsp;examples
-      for developing interactive fiction.
+      for Interactive Fiction development.
     </section>
     <section>
       <a href='https://github.com/He4eT/yet-another-experiment' target='_blank'>repository</a>

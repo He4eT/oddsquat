@@ -3,7 +3,7 @@
 layout: post
 lang: 'ru'
 year: '2026'
-date: '2026-03-06'
+date: '2026-03-18'
 section: 'posts'
 
 title: 'ugly_keyboards'

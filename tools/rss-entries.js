@@ -5,6 +5,11 @@
  * description
  */
 const feed = [[
+  '2026-03-18',
+  'https://oddsquat.org/posts/2026/ugly_keyboards_ru/',
+  '[RU] ugly keyboards',
+  'Почему нас окружают уродливые клавиатуры и что с этим можно сделать.'
+], [
   '2024-07-27',
   'https://oddsquat.org/posts/2024/wrapped_bw_ru/',
   '[RU] wrapped bw',

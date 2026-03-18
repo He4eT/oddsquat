@@ -14,6 +14,20 @@ Announcements are available via [RSS](/rss.xml).
 
 ---
 
+## 2026
+
+- <article class='entry'>
+    <header>
+      [ru]
+      <strong>
+        <a href='/posts/2026/ugly_keyboards_ru/'>ugly keyboards</a>
+      </strong>
+    </header>
+    <section class='description'>
+      Почему нас окружают уродливые клавиатуры и&nbsp;что с&nbsp;этим можно сделать.
+    </section>
+  </article>
+
 ## 2024
 
 - <article class='entry'>

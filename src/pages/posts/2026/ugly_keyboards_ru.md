@@ -1381,11 +1381,11 @@ MacBook продавался&nbsp;бы с
 Публично обсудить пост можно на&nbsp;этих площадках:
 
 - <a target='_blank'
-    href='https://t.me/barbadbar/'>
+    href='https://t.me/barbadbar/4296'>
     Telegram</a>
 
 - <a target='_blank'
-    href='https://techhub.social/@He4eT/'>
+    href='https://techhub.social/@He4eT/116251135217482638'>
     Fediverse</a>
 
 Кроме того, я&nbsp;с&nbsp;радостью отвечу на&nbsp;любые вопросы,

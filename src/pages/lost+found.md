@@ -24,6 +24,34 @@ in&nbsp;the middle of&nbsp;a&nbsp;conversation.
 - <article class='entry'>
     <header>
       <strong>
+        <a href='https://cari.institute/aesthetics' target='_blank'>
+          Index of&nbsp;Aesthetics
+        </a>
+      </strong>
+    </header>
+    <section class='description'>
+      An&nbsp;impressive library of&nbsp;visual styles
+      that are usually hard to&nbsp;name.
+    </section>
+  </article>
+
+- <article class='entry'>
+    <header>
+      <strong>
+        <a href='https://humanprogress.org/trends/' target='_blank'>
+          Human Progress
+        </a>
+      </strong>
+    </header>
+    <section class='description'>
+      A&nbsp;collection of&nbsp;positive human statistics
+      and optimistic charts.
+    </section>
+  </article>
+
+- <article class='entry'>
+    <header>
+      <strong>
         <a href='https://novehiclesinthepark.com/' target='_blank'>
           No&nbsp;Vehicles in&nbsp;the Park
         </a>

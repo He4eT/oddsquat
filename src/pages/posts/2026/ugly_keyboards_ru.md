@@ -1101,7 +1101,7 @@ MacBook продавался&nbsp;бы с
 из&nbsp;раскладки обязательно придётся что‑то выбросить.
 В&nbsp;реальности&nbsp;же 42&nbsp;клавиши
 легко превращаются и&nbsp;в&nbsp;100, и&nbsp;в&nbsp;200.
-Подробно рассказывать про слои, макросы, комбо,
+Детально рассказывать про слои, макросы, комбо,
 <a target='_blank'
   href='https://precondition.github.io/home-row-mods'>
   home row modifiers</a>
@@ -1112,7 +1112,7 @@ MacBook продавался&nbsp;бы с
   href='https://www.youtube.com/watch?v=unMXQTSQEak'>
   «34&nbsp;keys is&nbsp;all you need»</a>.
 Свою раскладку для этой клавиатуры
-я&nbsp;однажды довольно подробно описал на
+я&nbsp;однажды тщательно описал на
 <a target='_blank'
   href='https://forum.dmz.rs/t/cantor-mx-keyboard/700/2'>
   форуме Decentrala</a>.

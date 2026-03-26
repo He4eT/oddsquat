@@ -748,7 +748,8 @@ MacBook продавался&nbsp;бы с
 если приподнять дальние клавиши,
 то&nbsp;тянуться до&nbsp;них будет проще.
 
-Такие устройства называют **Concave Keyboards** или **Contoured Keyboards**.
+Такие устройства называют **Concave Keyboards**, **Contoured Keyboards**
+или **Keywell Keyboards**.
 
 <figure class='image bordered'>
   <img

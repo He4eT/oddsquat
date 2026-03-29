@@ -26,6 +26,22 @@ a:hover {
   border-color: currentColor;
 }
 
+/* Lists */
+
+ul {
+  list-style: square;
+}
+
+/* Tables */
+
+@media (max-width: 500px) {
+  table {
+    display: block;
+    overflow: auto;
+    width: 100%;
+  }
+}
+
 /* Code and quotes*/
 
 pre, blockquote {
@@ -72,11 +88,7 @@ figure.image figcaption {
   margin-top: 1.0rem;
 }
 
-/* Lists */
-
-ul {
-  list-style: square;
-}
+/* Entries */
 
 .entry:last-child,
 .entry {
@@ -86,16 +98,6 @@ ul {
 .entry > header,
 .entry > .description {
   margin-bottom: 0.5rem;
-}
-
-/* Tables */
-
-@media (max-width: 500px) {
-  table {
-    display: block;
-    overflow: auto;
-    width: 100%;
-  }
 }
 
 /* Stripes */

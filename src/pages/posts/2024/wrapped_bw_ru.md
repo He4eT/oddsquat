@@ -26,7 +26,7 @@ description: 'Превращаем fully-featured Bitwarden command-line interfa
 
 > You are responsible for maintaining your session key.
 
-Bitwarden CLI поддерживает [механизм сессий](https://bitwarden.com/help/cli/#using-a-session-key), который призван избавить пользователя от&nbsp;бесконечного ввода мастер-пароля. Приложение позволяет разблокировать хранилище и&nbsp;получить временный сессионный ключ, который можно либо хранить в&nbsp;беззащитной переменной окружения, либо прикладывать к&nbsp;каждому запросу вручную. 
+Bitwarden CLI поддерживает [механизм сессий](https://bitwarden.com/help/cli/#using-a-session-key), который призван избавить пользователя от&nbsp;бесконечного ввода мастер-пароля. Приложение позволяет разблокировать хранилище и&nbsp;получить временный сессионный ключ, который можно либо хранить в&nbsp;беззащитной переменной окружения, либо прикладывать к&nbsp;каждому запросу вручную.
 
 По&nbsp;сути своей, сессионный ключ отличается от&nbsp;мастер-пароля тем, что его можно моментально деактивировать, но&nbsp;совершенно невозможно запомнить, а, значит, нужно где-то хранить. Хочется делать это удобно и&nbsp;безопасно, а&nbsp;не&nbsp;в&nbsp;общедоступной переменной окружения.
 
@@ -36,7 +36,7 @@ Bitwarden CLI поддерживает [механизм сессий](https://b
 
 Где-то в&nbsp;этот момент чтения документации я&nbsp;окончательно начал подозревать, что официальный CLI предназначен для скриптов: всё строго, никакого автодополнения, никакого интерактивного поиска, а&nbsp;пароли лаконично вываливаются в&nbsp;стандартный вывод терминала, откуда их&nbsp;ещё нужно как-то переправить в&nbsp;место назначения.
 
-## Приручение CLI 
+## Приручение CLI
 
 Может показаться, что я&nbsp;ругаюсь, но&nbsp;отсутствие удобств и&nbsp;излишеств в&nbsp;официальном CLI&nbsp;— это хорошо:
 - Отсутствие фич всегда приятнее, чем кривые фичи.
@@ -69,7 +69,7 @@ save_sessionkey () {
   local sessionkey=$1
   sudo chmod 600 $sessionfile
   sudo sh -c "echo $sessionkey > $sessionfile"
-} 
+}
 ```
 ```
 local sessionkey=$(get_saved_sessionkey)
@@ -91,7 +91,7 @@ fi
 -rw-------. 1 root root   89 Jul 24 22:15 .bitwarden_session
 ...
 
-~ » less .bitwarden_session 
+~ » less .bitwarden_session
 .bitwarden_session: Permission denied
 ```
 
@@ -100,25 +100,29 @@ fi
 Деактивировать сохранённый ключ можно с&nbsp;помощью команды `bw lock`.
 К&nbsp;сожалению, я&nbsp;так и&nbsp;не&nbsp;понял, как с&nbsp;помощью утилиты `bw` можно проверить, валиден&nbsp;ли ключ, так что после деактивации придётся удалить файл `~/.bitwarden_session` вручную, иначе скрипт так и&nbsp;будет подставлять протухший сохранённый ключ, а&nbsp;`bw` будет каждый раз игнорировать его и&nbsp;настойчиво спрашивать мастер-пароль.
 
+**Update [2026-03-29]**:
+Нормального способа проверить валидность сессионного ключа [всё ещё нет](https://github.com/bitwarden/clients/issues/9254),
+но&nbsp;я&nbsp;научил утилиту удалять файл с&nbsp;протухшим ключом по&nbsp;косвенным признакам.
+
 ## Применять с&nbsp;осторожностью
 
 Взаимодействие с&nbsp;менеджером паролей выглядит для меня теперь примерно так:
 
 ```
-~ » bwc github 
-[sudo] password for $USER: 
+~ » bwc github
+[sudo] password for $USER:
 Using the existing session key from '/home/$USER/.bitwarden_session'.
 Searching for 'github'...
 
 abcdefgh-ijkl-mnop-qrst-uvwxyz123456
 github.com
 
-Username 'Username' copied to clipboard.
-Press any key to copy the password...
+Username 'username' copied to clipboard.
+[Press any key to copy the password]
 Password copied to clipboard.
 ```
 
-Финальный вариант скрипта можно найти в&nbsp;репозитории [He4eT/fuzzy-bitwarden-clipboard](https://github.com/He4eT/fuzzy-bitwarden-clipboard). 
+Финальный вариант скрипта можно найти в&nbsp;репозитории [He4eT/fuzzy-bitwarden-clipboard](https://github.com/He4eT/fuzzy-bitwarden-clipboard).
 
 Настоятельно рекомендую читать любой код перед тем, как запускать&nbsp;его. Особенно в&nbsp;тех случаях, когда речь идёт о&nbsp;настолько чувствительных данных.
 

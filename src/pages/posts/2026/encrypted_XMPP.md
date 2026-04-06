@@ -36,26 +36,19 @@ and the practical aspects of using it.
 
 ## Short Glossary
 
-**End-to-end encryption** is a way to keep your chats truly private.
-
+**End-to-end encryption** is a way to keep your chats truly private.<br>
 Only you and the person you’re messaging can read the messages.
 Not even the server owner or your carrier has the keys
 needed to decrypt or modify them.
 
-**XMPP** is a protocol made for instant messaging.
+**XMPP** is an extensible protocol for instant messaging.
 
-The cool thing? The X stands for Extensible,
-which basically means you can add almost any feature through XEPs:
-audio and video calls,
-encryption,
-file transfer,
-sync across devices,
-text markup,
-and even stories!
-
-The ugly thing? The X stands for Extensible,
-which means it’s pretty hard to find two applications
-that support the same subset of XEPs.
+**OMEMO** is a widely supported XMPP Extension Protocol (XEP)
+for secure multi-client end-to-end encryption.
+You can read more about
+it on a&nbsp;<a
+  href='https://contrapunctus.codeberg.page/the-quick-and-easy-guide-to-xmpp.html'
+  target='_blank'>dedicated page by Daniel Gultsch</a>.
 
 ## Trade-offs Between Safety and Convenience
 

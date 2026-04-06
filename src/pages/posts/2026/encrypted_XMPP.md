@@ -22,7 +22,7 @@ That’s when I realized that I prefer protocols over services.
 I didn’t have much success back then,
 but fortunately, XMPP (and I hope I have too)
 has continued moving forward over the past two decades.
-It has developed slowly, sometimes awkwardly, but still.
+It has developed slowly, sometimes awkwardly, but steadily.
 
 Here I won’t talk about why XMPP is great or how to use it.
 You can check
@@ -67,7 +67,7 @@ aren’t available on desktop at all,
 and so on.
 
 All commercial so-called "secure" messengers, like Signal or WhatsApp,
-end up with pretty much the same limitations,
+end up with pretty similar limitations,
 because it's tricky to make end-to-end encrypted chats
 work the way users expect.
 
@@ -76,13 +76,14 @@ convenience or user expectations.
 Many XMPP clients let you do almost anything you’re trying to do.
 Sometimes it’s clunky and unintuitive,
 sometimes it’s the kind of freedom that lets you shoot yourself in the foot.
+At the end of the day, you’d better understand what you’re doing.
 
-It might sound messy, but XMPP actually
-gives you a lot of handy features.
-Your chats are secured with Signal-grade end-to-end encryption,
+It might sound messy, but for that price, XMPP actually
+gives you a lot of handy features:
+your chats are secured with Signal-grade end-to-end encryption,
 and you can use as many devices as you want,
 all at the same time,
-without being tied to any single service.
+without being tied to any proprietary service.
 This post is here to show how to use it intentionally and safely.
 
 In general, the XMPP experience today

@@ -88,5 +88,5 @@ This post is here to show how to use it intentionally and safely.
 
 In general, the XMPP experience today
 could be described as a "WhatsApp with benefits and frictions".
-It's kinda funny, considering that WhatsApp’s protocol
+It's kinda ironic, considering that WhatsApp’s protocol
 is actually based on XMPP, but incompatibly altered and defederated.

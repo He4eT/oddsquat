@@ -65,6 +65,16 @@ could be described as a "WhatsApp with benefits and frictions".
 It's kinda funny, considering that WhatsApp’s protocol
 is actually based on XMPP, but incompatibly altered and defederated.
 
+The comparison above sounds messy, but XMPP actually
+gives you a lot of handy features.
+Your chats are secured with Signal-grade end-to-end encryption,
+and you can use it from as many devices as you want,
+all at the same time,
+anonymously,
+without being tied to any single service.
+This post is here to show how to use all of that
+intentionally and safely.
+
 ## Draft
 
 Мне кажется забавным, что двадцать лет назад я уже пытался продвигать своим

@@ -62,6 +62,8 @@ sometimes it’s the kind of freedom that lets you shoot yourself in the foot.
 
 In general, the XMPP experience today
 could be described as a "WhatsApp with benefits and frictions".
+It's kinda funny, considering that WhatsApp’s protocol
+is actually based on XMPP, but incompatibly altered and defederated.
 
 ## Draft
 

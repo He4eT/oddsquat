@@ -42,6 +42,7 @@ Not even the server owner or your carrier has the keys
 needed to decrypt or modify them.
 
 **XMPP** is an extensible protocol for instant messaging.
+It's open, decentralized, and mature.
 
 **OMEMO** is a widely supported XMPP Extension Protocol (XEP)
 for secure multi-client end-to-end encryption.

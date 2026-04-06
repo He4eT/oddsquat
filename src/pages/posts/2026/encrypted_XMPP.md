@@ -34,6 +34,35 @@ You can check
 In this post, I want to focus specifically on end-to-end encryption
 and the practical aspects of using it.
 
+## Trade-offs Between Safety and Convenience
+
+Unfortunately, things that are truly secure are rarely convenient.
+They often require some initial efforts and a bit of ongoing attention.
+
+Telegram, which used to be a benchmark for messenger usability
+before its long dive into enshitification,
+really draws the line between convenience and security.
+Regular chats are easy and flexible,
+but "secret" chats come with a full set of limitations:
+they’re one-on-one only,
+can’t be synced to another device,
+aren’t available on desktop at all,
+and so on.
+
+All commercial so-called "secure" messengers, like Signal or WhatsApp,
+end up with pretty much the same limitations,
+because it's tricky to make end-to-end encrypted chats
+work the way users expect.
+
+Luckily, protocols and cryptography don’t care about
+convenience or user expectations.
+Many XMPP clients let you do almost anything you’re trying to do.
+Sometimes it’s clunky and unintuitive,
+sometimes it’s the kind of freedom that lets you shoot yourself in the foot.
+
+In general, the XMPP experience today
+could be described as a "WhatsApp with benefits and frictions".
+
 ## Draft
 
 Мне кажется забавным, что двадцать лет назад я уже пытался продвигать своим
@@ -51,3 +80,18 @@ and the practical aspects of using it.
 об этом можно почитать в этом гайде, я лучше не напишу.
 В этом посте я хочу обсудить вопрос конкретно вопрос e2e-шифрования
 и практические аспекты его использования.
+
+---
+
+К сожалению, действительно безопасные вещи редко удаётся сделать удобными.
+Они часто требуют каких-то усилий на старте
+и какого-то периодического внимания к себе.
+
+Пользователи Телеграма (который до затяжной спирали эншифтикации можно было
+смело назвать образцом юзабилити среди мессенджеров) могут, например,
+чётко увидеть эту границу между удобством и безопасностью:
+секретные и обычные чаты.
+Секретные чаты бывают только 1 на 1, их нельзя перенести на другое устройство,
+а на десктопе они вообще недоступны.
+
+

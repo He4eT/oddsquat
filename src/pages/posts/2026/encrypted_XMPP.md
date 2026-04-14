@@ -134,9 +134,6 @@ and only then you mark it as trusted.
 In most XMPP clients this is simply done by ticking a checkbox
 or by scanning a QR code.
 
-If your client automatically trusts all new fingerprints by default,
-I strongly recommend disabling this behavior in the settings.
-
 The list of trusted fingerprints is used at the moment a message is sent.
 Behind the scenes, OMEMO performs a certain amount of key management,
 and only the clients that are present in the trusted list
@@ -146,28 +143,26 @@ It's important to understand that trust cannot be applied retroactively:
 it's not possible to "extend" trust to new clients
 after a message has already been encrypted and sent.
 
-## Реалии OMEMO и XMPP
-## Особенности OMEMO и XMPP
+## Practical Aspects of OMEMO and XMPP
 
 ### Chat History
 
-Вообще, XMPP поддерживает хранение истории переписок на сервере.
-За это отвечает **XEP-0313: Message Archive Management**.
+In theory, XMPP supports server-side message history storage via
+**XEP-0313: Message Archive Management**.
 
-В реальности поддержка этого XEP,
-политика хранения истории и особенно сроки хранения сообщений
-зависят от конкретного сервера.
-Рассчитывать по-умолчанию на бессрочное хранение всех переписок не стоит.
+In practice, support for this XEP,
+as well as retention policies and message lifetime,
+depends on the specific server.
+You should never assume that all conversations are stored
+indefinitely by default.
 
-В конечном счёте,
-ответственность за хранение переписок лежит исключительно на вас
-и это разумное место для применения local-first подхода.
+At the end of the day, keeping your chat history is your responsibility,
+and this is a good place to apply a local-first approach.
 
-С практической точки зрения
-проще всего рассматривать серверный архив сообщений
-как некоторый кэш, который выручит вас по возвращении
-из непродолжительного офлайна
-или поможет с синхронизацей текущей переписки между разными устройствами.
+From a practical standpoint,
+the server-side archive is better considered a cache:
+it can help you handle recent messages after a short period offline
+or synchronize conversations across multiple devices.
 
 ### Synchronisation
 

@@ -108,46 +108,43 @@ is actually based on XMPP, but incompatibly altered and defederated.
 
 ### Keys, Fingerprints and Trust
 
-OMEMO построен вокруг Double Ratchet Algorithm.
-Там внутри всё очень интересно,
-но нам для практического применения важно только то,
-что каждый клиент пользователя хранит в себе какие-то там ключи,
-и умеет получать из них какой-то там хэш,
-который принято называть fingerprint.
+OMEMO is based on the Double Ratchet Algorithm.
+While the internal details are quite interesting,
+for practical purposes it's enough to know that
+each client stores some cryptographic keys
+and can derive a hash from them, commonly called a fingerprint.
 
-Ключи обычно как-то автоматически управляются XMPP клиентом
-и в норме вам никогда не стоит трогать их руками.
-Возможно, вам лучше даже и не знать, как они выглядят.
-Единственное, что с ними нужно делать --
-держать в секрете и бэкапить при необходимости.
+Keys are usually managed automatically by the XMPP client,
+and in normal use you should never need to handle them manually.
+In fact, you probably don’t even need to know what they look like.
+The only thing you need to do is keep them secret
+and back them up if necessary.
 
-Фингерпринт позволяет отличать конкретный
-клиент собеседника и быть уверенным, что его не подмененили.
-Список фингерпринтов для конкретного аккаунта
-не является чем-то секретным:
-клиентские приложения сами анонсируют свои фингерпнинты на сервере
-и автоматически пополняют список чужих.
-Значение имеют только те,
-которые вы пометили как фингерпринты довереных клиентов.
+A fingerprint lets you identify a specific client of your contact
+and verify that it hasn’t been spoofed.
+Fingerprints for an account are not secret:
+clients publish their own fingerprints to the XMPP server
+and automatically receive the fingerprints of others.
+Only fingerprints you explicitly mark as trusted are relevant.
 
-В идеале, человек должен лично при встрече
-или по уже довереному и безопасному каналу связи
-сказать вам "Да, фингерпринт XXX принадлежит моему устройству"
-и только после этого вы помечаете XXX доверенным.
-Обычно в интерфейсе это просто проставление чекбокса или сканирование QR-кода.
+In an ideal scenario, the contact should confirm in person
+or through an already trusted and secure communication channel
+that the fingerprint belongs to their device,
+and only then you mark it as trusted.
+In most XMPP clients this is simply done by ticking a checkbox
+or by scanning a QR code.
 
-Некоторые клиенты для удобства пользователя
-довериют любым новым фингерпринтам контактов по-умолчанию,
-но я не стал бы рекомендовать использовать такую политику,
-это легкомысленно и небезопасно.
-Политики доверия или недоверия
-можно посмотреть или поменять в настройках вашего клиента.
+If your client automatically trusts all new fingerprints by default,
+I strongly recommend disabling this behavior in the settings.
 
-Список доверенных фингерпринтов используется в момент отправки сообщения:
-OMEMO творит какую-то магию с жонглированием ключами и
-ни один клиент, кроме перечисленных в списке на момент зашифровки,
-не сможет его впоследствии расшифровать.
-Передать как-то доверие в прошлое, увы, невозможно.
+The list of trusted fingerprints is used at the moment a message is sent.
+Behind the scenes, OMEMO performs a certain amount of key management,
+and only the clients that are present in the trusted list
+at the time of encryption will be able to decrypt the message later.
+
+It's important to understand that trust cannot be applied retroactively:
+it's not possible to "extend" trust to new clients
+after a message has already been encrypted and sent.
 
 ## Реалии OMEMO и XMPP
 ## Особенности OMEMO и XMPP

@@ -15,7 +15,7 @@ description: 'Secure and private messaging with XMPP and OMEMO encryption.'
 
 I find it funny that twenty years ago I was already trying
 to promote XMPP over ICQ to my classmates.
-At that time, the proprietary messenger once again made life harder
+At the time, the proprietary messenger kept making life harder
 for users of alternative clients.
 That’s when I realized that I prefer protocols over services.
 
@@ -50,21 +50,21 @@ it on a&nbsp;<a
   href='https://contrapunctus.codeberg.page/the-quick-and-easy-guide-to-xmpp.html'
   target='_blank'>dedicated page by Daniel Gultsch</a>.
 
-Хочу также отметить,
-что я буду использовать слово Client для обозначения конкретных инстансов
-приложений на пользовательских устройствах. В документации, связанной с OMEMO
-для этого использвется термин Device, но мне он кажется запутывающим:
-в реальности на одном устройстве может быть несколько независимых клиентов.
+**Client**, in this post,
+means a specific instance of an XMPP application on a user device.
+<br>OMEMO-related documentation uses the term Device,
+but I find it potentially confusing:
+in practice, a single physical device can run multiple independent clients.
 
 ## Basic Concepts
 
-Here I'm going to explain some basic ideas behind e2e.
+This section introduces some basic ideas behind end-to-end encryption.
 
-Если основные концепции и терминология вам знакомы,
-то можете смело пропустить этот раздел
-и перейти к особенностям их практического применения касательно XMPP.
-
-Или даже сразу перейти к описанию workflow, которого я придерживаюсь сам.
+If you're already familiar with the concepts and terminology,
+you can skip ahead to&nbsp;<a
+  href='#'>how end-to-end encryption affects the XMPP user experience</a>
+or jump straight to the <a
+  href='#'>step-by-step workflow</a>&nbsp;I personally use.
 
 ### Trade-offs Between Safety and Convenience
 

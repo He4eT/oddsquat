@@ -155,70 +155,65 @@ as well as retention policies and message lifetime,
 depends on the specific server.
 You should never assume that all conversations are stored
 indefinitely by default.
+From a practical standpoint,
+the server-side MAM archive is better considered a cache:
+it can help you handle recent messages after a short period offline
+or synchronize conversations across multiple devices.
 
 At the end of the day, keeping your chat history is your responsibility,
 and this is a good place to apply a local-first approach.
 
-From a practical standpoint,
-the server-side archive is better considered a cache:
-it can help you handle recent messages after a short period offline
-or synchronize conversations across multiple devices.
 
 ### Synchronisation
 
-За бесшовное переключение между клиентами отвечает
+Seamless switching between clients is handled by
 **XEP-0280: Message Carbons**.
-До его внедрения можно было переключиться с телефона на лэптоп
-и пялиться в загруженную историю переписки,
-состоящей только из входящих сообщений от собеседника.
-Отправка своих же сообщений ещё и самому себе
-на уровне протокола -- это довольно неочевидная фича.
+Before its introduction, only incoming messages were synced between devices,
+while your own outgoing messages were not.
+Protocol-level mirroring of your own messages
+is a rather non-obvious feature :D
 
-Тут важно упомянуть, что при использовании e2e шифрования,
-упомянутая выше концепция доверенных отпечатков пальцев
-распространяется и на свои клиенты тоже.
+It's important to note that with end-to-end encryption,
+the concept of trusted fingerprints also applies to your own clients.
+For seamless synchronisation of outgoing messages,
+all your clients must trust each other's fingerprints.
+A new client,
+or an old one that was not trusted at the time messages were sent,
+will receive the full history from MAM but will not be able to decrypt it.
+<br>Yes, even your own messages.
 
-Для бесшовной синхронизации исходящих сообщений
-все ваши клиенты должны считать фингерпринты друг друга доверенными,
-иначе можно столкнуться с ситуацией,
-когда не получается прочитать своё же сообщение.
-
-Логичное, но неприятное следствие:
-Новый клиент или старый,
-который не был в списке доверенных на момент отправки сообщений,
-получит историю из MAM, но не сможет её расшифровать.
-Да, даже ваши сообщения.
-Теоретически, перепаковка сообщений
-на старых доверенных клиентах вроде как возможна,
-но на практике, никто такое пока не имплементировал
-и важные вещи придётся пересылать вручную.
+In theory, re-encrypting messages on already trusted clients
+could solve this issue, but no XMPP client implements it yet.
+So in practice you may need to manually resend
+important messages to a new device.
 
 ### Message Correction
 
-Тут же стоит отметить, что такие простые и понятные на первый взгляд фичи
-как редактирование и удаление сообщений вообще-то полагаются на
-клиентский код и могут не сработать у вашего собеседника так,
-как вы этого ожидаете.
-Ими можно пользоваться,
-это удобно и некоторые клиенты их отлично поддерживают,
-но полагаться на них для сокрытия чего-либо не стоит.
+It’s worth keeping in mind that
+features that seem simple and straightforward at first glance,
+such as message editing and deletion,
+actually rely on client-side implementation
+and may not behave for your recipient the way you expect.
+
+They’re fine to use and are well supported in some clients,
+but you shouldn’t rely on them to hide anything.
 
 ### Maintenance
 
-OMEMO был задуман как решение, которое после настройки не требует какого-то
-дополнительного вмешательства.
-Можно считать, что этой заявленной цели удалось достичь
-и при наличии базового понимания работы протокола и регулярном онлайне
-никаких сюрпризов быть не должно.
+OMEMO was designed as a set-it-and-forget-it solution,
+and it mostly succeeds in that goal.
+If you have a basic understanding of how the protocol works
+and check in online from time to time,
+there shouldn’t be any surprises.
 
-Всё обслуживание заключается в регулярных бэкапах и
-уведомлении своих контактов о фингерпринтах,
-которые стоит добавить в список доверенных или убрать из него.
-В нашем локальном хакспейсе мы даже проводим для этого регулярные события =)
+All maintenance comes down to making regular backups
+and notifying your contacts
+when fingerprints are added or no longer valid
+so they can keep their trust list up to date.
 
 ## Step-by-step guide
 
-Представим, что у меня есть аккаунт jid@some.server и несколько устройств:
+Представим, что у меня есть аккаунт me@some.server и несколько устройств:
 телефон, ноутбук и настольный компьютер.
 Сначала я опишу воркфлоу общими словами,
 а потом дам уточнения про использование конкретных приложений.

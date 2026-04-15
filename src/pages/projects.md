@@ -123,7 +123,7 @@ Incomplete list of&nbsp;my&nbsp;projects and experiments.
 - <article class='entry'>
     <header>
       <strong>
-        Cantor MX Tastatura
+        Cantor MX&nbsp;Tastatura
       </strong>
     </header>
     <section class='description'>
@@ -141,7 +141,7 @@ Incomplete list of&nbsp;my&nbsp;projects and experiments.
       </strong>
     </header>
     <section class='description'>
-      Huge custom ergonomic mechanical Dactyl-Manuform (5&times;6) keyboard.
+      Huge custom ergonomic mechanical Dactyl-Manuform (5×6) keyboard.
     </section>
     <section>
       <a href='https://github.com/He4eT/oddkb' target='_blank'>repository</a>

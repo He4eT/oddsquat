@@ -245,35 +245,36 @@ https://oddsquat.org/about/keys/
 
 ### Start the Conversation in Person
 
-Предположим, я встретил Алису и мы решили обменяться контактами.
-Я открыл на телефоне специальный QR-код,
-затем Алиса считала его своим клиентом.
-В этот QR-код уже зашиты фингерпринты всех моих устройств, так что
-дополнительных действий не требуется.
-Аналогично, я своим мобильным клиентом считываю QR-код с экрана Алисы.
+Let’s say I meet Alice,
+we start talking, and decide to continue the conversation online.
 
-Теперь мы оба уверены, что в переписке будем участвовать именно мы,
-а все наши сообщения будут доступны на всех наших устройствах и только на них.
+I open a special QR code on my phone, and Alice scans it with her client.
+This QR code already contains the fingerprints of all my devices,
+so no extra steps are needed.
+
+Then I do the same and scan the QR code from Alice’s screen
+with my mobile client.
+
+Now we are both sure that it’s really us in the conversation,
+and that all messages will be available on all our devices and only on them.
 
 ### Start the Conversation Online
 
-Предположим, что мы начали обсуждать что-то с Бобом где-то в сети
-(на форуме, в федиверсе, не важно) и решили продолжить обсуждение в мессенджере.
+Let’s say Bob and I start discussing something
+on a forum or in the Fediverse,
+and then decide to move to XMPP.
 
-Боб инициирует переписку, я слепо доверяю первому устройству,
-с которого он мне написал и уже потом мы обмениваемся в переписке
-фингерпринтами остальных наших устройств, если они есть.
-Такая стратегия называется ToFu.
+Bob starts the chat. I trust the first device he messages me from,
+and then we exchange fingerprints for our other devices, if we have any.
+This approach is called TOFU (Trust On First Use).
 
-Опять же Боб может убедиться, что я это я с помощью моей страницы с ключами,
-а я могу убедиться, что Боб на форуме -- тот же самый Боб, попросив его
-прислать мне фингерпринты прямо в личных сообщениях на том же самом форуме или
-отдельно посредством email, например.
+Bob can confirm it’s really me using my page with fingerprints.
+I can confirm it’s really him by asking him to send his fingerprints
+in a private message on the same forum or via email.
 
-В идеальном случае,
-у Боба тоже есть какая-то публичная страница с фингерпринтами.
-Тогда мы оба можем независимо убедиться,
-что мы именно те, за кого себя выдаём =)
+Ideally, Bob also has a public page with his fingerprints.
+That way, we can both independently verify
+that we are who we say we are.
 
 ### New or Lost Devices
 

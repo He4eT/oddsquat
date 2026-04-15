@@ -309,7 +309,7 @@ There are several forks of it where the UI or UX may differ,
 but the core features work exactly the same.
 I personally use Monocles Chat.
 
-On the contact details screen (including your own account),
+On the Contact Details screen (including your own account),
 you can see a list of published fingerprints
 and manually mark them as trusted or revoke trust.
 
@@ -320,12 +320,19 @@ This makes device verification during in-person meetings simple and effortless.
 
 ### Dino
 
-Это лёгкий GUI-клиент, построенный на GTK фреймвоке.
-Опять же, все вопросы доверия и недоверия
-можно легко решить на экране "Детали контакта" с помощью чекбоксов.
+Dino is a lightweight GTK-based GUI client.
 
-К сожалению, по умолчанию, Dino настроен на автоматическое доверие
-новым фингерпринтам, я рекомендую эту функцию отключить.
+It can be considered a fully functional one,
+although some non-essential features are still not supported or implemented.
+For example,
+it is not possible to clear local chat history using built-in methods :D
+
+Trust and untrust decisions can be easily managed
+in the Encryption tab of the Conversation Details window.
+
+It is important to note that, by default, Dino is configured
+to automatically trust new fingerprints.
+I recommend disabling this feature.
 
 ### Profanity
 

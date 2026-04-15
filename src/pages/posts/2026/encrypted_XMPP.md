@@ -278,23 +278,21 @@ that we are who we say we are.
 
 ### New or Lost Devices
 
-Если я решил начать использовать
-какое-то новое устройство или установить куда-нибудь
-ещё одно клиентское приложение,
-то первым делом я должен добавить его в список доверенных клиентов
-на остальных моих существующих устройствах.
+If I start using a new device or install another client application,
+the first thing I do is add it to the list of trusted clients
+on my existing devices.
 
-Если я по каким-либо причинам потеряю любое из своих устройств
-или зачем-то удалю один из своих приватных ключей,
-то первым делом я должен исключить такой клиент из списка доверенных
-на остальных моих устройствах.
+If I lose one of my devices or delete any private keys,
+the first thing I do is remove the corresponding client
+from the trusted list on my other devices.
 
-После актуализации моих личных списков доверенных устройств
-стоит сообщить об изменениях моим собеседникам по довереным каналам.
-Я могу просто попросить Алису считать мой новый QR-код при следующей встрече,
-а Бобу отправить сообщение о том,
-что утраченому устройству доверять больше не стоит,
-настоящих сообщений с него уже никогда не придёт.
+Once I’ve updated my personal list of trusted devices,
+I should inform my contacts through trusted channels.
+
+I can simply ask Alice to scan my new QR code the next time we meet,
+and send Bob a message introducing my new client or letting him know
+that the lost device is no longer trusted
+and that no real messages will ever come from it again.
 
 ## Client Applications
 

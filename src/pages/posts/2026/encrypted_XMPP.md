@@ -163,7 +163,9 @@ that trust cannot be&nbsp;applied retroactively:
 it’s not possible to&nbsp;“extend” trust to&nbsp;new clients
 after a&nbsp;message has already been encrypted and sent.
 
-## Practical Aspects of&nbsp;OMEMO and XMPP
+<h2 id='practical-aspects-of-omemo-and-xmpp'>
+  Practical Aspects of&nbsp;OMEMO and XMPP
+</h2>
 
 ### Chat History
 

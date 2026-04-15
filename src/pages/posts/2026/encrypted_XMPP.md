@@ -185,7 +185,7 @@ will receive the full history from MAM but will not be able to decrypt it.
 In theory, re-encrypting messages on already trusted clients
 could solve this issue, but no XMPP client implements it yet.
 So in practice you may need to manually resend
-important messages to a new device.
+some data to a new device.
 
 ### Message Correction
 
@@ -211,36 +211,37 @@ and notifying your contacts
 when fingerprints are added or no longer valid
 so they can keep their trust list up to date.
 
-## Step-by-step guide
+## Step-by-step Guide
 
-Представим, что у меня есть аккаунт me@some.server и несколько устройств:
-телефон, ноутбук и настольный компьютер.
-Сначала я опишу воркфлоу общими словами,
-а потом дам уточнения про использование конкретных приложений.
+Let’s say I have a XMPP account, me@some.server,
+and a few devices: a phone, a laptop, and a desktop computer.
+First I’ll describe my mindset at a high level,
+then I’ll add some notes about specific clients.
 
-Я предпочитаю следовать такому майндсету:
-С одной стороны,
-у меня есть мобильное устройство,
-которое всегда со мной и практические всегда онлайн:
-на нём я храню полную историю переписок и получаю уведомления в реальном
-времени.
-С другой стороны, у меня есть несколько десктопных приложений:
-я открываю их только когда мне нужно обсудить что-нибудь с использованием
-клавиатуры или копи-пастинга.
-Мне нравится думать о них, как о приложениях-сателлитах.
+### Client Roles
+
+On the one hand, I have my phone.
+It’s almost always with me and almost always online.
+That’s where I keep the full chat history and get real-time notifications.
+
+On the other hand, I have a couple of desktop applications.
+I only open them when I need to discuss something using my keyboard
+or move some text between devices.
+I like to think of them as ad-hoc or satellite clients.
 
 ### Before the Start
 
-Первым делом мне нужно сгенерировать на каждом устройстве приватные ключи.
-Обычно это происходит автоматически.
+First, enable OMEMO encryption on every client if it isn't enabled by default.
+The client will usually generate the keys and fingerprint automatically.
 
-Потом я должен на каждом своём устройстве добавить остальные:
-телефон должен считать все мои компьютеры доверенными устройствами,
-а компьютеры доверять друг другу и телефону.
+The next step is to add all clients to the trust list on each device:
+my phone should trust all my computers,
+and my computers should trust each other as well as my phone.
 
-Фингерпринты публичные,
-их можно даже разместить у себя на какой-нибудь личной странице.
-Вот, например, моя: https://oddsquat.org/about/keys/
+Fingerprints do not have to be secret, so they can be published on
+your website or even on social media profiles.
+Here is my page with the fingerprints:
+https://oddsquat.org/about/keys/
 
 ### Start the Conversation in Person
 

@@ -117,8 +117,6 @@ and can derive a hash from them, commonly called a fingerprint.
 Keys are usually managed automatically by the XMPP client,
 and in normal use you should never need to handle them manually.
 In fact, you probably don’t even need to know what they look like.
-The only thing you need to do is keep them secret
-and back them up if necessary.
 
 A fingerprint lets you identify a specific client of your contact
 and verify that it hasn’t been spoofed.

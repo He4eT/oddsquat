@@ -200,7 +200,7 @@ in&nbsp;the middle of&nbsp;a&nbsp;conversation.
     </header>
     <section class='description'>
       Interactive articles about physics, math, and engineering.
-      It's probably the best website on&nbsp;the entire internet.<br>
+      It’s probably the best website on&nbsp;the entire internet.<br>
       My&nbsp;favorite post is&nbsp;the one about
       <a href='https://ciechanow.ski/bicycle/' target='_blank'>bicycles</a>.
     </section>
@@ -245,7 +245,7 @@ in&nbsp;the middle of&nbsp;a&nbsp;conversation.
     <section class='description'>
       Torrenting can leave traces.<br>
       Check torrent downloads and distributions
-      for your own or&nbsp;your neighbor's IP&nbsp;address.
+      for your own or&nbsp;your neighbor’s IP&nbsp;address.
     </section>
   </article>
 
@@ -300,7 +300,7 @@ in&nbsp;the middle of&nbsp;a&nbsp;conversation.
     <header>
       <strong>
         <a href='https://news.ycombinator.com/item?id=42492508' target='_blank'>
-          Ask HN: Programmers who don't use autocomplete/LSP, how do&nbsp;you do&nbsp;it?
+          Ask HN: Programmers who don’t use autocomplete/LSP, how do&nbsp;you do&nbsp;it?
         </a>
       </strong>
     </header>
@@ -314,7 +314,7 @@ in&nbsp;the middle of&nbsp;a&nbsp;conversation.
     <header>
       <strong>
         <a href='https://sneak.berlin/20201112/your-computer-isnt-yours/' target='_blank'>
-          Your Computer Isn't Yours
+          Your Computer Isn’t Yours
         </a>
       </strong>
     </header>
@@ -411,7 +411,7 @@ in&nbsp;the middle of&nbsp;a&nbsp;conversation.
       </strong>
     </header>
     <section class='description'>
-      Most software tutorials suck. Here's how to&nbsp;make one that doesn't.
+      Most software tutorials suck. Here’s how to&nbsp;make one that doesn’t.
     </section>
   </article>
 

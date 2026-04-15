@@ -25,6 +25,7 @@ const tp = new Typograf({
 
 const enabledRules = [
   'common/nbsp/*',
+  'common/punctuation/apostrophe',
   'common/punctuation/quote',
   'en-US/dash/main',
   'ru/dash/main',

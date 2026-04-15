@@ -336,14 +336,14 @@ I recommend disabling this feature.
 
 ### Profanity
 
-Это могучий TUI-клиент,
-где всё-всё-всё реализовано через встроенную систему команд.
+Profanity is a powerful TUI client
+where everything is controlled through a built-in command system.
 
-Если вы зачем-то намерены им пользоваться,
-то ниже вас ожидает небольшой читшит по использованию OMEMO,
-но я настойчиво рекомендую ознакомиться с полной документацией самостоятельно.
+If you somehow intend to use it,
+below you will find a small cheat sheet for using OMEMO.
+However, I strongly recommend reading the full documentation.
 
-- Генерация ключа и добавление своих устройств:
+- Generate a key and add your other clients:
   ```text
   /omemo gen
   /omemo trust me@some.server some-cool-fingerprint-01
@@ -351,26 +351,26 @@ I recommend disabling this feature.
   /omemo qrcode
   ```
 
-- Увидеть список своих или чужих fingerprint'ов:
+- View the list of your own or someone else’s fingerprints:
   ```text
   /omemo fingerprint me@some.server
   /omemo fingerprint alice@another.server
   ```
-  Доверенные будут помечены как `trusted`.
+  Trusted ones will be marked as `trusted`.
 
-- Начать зашифрованный диалог:
+- Start an encrypted conversation:
   ```text
   /omemo start alice@another.server
   ```
 
-- Добавить чужой фингерпринт в список доверенных:
+- Add fingerprints to the trusted list:
   ```text
   /omemo trust alice@another.server some-cool-fingerprint-02
   /omemo trust alice@another.server some-cool-fingerprint-03
   /omemo trust bob@another.server some-cool-fingerprint-04
   ```
 
-- Перестать доверять кокретному клиенту:
+- Revoke trust for a specific client:
   ```text
   /omemo untrust alice@another.server some-cool-fingerprint-02
   ```

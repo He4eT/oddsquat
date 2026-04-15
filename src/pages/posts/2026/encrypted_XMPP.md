@@ -22,25 +22,25 @@ using alternative clients, which was quite annoying.
 After yet another round of this pointless battle
 I realized clearly that I prefer protocols over services.
 
-I didn’t have much success back then,
+I didn't have much success back then,
 but fortunately, XMPP (and I hope I have too)
 has continued moving forward over the past two decades.
 It has developed slowly, sometimes awkwardly, but steadily.
 
-Here, I won’t talk about why XMPP is great or how it works.
+Here, I won't talk about why XMPP is great or how it works.
 You can check
 <a
   href='https://contrapunctus.codeberg.page/the-quick-and-easy-guide-to-xmpp.html'
   target='_blank'>
   this guide</a>
-(one of many) and I’d rather not write another one.
+(one of many) and I'd rather not write another one.
 In this post, I want to focus specifically on end-to-end encryption
 and the practical aspects of using it.
 
 ## Short Glossary
 
 **End-to-end encryption** is a way to keep your chats truly private.<br>
-Only you and the person you’re messaging can read the messages.
+Only you and the person you're messaging can read the messages.
 Not even the server owner has the keys needed to decrypt or modify them.
 
 **XMPP** is an extensible protocol for instant messaging.
@@ -82,9 +82,9 @@ before its long dive into enshitification,
 really draws the line between convenience and security.
 Regular chats are easy and flexible,
 but "secret" chats come with a full set of limitations:
-they’re one-on-one only,
-can’t be synced to another device,
-aren’t available on desktop at all,
+they're one-on-one only,
+can't be synced to another device,
+aren't available on desktop at all,
 and so on.
 
 All commercial so-called "secure" messengers, like Signal or WhatsApp,
@@ -92,12 +92,12 @@ end up with pretty similar limitations,
 because it's tricky to make end-to-end encrypted chats
 work the way users expect.
 
-Luckily, protocols and cryptography don’t care about
+Luckily, protocols and cryptography don't care about
 convenience or user expectations.
-Many XMPP clients let you do almost anything you’re trying to do.
-Sometimes it’s clunky and unintuitive,
-sometimes it’s the kind of freedom that lets you shoot yourself in the foot.
-At the end of the day, you’d better understand what you’re doing.
+Many XMPP clients let you do almost anything you're trying to do.
+Sometimes it's clunky and unintuitive,
+sometimes it's the kind of freedom that lets you shoot yourself in the foot.
+At the end of the day, you'd better understand what you're doing.
 
 It might sound messy, but for that price, XMPP actually
 gives you a lot of handy features:
@@ -108,7 +108,7 @@ without being tied to any proprietary service.
 
 In general, the XMPP experience today
 could be described as a "WhatsApp with benefits and frictions".
-It's kinda ironic, considering that WhatsApp’s protocol
+It's kinda ironic, considering that WhatsApp's protocol
 is actually based on XMPP, but incompatibly altered and defederated.
 
 ### Keys, Fingerprints and Trust
@@ -123,10 +123,10 @@ and can derive a hash from them, commonly called a fingerprint.
 
 Keys are usually managed automatically by the XMPP client,
 and in normal use you should never need to handle them manually.
-In fact, you probably don’t even need to know what they look like.
+In fact, you probably don't even need to know what they look like.
 
 A fingerprint lets you identify a specific client of your contact
-and verify that it hasn’t been spoofed.
+and verify that it hasn't been spoofed.
 Fingerprints for an account are not secret:
 clients publish their own fingerprints to the XMPP server
 and automatically receive the fingerprints of others.
@@ -194,14 +194,14 @@ some data to a new device.
 
 ### Message Correction
 
-It’s worth keeping in mind that
+It's worth keeping in mind that
 features that seem simple and straightforward at first glance,
 such as message editing and deletion,
 actually rely on client-side implementation
 and may not behave for your recipient the way you expect.
 
-They’re fine to use and are well supported in some clients,
-but you shouldn’t rely on them to hide anything.
+They're fine to use and are well supported in some clients,
+but you shouldn't rely on them to hide anything.
 
 ### Maintenance
 
@@ -209,7 +209,7 @@ OMEMO was designed as a set-it-and-forget-it solution,
 and it mostly succeeds in that goal.
 If you have a basic understanding of how the protocol works
 and check in online from time to time,
-there shouldn’t be any surprises.
+there shouldn't be any surprises.
 
 All maintenance comes down to making regular backups
 and notifying your contacts
@@ -218,16 +218,16 @@ so they can keep their trust list up to date.
 
 ## Step-by-Step Guide
 
-Let’s say I have a XMPP account, `me@some.server`,
+Let's say I have a XMPP account, `me@some.server`,
 and a few devices: a phone, a laptop, and a desktop computer.
-First I’ll describe my mindset at a high level,
-then I’ll add some notes about specific clients.
+First I'll describe my mindset at a high level,
+then I'll add some notes about specific clients.
 
 ### Client Roles
 
 On the one hand, I have my phone.
-It’s almost always with me and almost always online.
-That’s where I keep the full chat history and get real-time notifications.
+It's almost always with me and almost always online.
+That's where I keep the full chat history and get real-time notifications.
 
 On the other hand, I have a couple of desktop applications.
 I only open them when I need to discuss something using my keyboard
@@ -251,7 +251,7 @@ Here is my page with the fingerprints, for example:
 
 ### Start the Conversation in Person
 
-Let’s say I meet Alice,
+Let's say I meet Alice,
 we start talking, and then decide to continue the conversation online.
 
 I open a special QR code on my phone, and Alice scans it with her client.
@@ -267,7 +267,7 @@ and that all messages will be available on all our devices and only on them.
 
 ### Start the Conversation Online
 
-Let’s say Bob and I start discussing something
+Let's say Bob and I start discussing something
 on a forum or in the Fediverse,
 and then decide to continue the discussion on XMPP.
 
@@ -275,8 +275,8 @@ Bob starts the chat. I trust the first device he messages me from,
 and then we exchange fingerprints for our other devices, if we have any.
 This approach is called TOFU (Trust On First Use).
 
-Bob can confirm it’s really me using my page with fingerprints.
-I can confirm it’s really him by asking him to send his fingerprints
+Bob can confirm it's really me using my page with fingerprints.
+I can confirm it's really him by asking him to send his fingerprints
 in a private message on the same forum or via email.
 
 Ideally, Bob also has a public page with his fingerprints.
@@ -293,7 +293,7 @@ If I lose one of my devices or delete any private keys,
 the first thing I do is remove the corresponding client
 from the trusted list on my other devices.
 
-Once I’ve updated all my personal lists,
+Once I've updated all my personal lists,
 I should inform my contacts about changes via trusted channels.
 
 I can simply ask Alice to scan my new QR code the next time we meet,
@@ -321,7 +321,7 @@ you can see a list of published fingerprints
 and manually mark them as trusted or revoke trust.
 
 To simplify all these routine operations, a QR-code-based system is used:
-you can show your own QR code or scan other people’s codes
+you can show your own QR code or scan other people's codes
 directly from the main screen.
 This makes device verification during in-person meetings simple and effortless.
 
@@ -358,7 +358,7 @@ However, I strongly recommend reading the full documentation.
   /omemo qrcode
   ```
 
-- View the list of your own or someone else’s fingerprints:
+- View the list of your own or someone else's fingerprints:
   ```text
   /omemo fingerprint me@some.server
   /omemo fingerprint alice@another.server
@@ -387,12 +387,12 @@ However, I strongly recommend reading the full documentation.
 This post was originally intended as a collection of answers to questions
 I had when I first started using XMPP with OMEMO.
 
-It isn’t meant to be exhaustive or formal,
+It isn't meant to be exhaustive or formal,
 but rather to clarify the practical side of things
 and reduce that initial feeling of being lost
 when you keep running into
 "The message was not encrypted for this device"
 over and over again.
 
-From now on, I hope you won’t encounter errors like this
+From now on, I hope you won't encounter errors like this
 or any other issues with end-to-end encryption in XMPP.

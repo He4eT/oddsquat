@@ -14,17 +14,20 @@ description: 'Secure and private messaging with XMPP and OMEMO encryption.'
 # End-to-End Encryption in XMPP with OMEMO
 
 I find it funny that twenty years ago I was already trying
-to promote XMPP over ICQ to my classmates.
-At the time, the proprietary messenger kept making life harder
-for users of alternative clients.
-That’s when I realized that I prefer protocols over services.
+to get people to switch to XMPP.
+
+For a long time, ICQ was extremely popular around me,
+but the proprietary messenger kept breaking things for people
+using alternative clients, which was quite annoying.
+After yet another round of this pointless battle
+I realized clearly that I prefer protocols over services.
 
 I didn’t have much success back then,
 but fortunately, XMPP (and I hope I have too)
 has continued moving forward over the past two decades.
 It has developed slowly, sometimes awkwardly, but steadily.
 
-Here I won’t talk about why XMPP is great or how to use it.
+Here, I won’t talk about why XMPP is great or how it works.
 You can check
 <a
   href='https://contrapunctus.codeberg.page/the-quick-and-easy-guide-to-xmpp.html'
@@ -43,7 +46,10 @@ Not even the server owner has the keys needed to decrypt or modify them.
 **XMPP** is an extensible protocol for instant messaging.
 It's open, decentralized, and mature.
 
-**OMEMO** is a widely supported XMPP Extension Protocol (XEP)
+**OMEMO** is a&nbsp;<a
+  href='https://omemo.top/'
+  target='_blank'>widely supported</a>
+XMPP Extension Protocol (XEP)
 for secure multi-client end-to-end encryption.
 You can read more about
 it on a&nbsp;<a
@@ -58,13 +64,13 @@ in practice, a single physical device can run multiple independent clients.
 
 ## Basic Concepts
 
-This section introduces some basic ideas behind end-to-end encryption.
+This section introduces some basics of end-to-end encryption.
 
 If you're already familiar with the concepts and terminology,
 you can skip ahead to&nbsp;<a
-  href='#'>how end-to-end encryption affects the XMPP user experience</a>
+  href='#practical-aspects-of-omemo-and-xmpp'>how end-to-end encryption affects the XMPP user experience</a>
 or jump straight to the <a
-  href='#'>step-by-step workflow</a>&nbsp;I personally use.
+  href='#step-by-step-guide'>step-by-step workflow</a>&nbsp;I personally use.
 
 ### Trade-offs Between Safety and Convenience
 
@@ -99,7 +105,6 @@ your chats are secured with Signal-grade end-to-end encryption,
 and you can use as many devices as you want,
 all at the same time,
 without being tied to any proprietary service.
-This post is here to show how to use it intentionally and safely.
 
 In general, the XMPP experience today
 could be described as a "WhatsApp with benefits and frictions".
@@ -108,7 +113,9 @@ is actually based on XMPP, but incompatibly altered and defederated.
 
 ### Keys, Fingerprints and Trust
 
-OMEMO is based on the Double Ratchet Algorithm.
+OMEMO is based on the
+<a href='https://en.wikipedia.org/wiki/Double_Ratchet_Algorithm' target='_blank'>
+  Double Ratchet Algorithm</a>.
 While the internal details are quite interesting,
 for practical purposes it's enough to know that
 each client stores some cryptographic keys
@@ -209,9 +216,9 @@ and notifying your contacts
 when fingerprints are added or no longer valid
 so they can keep their trust list up to date.
 
-## Step-by-step Guide
+## Step-by-Step Guide
 
-Let’s say I have a XMPP account, me@some.server,
+Let’s say I have a XMPP account, `me@some.server`,
 and a few devices: a phone, a laptop, and a desktop computer.
 First I’ll describe my mindset at a high level,
 then I’ll add some notes about specific clients.
@@ -224,13 +231,12 @@ That’s where I keep the full chat history and get real-time notifications.
 
 On the other hand, I have a couple of desktop applications.
 I only open them when I need to discuss something using my keyboard
-or move some text between devices.
-I like to think of them as ad-hoc or satellite clients.
+or share some text between devices.
+I like to think of them as satellite clients.
 
 ### Before the Start
 
 First, enable OMEMO encryption on every client if it isn't enabled by default.
-The client will usually generate the keys and fingerprint automatically.
 
 The next step is to add all clients to the trust list on each device:
 my phone should trust all my computers,
@@ -238,29 +244,32 @@ and my computers should trust each other as well as my phone.
 
 Fingerprints do not have to be secret, so they can be published on
 your website or even on social media profiles.
-Here is my page with the fingerprints:
-https://oddsquat.org/about/keys/
+Here is my page with the fingerprints, for example:
+<br><a href='https://oddsquat.org/about/keys/' target='_blank'>
+  https://oddsquat.org/about/keys/
+</a>
 
 ### Start the Conversation in Person
 
 Let’s say I meet Alice,
-we start talking, and decide to continue the conversation online.
+we start talking, and then decide to continue the conversation online.
 
 I open a special QR code on my phone, and Alice scans it with her client.
 This QR code already contains the fingerprints of all my devices,
-so no extra steps are needed.
+so no extra steps are needed on her phone.
+After that, I do the same and scan her QR code as well.
 
-Then I do the same and scan the QR code from Alice’s screen
-with my mobile client.
+Later at home, I manually mark her devices as trusted on my computers
+using the trusted list on my phone, and she does the same.
 
-Now we are both sure that it’s really us in the conversation,
+Now we are both sure that it is really us in the conversation,
 and that all messages will be available on all our devices and only on them.
 
 ### Start the Conversation Online
 
 Let’s say Bob and I start discussing something
 on a forum or in the Fediverse,
-and then decide to move to XMPP.
+and then decide to continue the discussion on XMPP.
 
 Bob starts the chat. I trust the first device he messages me from,
 and then we exchange fingerprints for our other devices, if we have any.
@@ -301,7 +310,7 @@ that I personally use.
 
 Conversations is a modern, fully featured chat application for Android.
 It supports everything a messaging app should support:
-chats, voice calls, and sharing photos and files.
+chats, voice calls, video calls, and sharing files of any kind.
 
 There are several forks of it where the UI or UX may differ,
 but the core features work exactly the same.
@@ -312,7 +321,7 @@ you can see a list of published fingerprints
 and manually mark them as trusted or revoke trust.
 
 To simplify all these routine operations, a QR-code-based system is used:
-You can show your own QR code or scan other people’s codes
+you can show your own QR code or scan other people’s codes
 directly from the main screen.
 This makes device verification during in-person meetings simple and effortless.
 
@@ -321,7 +330,7 @@ This makes device verification during in-person meetings simple and effortless.
 Dino is a lightweight GTK-based GUI client.
 
 It can be considered a fully functional one,
-although some non-essential features are still not supported or implemented.
+although some non-essential features are still not implemented.
 For example,
 it is not possible to clear local chat history using built-in methods :D
 
@@ -338,7 +347,7 @@ Profanity is a powerful TUI client
 where everything is controlled through a built-in command system.
 
 If you somehow intend to use it,
-below you will find a small cheat sheet for using OMEMO.
+you can find a small cheat sheet for the `/omemo` command below.
 However, I strongly recommend reading the full documentation.
 
 - Generate a key and add your other clients:
@@ -372,3 +381,18 @@ However, I strongly recommend reading the full documentation.
   ```text
   /omemo untrust alice@another.server some-cool-fingerprint-02
   ```
+
+## Late Disclaimer
+
+This post was originally intended as a collection of answers to questions
+I had when I first started using XMPP with OMEMO.
+
+It isn’t meant to be exhaustive or formal,
+but rather to clarify the practical side of things
+and reduce that initial feeling of being lost
+when you keep running into
+"The message was not encrypted for this device"
+over and over again.
+
+From now on, I hope you won’t encounter errors like this
+or any other issues with end-to-end encryption in XMPP.

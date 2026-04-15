@@ -286,8 +286,8 @@ If I lose one of my devices or delete any private keys,
 the first thing I do is remove the corresponding client
 from the trusted list on my other devices.
 
-Once I’ve updated my personal list of trusted devices,
-I should inform my contacts through trusted channels.
+Once I’ve updated all my personal lists,
+I should inform my contacts about changes via trusted channels.
 
 I can simply ask Alice to scan my new QR code the next time we meet,
 and send Bob a message introducing my new client or letting him know
@@ -296,26 +296,27 @@ and that no real messages will ever come from it again.
 
 ## Client Applications
 
-Этот раздел описывает особенности применения OMEMO для конкретных клиентов,
-которыми я пользуюсь сам.
+This section describes how OMEMO is used in specific client applications
+that I personally use.
 
-### Conversations, Monocles and Other Forks
+### Conversations and Forks
 
-Conversation - это современное полнофункциональное чат-приложение.
-Оно поддерживает всё, что должно поддерживать:
-переписки, звонки, отправку фотографий и файлов.
-У него есть несколько форков, в которых UX может отличаться,
-но core-фичи работают абсолютно одинаково.
+Conversations is a modern, fully featured chat application for Android.
+It supports everything a messaging app should support:
+chats, voice calls, and sharing photos and files.
 
-На экране с информацией о конакте (в том числе и о своём аккаунте)
-можно увидеть список фингерпринтов,
-вручную отметить галочкой доверенные или отозвать доверие.
+There are several forks of it where the UI or UX may differ,
+but the core features work exactly the same.
+I personally use Monocles Chat.
 
-Упростить все эти рутинные вещи призвана система с QR-кодами:
-прямо на главном можно показать свой код или считать чужой.
-Так верификация устройств при личной встрече становится простой и ненапряжной.
+On the contact details screen (including your own account),
+you can see a list of published fingerprints
+and manually mark them as trusted or revoke trust.
 
-Правило большого пальца - сканируй QR-код при каждом удобном случае.
+To simplify all these routine operations, a QR-code-based system is used:
+You can show your own QR code or scan other people’s codes
+directly from the main screen.
+This makes device verification during in-person meetings simple and effortless.
 
 ### Dino
 

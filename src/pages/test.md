@@ -1,15 +1,14 @@
 ---
 
 layout: post
-
 lang: 'en'
-date: '2020-10-30'
-
-year: '2020'
-section: 'posts'
 
 title: 'markdown test page'
 description: 'A test document written using the Markdown language.'
+
+section: 'posts'
+year: '2020'
+date: '2020-10-30'
 
 ---
 

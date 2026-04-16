@@ -1,15 +1,15 @@
 ---
 
 layout: post
-
 lang: 'ru'
-date: '2024-07-27'
-
-year: '2024'
-section: 'posts'
 
 title: 'wrapped bw'
 description: 'Превращаем fully-featured Bitwarden command-line interface в удобный.'
+
+section: 'posts'
+year: '2024'
+date: '2024-07-27'
+
 ---
 
 # Интеграция Bitwarden CLI с&nbsp;fzf и&nbsp;буфером обмена

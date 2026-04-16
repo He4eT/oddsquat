@@ -57,7 +57,7 @@ XMPP Extension Protocol (XEP)
 for secure multi-client end-to-end encryption.
 You can read more about
 it&nbsp;on&nbsp;a&nbsp;<a
-  href='https://contrapunctus.codeberg.page/the-quick-and-easy-guide-to-xmpp.html'
+  href='https://conversations.im/omemo/'
   target='_blank'>dedicated page by&nbsp;Daniel Gultsch</a>.
 
 **Client**, in&nbsp;this post,
@@ -143,13 +143,10 @@ clients publish their own fingerprints to&nbsp;the XMPP server
 and automatically receive the fingerprints of&nbsp;others.
 Only fingerprints you explicitly mark as&nbsp;trusted are relevant.
 
-In&nbsp;an&nbsp;ideal scenario, the contact should confirm in&nbsp;person
+In&nbsp;an&nbsp;typical scenario, the contact should confirm in&nbsp;person
 or&nbsp;through an&nbsp;already trusted and secure communication channel
 that the fingerprint belongs to&nbsp;their device,
 and only then you mark it&nbsp;as&nbsp;trusted.
-In&nbsp;most XMPP clients this is&nbsp;simply done
-by&nbsp;ticking a&nbsp;checkbox
-or&nbsp;by&nbsp;scanning a&nbsp;QR&nbsp;code.
 
 The list of&nbsp;trusted fingerprints
 is&nbsp;used at&nbsp;the moment a&nbsp;message is&nbsp;sent.
@@ -226,8 +223,8 @@ but you shouldn’t rely on&nbsp;them to&nbsp;hide anything.
 
 ### Maintenance
 
-OMEMO was designed as&nbsp;a&nbsp;set-it-and-forget-it solution,
-and it&nbsp;mostly succeeds in&nbsp;that goal.
+OMEMO was designed as&nbsp;a&nbsp;set-it-and-forget-it solution
+and mostly succeeds in&nbsp;that goal.
 If&nbsp;you have a&nbsp;basic understanding of&nbsp;how the protocol works
 and check in&nbsp;online from time to&nbsp;time,
 there shouldn’t be&nbsp;any surprises.
@@ -306,12 +303,7 @@ Let’s say Bob and I&nbsp;start discussing something
 on&nbsp;a&nbsp;forum or&nbsp;in&nbsp;the Fediverse,
 and then decide to&nbsp;continue the discussion on&nbsp;XMPP.
 
-Bob starts the chat.
-I&nbsp;trust the first device he&nbsp;messages me&nbsp;from,
-and then we&nbsp;exchange fingerprints for our other devices,
-if&nbsp;we&nbsp;have any.
-This approach is&nbsp;called TOFU (Trust On&nbsp;First Use).
-
+Before starting the chat,
 Bob can confirm it’s really me&nbsp;using my&nbsp;page with fingerprints.
 I&nbsp;can confirm it’s really him
 by&nbsp;asking him to&nbsp;send his fingerprints
@@ -320,6 +312,16 @@ in&nbsp;a&nbsp;private message on&nbsp;the same forum or&nbsp;via email.
 Ideally, Bob also has a&nbsp;public page with his fingerprints.
 That way, we&nbsp;can both independently verify
 that we&nbsp;are who we&nbsp;say we&nbsp;are.
+
+In&nbsp;an&nbsp;alternative scenario,
+where there has been no&nbsp;prior communication or&nbsp;public pages
+and only a&nbsp;single JID&nbsp;is known,
+things play out a&nbsp;bit differently:
+Bob starts the chat,
+I&nbsp;trust the first device he&nbsp;messages me&nbsp;from,
+and then we&nbsp;exchange fingerprints for our other devices,
+if&nbsp;we&nbsp;have any.
+This approach is&nbsp;called TOFU (Trust On&nbsp;First Use).
 
 ### New or&nbsp;Lost Devices
 
@@ -351,7 +353,10 @@ that I&nbsp;personally use.
 
 ### Conversations and Forks
 
-Conversations is&nbsp;a&nbsp;modern,
+<a
+  href='https://conversations.im/'
+  target='_blank'>
+  Conversations</a> is&nbsp;a&nbsp;modern,
 fully featured chat application for Android.
 It&nbsp;supports everything a&nbsp;messaging app should support:
 chats, voice calls, video calls, and sharing files of&nbsp;any kind.
@@ -359,7 +364,10 @@ chats, voice calls, video calls, and sharing files of&nbsp;any kind.
 There are several forks of&nbsp;it&nbsp;where
 the UI&nbsp;or&nbsp;UX&nbsp;may differ,
 but the core features work exactly the same.
-I&nbsp;personally use Monocles Chat.
+I&nbsp;personally use <a
+  href='https://codeberg.org/monocles/monocles_chat'
+  target='_blank'>
+  Monocles Chat</a>.
 
 On&nbsp;the Contact Details screen (including your own account),
 you can see a&nbsp;list of&nbsp;published fingerprints
@@ -374,7 +382,10 @@ simple and effortless.
 
 ### Dino
 
-Dino is&nbsp;a&nbsp;lightweight GTK-based GUI client.
+<a
+  href='https://dino.im/'
+  target='_blank'>
+  Dino</a> is&nbsp;a&nbsp;lightweight GTK-based GUI client.
 
 It&nbsp;can be&nbsp;considered a&nbsp;fully functional one,
 although some non-essential features are still not implemented.
@@ -392,11 +403,14 @@ I&nbsp;recommend disabling this feature.
 
 ### Profanity
 
-Profanity is&nbsp;a&nbsp;powerful TUI client
+<a
+  href='https://profanity-im.github.io/'
+  target='_blank'>
+  Profanity</a> is&nbsp;a&nbsp;powerful TUI client
 where everything is&nbsp;controlled through a&nbsp;built-in command system.
 
 If&nbsp;you somehow intend to&nbsp;use it,
-you can find a&nbsp;small cheat sheet for the `/omemo` command below.
+you can find a&nbsp;small cheat sheet for the `omemo` command below.
 However, I&nbsp;strongly recommend reading the full documentation.
 
 - Generate a&nbsp;key and add your other clients:
@@ -444,5 +458,6 @@ when you keep running into
 “The message was not encrypted for this device”
 over and over again.
 
-From now on, I&nbsp;hope you won’t encounter errors like this
-or&nbsp;any other issues with end-to-end encryption in&nbsp;XMPP.
+From now on, I&nbsp;hope you won’t encounter such errors
+or&nbsp;any other issues
+connected to&nbsp;end-to-end encryption in&nbsp;XMPP.

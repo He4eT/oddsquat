@@ -4,7 +4,7 @@ layout: post
 lang: 'en'
 
 title: 'posts'
-description: 'Сomplete list of posts'
+description: 'Сomplete list of posts.'
 
 ---
 

@@ -1,15 +1,14 @@
 ---
 
 layout: post
-
 lang: 'ru'
-date: '2020-11-08'
-
-year: '2020'
-section: 'posts'
 
 title: 'initial post'
 description: 'Первый пост в этом фэнзине, рассказывающий о его внутреннем устойстве.'
+
+section: 'posts'
+year: '2020'
+date: '2020-11-08'
 
 ---
 

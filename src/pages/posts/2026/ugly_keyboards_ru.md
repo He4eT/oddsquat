@@ -2,12 +2,13 @@
 
 layout: post
 lang: 'ru'
+
+title: 'ugly keyboards'
+description: 'Почему нас окружают уродливые клавиатуры и что с этим можно сделать.'
+
+section: 'posts'
 year: '2026'
 date: '2026-03-18'
-section: 'posts'
-
-title: 'ugly_keyboards'
-description: 'Почему нас окружают уродливые клавиатуры и что с этим можно сделать.'
 
 ---
 

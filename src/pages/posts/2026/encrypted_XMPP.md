@@ -2,12 +2,13 @@
 
 layout: post
 lang: 'en'
+
+title: 'encrypted XMPP'
+description: 'Secure and private messaging with XMPP and OMEMO encryption.'
+
+section: 'posts'
 year: '2026'
 date: '2026-04-07'
-section: 'posts'
-
-title: 'encrypted_XMPP'
-description: 'Secure and private messaging with XMPP and OMEMO encryption.'
 
 ---
 

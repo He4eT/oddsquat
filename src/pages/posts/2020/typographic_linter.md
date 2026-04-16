@@ -1,15 +1,14 @@
 ---
 
 layout: post
-
 lang: 'ru'
-date: '2020-11-18'
-
-year: '2020'
-section: 'posts'
 
 title: 'typographic linter'
 description: 'Prettier для текста. Автоматизация рутинной типографики.'
+
+section: 'posts'
+year: '2020'
+date: '2020-11-18'
 
 ---
 

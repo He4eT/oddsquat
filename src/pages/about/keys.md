@@ -2,11 +2,12 @@
 
 layout: post
 lang: 'en'
-date: '2026-04-05'
-section: 'about'
 
 title: 'keys'
 description: 'Public keys and fingerprints.'
+
+section: 'about'
+date: '2026-04-05'
 
 ---
 

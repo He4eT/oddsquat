@@ -1,15 +1,14 @@
 ---
 
 layout: post
-
 lang: 'ru'
-date: '2024-01-15'
-
-year: '2024'
-section: 'posts'
 
 title: 'selfhosted LLM'
 description: 'Персональные LLM в docker-контейнере на твоём компьютере.'
+
+section: 'posts'
+year: '2024'
+date: '2024-01-15'
 
 ---
 

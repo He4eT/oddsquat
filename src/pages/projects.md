@@ -107,7 +107,7 @@ Incomplete list of&nbsp;my&nbsp;projects and experiments.
       </strong>
     </header>
     <section class='description'>
-      A&nbsp;lightweight SpaceAPI server with both web and REST interfaces.
+      Lightweight SpaceAPI server with both web and REST interfaces.
     </section>
     <section>
       <a href='https://github.com/He4eT/simple-spaceapi' target='_blank'>repository</a>

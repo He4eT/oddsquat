@@ -5,6 +5,11 @@
  * description
  */
 const feed = [[
+  '2026-04-23',
+  'https://oddsquat.org/posts/2026/encrypted_XMPP/',
+  '[EN] encrypted XMPP',
+  'Secure and private messaging with XMPP and OMEMO encryption.'
+], [
   '2026-03-18',
   'https://oddsquat.org/posts/2026/ugly_keyboards_ru/',
   '[RU] ugly keyboards',

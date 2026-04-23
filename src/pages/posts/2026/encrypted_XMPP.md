@@ -129,7 +129,8 @@ OMEMO is&nbsp;based on&nbsp;the <a
 While the internal details are quite interesting,
 for practical purposes it’s enough to&nbsp;know that
 each client stores some cryptographic keys
-and can derive a&nbsp;hash from them, commonly called a&nbsp;fingerprint.
+and can derive a&nbsp;human-readable hash from them,
+commonly called a&nbsp;fingerprint.
 
 Keys are usually managed automatically by&nbsp;the XMPP client,
 and in&nbsp;normal use you should never need to&nbsp;handle them manually.

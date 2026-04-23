@@ -460,5 +460,5 @@ when you keep running into
 over and over again.
 
 From now on, I&nbsp;hope you won’t encounter such errors
-or&nbsp;any other issues
-connected to&nbsp;end-to-end encryption in&nbsp;XMPP.
+or&nbsp;any other issues with end-to-end encryption,
+and you’ll feel confident using it&nbsp;in&nbsp;XMPP.

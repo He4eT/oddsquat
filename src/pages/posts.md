@@ -18,6 +18,18 @@ Announcements are available via [RSS](/rss.xml).
 
 - <article class='entry'>
     <header>
+      [en]
+      <strong>
+        <a href='/posts/2026/encrypted_XMPP/'>encrypted XMPP</a>
+      </strong>
+    </header>
+    <section class='description'>
+      Secure and private messaging with XMPP and OMEMO encryption.
+    </section>
+  </article>
+
+- <article class='entry'>
+    <header>
       [ru]
       <strong>
         <a href='/posts/2026/ugly_keyboards_ru/'>ugly keyboards</a>
